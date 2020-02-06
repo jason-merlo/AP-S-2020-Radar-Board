@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name aps_radar_lib)(type KiCad)(uri ${KIPRJMOD}/aps_radar_lib.pretty)(options "")(descr ""))
+  (lib (name aps_radar)(type KiCad)(uri ${KIPRJMOD}/aps_radar.pretty)(options "")(descr ""))
+)
