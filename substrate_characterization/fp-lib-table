@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name aps_radar_lib)(type KiCad)(uri ${KIPRJMOD}/aps_radar_lib.pretty)(options "")(descr ""))
-  (lib (name aps_radar)(type KiCad)(uri ${KIPRJMOD}/aps_radar.pretty)(options "")(descr ""))
+  (lib (name aps_radar_lib)(type KiCad)(uri "/Users/jasonmerlo/Projects/DELTA/AP-S Radar/aps2020-hardware/aps_radar_lib.pretty")(options "")(descr ""))
 )
