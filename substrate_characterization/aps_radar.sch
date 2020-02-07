@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:aps_radar-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 8500 11000 portrait
