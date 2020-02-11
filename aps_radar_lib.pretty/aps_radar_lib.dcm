@@ -4,4 +4,13 @@ $CMP BFCG-5600+
 F https://www.minicircuits.com/pdfs/BFCG-5600+.pdf
 $ENDCMP
 #
+$CMP CWX813
+D XTAL OSC XO LVCMOS
+F http://www.conwin.com/datasheets/sm/sm126.pdf
+$ENDCMP
+#
+$CMP LMX2491RTWR
+F http://www.ti.com/lit/ds/symlink/lmx2491.pdf
+$ENDCMP
+#
 #End Doc Library
