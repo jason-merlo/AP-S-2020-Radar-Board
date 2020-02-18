@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name aps_radar-cache)(type Legacy)(uri ${KIPRJMOD}/aps_radar-cache.lib)(options "")(descr ""))
+  (lib (name aps_radar_lib)(type Legacy)(uri C:/Users/vakaliss.ECE122/Documents/APS_SDC_2020/aps2020-hardware/aps_radar_lib.pretty/aps_radar_lib.lib)(options "")(descr ""))
+)
