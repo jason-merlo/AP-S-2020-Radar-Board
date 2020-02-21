@@ -255,4 +255,19 @@ Wire Wire Line
 	5150 3650 5150 3600
 Wire Wire Line
 	5150 3600 5350 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5E46629A
+P 6550 4150
+F 0 "#PWR?" H 6550 3900 50  0001 C CNN
+F 1 "GND" H 6555 3977 50  0000 C CNN
+F 2 "" H 6550 4150 50  0001 C CNN
+F 3 "" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4150 6550 4050
+Text Notes 4750 4300 0    50   ~ 0
+GND_OSCIN* should have\nsame outward looking \nimpedance as OSCIN
 $EndSCHEMATC
