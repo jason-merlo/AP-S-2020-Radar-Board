@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name aps_radar_lib)(type Legacy)(uri ${KIPRJMOD}/../aps_radar_lib.pretty/aps_radar_lib.lib)(options "")(descr ""))
-)
