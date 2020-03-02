@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:aps_radar-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 3
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -15,24 +15,357 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1800 2400 1100 1400
+S 1200 1150 1100 1400
 U 5E3C6313
 F0 "transmitter" 50
 F1 "transmitter.sch" 50
-F2 "TX_OUT" O R 2900 2550 50 
-F3 "LO_1" O R 2900 2800 50 
-F4 "LO_2" O R 2900 2900 50 
-F5 "LO_3" O R 2900 3000 50 
-F6 "LO_4" O R 2900 3100 50 
-F7 "LMX_TRIG1" O R 2900 3300 50 
-F8 "LMX_TRIG2" O R 2900 3400 50 
-F9 "LMX_MUXOUT" O R 2900 3500 50 
-F10 "LMX_MOD" O R 2900 3600 50 
+F2 "TX_OUT" O R 2300 1300 50 
+F3 "LO_1" O R 2300 1550 50 
+F4 "LO_2" O R 2300 1650 50 
+F5 "LO_3" O R 2300 1750 50 
+F6 "LO_4" O R 2300 1850 50 
+F7 "LMX_TRIG1" O R 2300 2050 50 
+F8 "LMX_TRIG2" O R 2300 2150 50 
+F9 "LMX_MUXOUT" O R 2300 2250 50 
+F10 "LMX_MOD" O R 2300 2350 50 
 $EndSheet
 $Sheet
-S 5950 2400 1800 1000
-U 5E3C637C
-F0 "receiver" 50
+S 6250 3850 1000 700 
+U 5F61773C
+F0 "receiver_2" 50
 F1 "receiver.sch" 50
+F2 "ANT_IN" I R 7250 4200 50 
+F3 "LO_IN" I L 6250 4000 50 
+F4 "IF_OUT_1" O L 6250 4200 50 
+F5 "IF_OUT_2" O L 6250 4400 50 
 $EndSheet
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F6184CA
+P 9400 1300
+F 0 "J?" H 9500 1275 50  0000 L CNN
+F 1 "Tx_Ant" H 9500 1184 50  0000 L CNN
+F 2 "" H 9400 1300 50  0001 C CNN
+F 3 " ~" H 9400 1300 50  0001 C CNN
+	1    9400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F61A382
+P 9400 1600
+F 0 "#PWR?" H 9400 1350 50  0001 C CNN
+F 1 "GND" H 9405 1427 50  0000 C CNN
+F 2 "" H 9400 1600 50  0001 C CNN
+F 3 "" H 9400 1600 50  0001 C CNN
+	1    9400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1600 9400 1500
+Text Notes 9000 1050 0    59   ~ 0
+Transmitter Output
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F61D7C7
+P 9450 3250
+F 0 "J?" H 9550 3225 50  0000 L CNN
+F 1 "Rx1_Ant" H 9550 3134 50  0000 L CNN
+F 2 "" H 9450 3250 50  0001 C CNN
+F 3 " ~" H 9450 3250 50  0001 C CNN
+	1    9450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F61D7CF
+P 9450 3550
+F 0 "#PWR?" H 9450 3300 50  0001 C CNN
+F 1 "GND" H 9455 3377 50  0000 C CNN
+F 2 "" H 9450 3550 50  0001 C CNN
+F 3 "" H 9450 3550 50  0001 C CNN
+	1    9450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3550 9450 3450
+Text Notes 9000 2950 0    59   ~ 0
+Receiver Inputs
+Wire Wire Line
+	7250 3250 9250 3250
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F61E813
+P 9450 4200
+F 0 "J?" H 9550 4175 50  0000 L CNN
+F 1 "Rx2_Ant" H 9550 4084 50  0000 L CNN
+F 2 "" H 9450 4200 50  0001 C CNN
+F 3 " ~" H 9450 4200 50  0001 C CNN
+	1    9450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F61E819
+P 9450 4500
+F 0 "#PWR?" H 9450 4250 50  0001 C CNN
+F 1 "GND" H 9455 4327 50  0000 C CNN
+F 2 "" H 9450 4500 50  0001 C CNN
+F 3 "" H 9450 4500 50  0001 C CNN
+	1    9450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4500 9450 4400
+Wire Wire Line
+	7250 4200 9250 4200
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F620063
+P 9450 5150
+F 0 "J?" H 9550 5125 50  0000 L CNN
+F 1 "Rx3_Ant" H 9550 5034 50  0000 L CNN
+F 2 "" H 9450 5150 50  0001 C CNN
+F 3 " ~" H 9450 5150 50  0001 C CNN
+	1    9450 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F620069
+P 9450 5450
+F 0 "#PWR?" H 9450 5200 50  0001 C CNN
+F 1 "GND" H 9455 5277 50  0000 C CNN
+F 2 "" H 9450 5450 50  0001 C CNN
+F 3 "" H 9450 5450 50  0001 C CNN
+	1    9450 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 5450 9450 5350
+Wire Wire Line
+	7250 5150 9250 5150
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5F620071
+P 9450 6100
+F 0 "J?" H 9550 6075 50  0000 L CNN
+F 1 "Rx4_Ant" H 9550 5984 50  0000 L CNN
+F 2 "" H 9450 6100 50  0001 C CNN
+F 3 " ~" H 9450 6100 50  0001 C CNN
+	1    9450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F620077
+P 9450 6400
+F 0 "#PWR?" H 9450 6150 50  0001 C CNN
+F 1 "GND" H 9455 6227 50  0000 C CNN
+F 2 "" H 9450 6400 50  0001 C CNN
+F 3 "" H 9450 6400 50  0001 C CNN
+	1    9450 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 6400 9450 6300
+Wire Wire Line
+	7250 6100 9250 6100
+Wire Wire Line
+	2300 1300 9200 1300
+Wire Wire Line
+	2300 1550 5450 1550
+Wire Wire Line
+	5450 1550 5450 3050
+Wire Wire Line
+	5450 3050 6250 3050
+Wire Wire Line
+	2300 1650 5300 1650
+Wire Wire Line
+	5300 1650 5300 4000
+Wire Wire Line
+	5300 4000 6250 4000
+Wire Wire Line
+	2300 1750 5100 1750
+Wire Wire Line
+	5100 1750 5100 4950
+Wire Wire Line
+	5100 4950 6250 4950
+Wire Wire Line
+	2300 1850 4850 1850
+Wire Wire Line
+	4850 1850 4850 5900
+Wire Wire Line
+	4850 5900 6250 5900
+$Sheet
+S 6250 4800 1000 700 
+U 5F617CF8
+F0 "receiver_3" 50
+F1 "receiver.sch" 50
+F2 "ANT_IN" I R 7250 5150 50 
+F3 "LO_IN" I L 6250 4950 50 
+F4 "IF_OUT_1" O L 6250 5150 50 
+F5 "IF_OUT_2" O L 6250 5350 50 
+$EndSheet
+$Sheet
+S 6250 5750 1000 700 
+U 5F617CFE
+F0 "receiver_4" 50
+F1 "receiver.sch" 50
+F2 "ANT_IN" I R 7250 6100 50 
+F3 "LO_IN" I L 6250 5900 50 
+F4 "IF_OUT_1" O L 6250 6100 50 
+F5 "IF_OUT_2" O L 6250 6300 50 
+$EndSheet
+$Sheet
+S 6250 2900 1000 700 
+U 5E3C637C
+F0 "receiver_1" 50
+F1 "receiver.sch" 50
+F2 "ANT_IN" I R 7250 3250 50 
+F3 "LO_IN" I L 6250 3050 50 
+F4 "IF_OUT_1" O L 6250 3250 50 
+F5 "IF_OUT_2" O L 6250 3450 50 
+$EndSheet
+Wire Wire Line
+	2300 2050 3000 2050
+Wire Wire Line
+	2300 2150 3000 2150
+Wire Wire Line
+	2300 2250 3000 2250
+Wire Wire Line
+	2300 2350 3000 2350
+Text Label 3000 2050 2    50   ~ 0
+LMX_TRIG1
+Text Label 3000 2150 2    50   ~ 0
+LMX_TRIG2
+Text Label 3000 2250 2    50   ~ 0
+LMX_MUXOUT
+Text Label 3000 2350 2    50   ~ 0
+LMX_MOD
+$Comp
+L Connector_Generic:Conn_01x16 J?
+U 1 1 5F626A7F
+P 1500 4700
+F 0 "J?" H 1450 5550 50  0000 C CNN
+F 1 "IF_OUT" H 1450 3750 50  0000 C CNN
+F 2 "" H 1500 4700 50  0001 C CNN
+F 3 "~" H 1500 4700 50  0001 C CNN
+	1    1500 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4000 3800 4000
+Wire Wire Line
+	3800 4000 3800 3250
+Wire Wire Line
+	3800 3250 6250 3250
+Wire Wire Line
+	1700 4200 3950 4200
+Wire Wire Line
+	3950 4200 3950 3450
+Wire Wire Line
+	3950 3450 6250 3450
+Wire Wire Line
+	1700 4400 4100 4400
+Wire Wire Line
+	4100 4400 4100 4200
+Wire Wire Line
+	4100 4200 6250 4200
+Wire Wire Line
+	1700 4600 4250 4600
+Wire Wire Line
+	4250 4600 4250 4400
+Wire Wire Line
+	4250 4400 6250 4400
+Wire Wire Line
+	1700 4800 4250 4800
+Wire Wire Line
+	4250 4800 4250 5150
+Wire Wire Line
+	4250 5150 6250 5150
+Wire Wire Line
+	6250 5350 4100 5350
+Wire Wire Line
+	4100 5350 4100 5000
+Wire Wire Line
+	4100 5000 1700 5000
+Wire Wire Line
+	1700 5200 3950 5200
+Wire Wire Line
+	3950 5200 3950 6100
+Wire Wire Line
+	3950 6100 6250 6100
+Wire Wire Line
+	6250 6300 3800 6300
+Wire Wire Line
+	3800 6300 3800 5400
+Wire Wire Line
+	3800 5400 1700 5400
+$Comp
+L power:GND #PWR?
+U 1 1 5F6369D4
+P 1850 6400
+F 0 "#PWR?" H 1850 6150 50  0001 C CNN
+F 1 "GND" H 1855 6227 50  0000 C CNN
+F 2 "" H 1850 6400 50  0001 C CNN
+F 3 "" H 1850 6400 50  0001 C CNN
+	1    1850 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6400 1850 5500
+Wire Wire Line
+	1850 4100 1700 4100
+Wire Wire Line
+	1700 4300 1850 4300
+Connection ~ 1850 4300
+Wire Wire Line
+	1850 4300 1850 4100
+Wire Wire Line
+	1700 4500 1850 4500
+Connection ~ 1850 4500
+Wire Wire Line
+	1850 4500 1850 4300
+Wire Wire Line
+	1700 4700 1850 4700
+Connection ~ 1850 4700
+Wire Wire Line
+	1850 4700 1850 4500
+Wire Wire Line
+	1700 4900 1850 4900
+Connection ~ 1850 4900
+Wire Wire Line
+	1850 4900 1850 4700
+Wire Wire Line
+	1700 5100 1850 5100
+Connection ~ 1850 5100
+Wire Wire Line
+	1850 5100 1850 4900
+Wire Wire Line
+	1700 5300 1850 5300
+Connection ~ 1850 5300
+Wire Wire Line
+	1850 5300 1850 5100
+Wire Wire Line
+	1700 5500 1850 5500
+Connection ~ 1850 5500
+Wire Wire Line
+	1850 5500 1850 5300
+Text Label 2000 4000 0    50   ~ 0
+RX1_I
+Text Label 2000 4200 0    50   ~ 0
+RX1_Q
+Text Label 2000 4400 0    50   ~ 0
+RX2_I
+Text Label 2000 4600 0    50   ~ 0
+RX2_Q
+Text Label 2000 5000 0    50   ~ 0
+RX3_Q
+Text Label 2000 5400 0    50   ~ 0
+RX4_Q
+Text Label 2000 4800 0    50   ~ 0
+RX3_I
+Text Label 2000 5200 0    50   ~ 0
+RX4_I
 $EndSCHEMATC
