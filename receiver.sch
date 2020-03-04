@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 12 14
+Sheet 11 15
 Title ""
 Date ""
 Rev ""
@@ -136,24 +136,6 @@ F 3 "" H 6050 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 4600 2350 4600
-$Comp
-L power:+5V #PWR?
-U 1 1 5F37D159
-P 2750 2350
-AR Path="/5E3C637C/5F37D159" Ref="#PWR?"  Part="1" 
-AR Path="/5F615A6B/5F37D159" Ref="#PWR?"  Part="1" 
-AR Path="/5F615BAD/5F37D159" Ref="#PWR?"  Part="1" 
-AR Path="/5F615D3F/5F37D159" Ref="#PWR?"  Part="1" 
-AR Path="/5F61773C/5F37D159" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CF8/5F37D159" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CFE/5F37D159" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2750 2200 50  0001 C CNN
-F 1 "+5V" H 2765 2523 50  0000 C CNN
-F 2 "" H 2750 2350 50  0001 C CNN
-F 3 "" H 2750 2350 50  0001 C CNN
-	1    2750 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2350 4850 2100 4850
 Wire Wire Line
@@ -324,24 +306,6 @@ Connection ~ 2350 3000
 Wire Wire Line
 	2350 3000 2350 2600
 $Comp
-L power:+5V #PWR?
-U 1 1 5F41FB8B
-P 3350 2350
-AR Path="/5E3C637C/5F41FB8B" Ref="#PWR?"  Part="1" 
-AR Path="/5F615A6B/5F41FB8B" Ref="#PWR?"  Part="1" 
-AR Path="/5F615BAD/5F41FB8B" Ref="#PWR?"  Part="1" 
-AR Path="/5F615D3F/5F41FB8B" Ref="#PWR?"  Part="1" 
-AR Path="/5F61773C/5F41FB8B" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CF8/5F41FB8B" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CFE/5F41FB8B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3350 2200 50  0001 C CNN
-F 1 "+5V" H 3365 2523 50  0000 C CNN
-F 2 "" H 3350 2350 50  0001 C CNN
-F 3 "" H 3350 2350 50  0001 C CNN
-	1    3350 2350
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5F41FB91
 P 3550 3000
@@ -486,26 +450,8 @@ F 3 "~" H 6550 2600 50  0001 C CNN
 	1    6550 2600
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5F451C97
-P 6350 2350
-AR Path="/5E3C637C/5F451C97" Ref="#PWR?"  Part="1" 
-AR Path="/5F615A6B/5F451C97" Ref="#PWR?"  Part="1" 
-AR Path="/5F615BAD/5F451C97" Ref="#PWR?"  Part="1" 
-AR Path="/5F615D3F/5F451C97" Ref="#PWR?"  Part="1" 
-AR Path="/5F61773C/5F451C97" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CF8/5F451C97" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CFE/5F451C97" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6350 2200 50  0001 C CNN
-F 1 "+5V" H 6365 2523 50  0000 C CNN
-F 2 "" H 6350 2350 50  0001 C CNN
-F 3 "" H 6350 2350 50  0001 C CNN
-	1    6350 2350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	6350 2350 6350 2600
+	6350 2350 6350 2400
 Wire Wire Line
 	6350 3700 6100 3700
 Wire Wire Line
@@ -610,24 +556,6 @@ F 2 "" H 5550 2600 50  0001 C CNN
 F 3 "~" H 5550 2600 50  0001 C CNN
 	1    5550 2600
 	0    1    -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5F47783F
-P 5750 2350
-AR Path="/5E3C637C/5F47783F" Ref="#PWR?"  Part="1" 
-AR Path="/5F615A6B/5F47783F" Ref="#PWR?"  Part="1" 
-AR Path="/5F615BAD/5F47783F" Ref="#PWR?"  Part="1" 
-AR Path="/5F615D3F/5F47783F" Ref="#PWR?"  Part="1" 
-AR Path="/5F61773C/5F47783F" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CF8/5F47783F" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CFE/5F47783F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5750 2200 50  0001 C CNN
-F 1 "+5V" H 5765 2523 50  0000 C CNN
-F 2 "" H 5750 2350 50  0001 C CNN
-F 3 "" H 5750 2350 50  0001 C CNN
-	1    5750 2350
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5750 2350 5750 2600
@@ -740,4 +668,51 @@ Text Notes 7700 3300 0    59   ~ 0
 Attenuation: 40 dB/dec
 Text Notes 7700 2850 0    79   ~ 0
 Second-Order Active Low-Pass
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5EC53FB4
+P 2750 2350
+F 0 "#PWR?" H 2750 2200 50  0001 C CNN
+F 1 "+5V0" H 2750 2500 50  0000 C CNN
+F 2 "" H 2750 2350 50  0001 C CNN
+F 3 "" H 2750 2350 50  0001 C CNN
+	1    2750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5EC54BCA
+P 3350 2350
+F 0 "#PWR?" H 3350 2200 50  0001 C CNN
+F 1 "+5V0" H 3350 2500 50  0000 C CNN
+F 2 "" H 3350 2350 50  0001 C CNN
+F 3 "" H 3350 2350 50  0001 C CNN
+	1    3350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5EC54F96
+P 5750 2350
+F 0 "#PWR?" H 5750 2200 50  0001 C CNN
+F 1 "+5V0" H 5750 2500 50  0000 C CNN
+F 2 "" H 5750 2350 50  0001 C CNN
+F 3 "" H 5750 2350 50  0001 C CNN
+	1    5750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5EC5541F
+P 6350 2350
+F 0 "#PWR?" H 6350 2200 50  0001 C CNN
+F 1 "+5V0" H 6350 2500 50  0000 C CNN
+F 2 "" H 6350 2350 50  0001 C CNN
+F 3 "" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 2400
+Wire Wire Line
+	6350 2400 6350 2600
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 14
+Sheet 13 15
 Title ""
 Date ""
 Rev ""
@@ -157,32 +157,6 @@ F 3 "" H 5650 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 3900 4850 3900
-$Comp
-L power:+5V #PWR?
-U 1 1 5F59FBB8
-P 5650 2500
-AR Path="/5E3C637C/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5E3C637C/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5E3C637C/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F615A6B/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F615A6B/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F615BAD/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F615BAD/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F615D3F/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F615D3F/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F61773C/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F61773C/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CF8/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CF8/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CFE/5F594231/5F59FBB8" Ref="#PWR?"  Part="1" 
-AR Path="/5F617CFE/5F5B2AB1/5F59FBB8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5650 2350 50  0001 C CNN
-F 1 "+5V" H 5665 2673 50  0000 C CNN
-F 2 "" H 5650 2500 50  0001 C CNN
-F 3 "" H 5650 2500 50  0001 C CNN
-	1    5650 2500
-	1    0    0    -1  
-$EndComp
 $Comp
 L aps_radar_lib:OPA227 U?
 U 1 1 5F59FBBE
@@ -425,4 +399,15 @@ Text Notes 1650 2350 0    59   ~ 0
 Attenuation: 40 dB/dec
 Text Notes 1650 1600 0    100  ~ 0
 Second-Order IF Low-Pass Filter
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5EC564D1
+P 5650 2500
+F 0 "#PWR?" H 5650 2350 50  0001 C CNN
+F 1 "+5V0" H 5665 2673 50  0000 C CNN
+F 2 "" H 5650 2500 50  0001 C CNN
+F 3 "" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
