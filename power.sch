@@ -16,16 +16,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 1150 1000 0    50   Input ~ 0
 +12V0_IN
-Text HLabel 10300 1000 2    50   Output ~ 0
-10V0_OUT
-Text HLabel 10300 1300 2    50   Output ~ 0
-5V0_OUT
-Text HLabel 10300 1150 2    50   Output ~ 0
-5V25_OUT
-Text HLabel 10300 1450 2    50   Output ~ 0
-3V3_OUT
-Text HLabel 10300 1600 2    50   Output ~ 0
-3V0_OUT
 $Comp
 L aps_radar_lib:TPS82140 U?
 U 1 1 5EC65C44
@@ -252,8 +242,6 @@ Wire Wire Line
 	3750 3050 4500 3050
 Text Notes 700  1950 0    100  ~ 0
 12V0 → 5V5 DC/DC Buck
-Text Label 4950 3050 2    50   ~ 0
-5V5_PGD
 Wire Wire Line
 	4100 2650 4100 2450
 Wire Wire Line
@@ -275,8 +263,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 2450 4500 2450
 Connection ~ 4100 2450
-Text Label 4950 2450 2    50   ~ 0
-5V5_OUT
 Text Notes 700  2300 0    50   ~ 0
 +12V0_IN range: \n[10.8 - 13.2]V
 Text Notes 4200 3000 0    50   ~ 0
@@ -479,8 +465,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 5000 3800 4550
 Connection ~ 3800 4550
-Wire Wire Line
-	3800 4550 4500 4550
 Text Notes 5850 1950 0    100  ~ 0
 5V5 → 5V25 LDO
 $Comp
@@ -719,9 +703,9 @@ F 3 "" H 9700 3550 50  0001 C CNN
 	1    9700 3550
 	1    0    0    -1  
 $EndComp
-Text Label 10600 2450 2    50   ~ 0
+Text Label 10900 2450 2    50   ~ 0
 5V25_OUT
-Text Label 10600 3150 2    50   ~ 0
+Text Label 10900 3150 2    50   ~ 0
 5V25_PGD
 $Comp
 L Connector:TestPoint TP?
@@ -738,7 +722,7 @@ Wire Wire Line
 	10150 2800 10150 3150
 Connection ~ 10150 3150
 Wire Wire Line
-	10150 3150 10600 3150
+	10150 3150 10900 3150
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5ED14AA9
@@ -753,8 +737,6 @@ $EndComp
 Wire Wire Line
 	4500 2800 4500 3050
 Connection ~ 4500 3050
-Wire Wire Line
-	4500 3050 4950 3050
 Text Notes 4000 750  0    100  ~ 0
 Power Indication LEDs
 $Bitmap
@@ -1235,9 +1217,9 @@ F 3 "" H 9700 5650 50  0001 C CNN
 	1    9700 5650
 	1    0    0    -1  
 $EndComp
-Text Label 10600 4550 2    50   ~ 0
+Text Label 10900 4550 2    50   ~ 0
 5V0_OUT
-Text Label 10600 5250 2    50   ~ 0
+Text Label 10900 5250 2    50   ~ 0
 5V0_PGD
 $Comp
 L Connector:TestPoint TP?
@@ -1254,7 +1236,7 @@ Wire Wire Line
 	10150 4900 10150 5250
 Connection ~ 10150 5250
 Wire Wire Line
-	10150 5250 10600 5250
+	10150 5250 10900 5250
 $Comp
 L Device:C_Small C?
 U 1 1 5ED5BE2C
@@ -1288,24 +1270,6 @@ F 3 "~" H 4700 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 2200 4500 2450
-Connection ~ 4500 4550
-Wire Wire Line
-	4500 4300 4500 4550
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5ED663B6
-P 4500 4300
-F 0 "TP?" H 4558 4418 50  0000 L CNN
-F 1 "10V0" H 4558 4327 50  0000 L CNN
-F 2 "" H 4700 4300 50  0001 C CNN
-F 3 "~" H 4700 4300 50  0001 C CNN
-	1    4500 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 4550 4950 4550
-Text Label 4950 4550 2    50   ~ 0
-10V0_OUT
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5ED83A9E
@@ -1552,14 +1516,12 @@ where V_REF=0.8v\n\nCalculated V_OUT = 4.989v
 Text Notes 8300 4000 0    50   ~ 0
 Feedback resistor eqn.
 Connection ~ 4500 2450
-Wire Wire Line
-	4500 2450 4950 2450
 Connection ~ 10150 2450
 Wire Wire Line
-	10150 2450 10600 2450
+	10150 2450 10500 2450
 Connection ~ 10150 4550
 Wire Wire Line
-	10150 4550 10600 4550
+	10150 4550 10450 4550
 $Comp
 L aps_radar_lib:LP5900-TL3.0 U?
 U 1 1 5EDCE3F9
@@ -1670,8 +1632,6 @@ Wire Wire Line
 	2200 6400 2500 6400
 Connection ~ 2500 6400
 Wire Wire Line
-	2500 6400 3100 6400
-Wire Wire Line
 	2500 6350 2500 6400
 $Comp
 L Connector:TestPoint TP?
@@ -1684,7 +1644,7 @@ F 3 "~" H 2700 6350 50  0001 C CNN
 	1    2500 6350
 	1    0    0    -1  
 $EndComp
-Text Label 3100 6400 2    50   ~ 0
+Text Label 3200 6400 2    50   ~ 0
 3V3_OUT
 $Comp
 L aps_radar_lib:LP5900-TL3.0 U?
@@ -1781,7 +1741,7 @@ Wire Wire Line
 	5250 6400 5550 6400
 Connection ~ 5550 6400
 Wire Wire Line
-	5550 6400 6150 6400
+	5550 6400 5850 6400
 Wire Wire Line
 	5550 6350 5550 6400
 $Comp
@@ -1795,7 +1755,7 @@ F 3 "~" H 5750 6350 50  0001 C CNN
 	1    5550 6350
 	1    0    0    -1  
 $EndComp
-Text Label 6150 6400 2    50   ~ 0
+Text Label 6300 6400 2    50   ~ 0
 3V0_OUT
 Wire Wire Line
 	1900 1350 1900 1450
@@ -2106,26 +2066,114 @@ Wire Wire Line
 	8500 1000 8400 1000
 Text Notes 5800 750  0    50   ~ 0
 All If=20mA
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F05B3D1
+P 2800 6300
+F 0 "#PWR?" H 2800 6150 50  0001 C CNN
+F 1 "+3V3" H 2815 6473 50  0000 C CNN
+F 2 "" H 2800 6300 50  0001 C CNN
+F 3 "" H 2800 6300 50  0001 C CNN
+	1    2800 6300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	10300 1000 9250 1000
-Text Notes 9200 750  0    100  ~ 0
-Power Output
-Text Label 9250 1000 0    50   ~ 0
+	2500 6400 2800 6400
+Wire Wire Line
+	2800 6300 2800 6400
+Connection ~ 2800 6400
+Wire Wire Line
+	2800 6400 3200 6400
+$Comp
+L power:+3V0 #PWR?
+U 1 1 5F0961AE
+P 5850 6300
+F 0 "#PWR?" H 5850 6150 50  0001 C CNN
+F 1 "+3V0" H 5865 6473 50  0000 C CNN
+F 2 "" H 5850 6300 50  0001 C CNN
+F 3 "" H 5850 6300 50  0001 C CNN
+	1    5850 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 6300 5850 6400
+Connection ~ 5850 6400
+Wire Wire Line
+	5850 6400 6300 6400
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5F0ADD47
+P 10450 4250
+F 0 "#PWR?" H 10450 4100 50  0001 C CNN
+F 1 "+5V0" H 10465 4423 50  0000 C CNN
+F 2 "" H 10450 4250 50  0001 C CNN
+F 3 "" H 10450 4250 50  0001 C CNN
+	1    10450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 4250 10450 4550
+Connection ~ 10450 4550
+Wire Wire Line
+	10450 4550 10900 4550
+$Comp
+L aps_radar_lib:+5V25 #PWR?
+U 1 1 5F0D035C
+P 10500 2150
+F 0 "#PWR?" H 10500 2000 50  0001 C CNN
+F 1 "+5V25" H 10515 2323 50  0000 C CNN
+F 2 "" H 10500 2150 50  0001 C CNN
+F 3 "" H 10500 2150 50  0001 C CNN
+	1    10500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2150 10500 2450
+Connection ~ 10500 2450
+Wire Wire Line
+	10500 2450 10900 2450
+Wire Wire Line
+	4500 2450 5350 2450
+Text Label 5350 4550 2    50   ~ 0
 10V0_OUT
 Wire Wire Line
-	10300 1150 9250 1150
-Text Label 9250 1150 0    50   ~ 0
-5V25_OUT
+	4500 3050 5350 3050
+Text Label 5350 2450 2    50   ~ 0
+5V5_OUT
+Text Label 5350 3050 2    50   ~ 0
+5V5_PGD
 Wire Wire Line
-	10300 1300 9250 1300
-Text Label 9250 1300 0    50   ~ 0
-5V0_OUT
+	4500 4550 5350 4550
+Connection ~ 4500 4550
 Wire Wire Line
-	10300 1450 9250 1450
-Text Label 9250 1450 0    50   ~ 0
-3V3_OUT
+	4500 4250 4500 4550
+$Comp
+L aps_radar_lib:+10V0 #PWR?
+U 1 1 5F0DD595
+P 4500 4250
+F 0 "#PWR?" H 4500 4100 50  0001 C CNN
+F 1 "+10V0" H 4515 4423 50  0000 C CNN
+F 2 "" H 4500 4250 50  0001 C CNN
+F 3 "" H 4500 4250 50  0001 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	10300 1600 9250 1600
-Text Label 9250 1600 0    50   ~ 0
-3V0_OUT
+	4100 4550 4500 4550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5ED663B6
+P 4100 4300
+F 0 "TP?" H 4158 4418 50  0000 L CNN
+F 1 "10V0" H 4158 4327 50  0000 L CNN
+F 2 "" H 4300 4300 50  0001 C CNN
+F 3 "~" H 4300 4300 50  0001 C CNN
+	1    4100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4300 4100 4550
+Connection ~ 4100 4550
+Wire Wire Line
+	3800 4550 4100 4550
 $EndSCHEMATC

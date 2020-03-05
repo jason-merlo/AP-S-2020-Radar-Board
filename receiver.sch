@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 11 15
+Sheet 8 15
 Title ""
 Date ""
 Rev ""
@@ -25,7 +25,7 @@ AR Path="/5F615D3F/5E3DBF7B" Ref="U?"  Part="1"
 AR Path="/5F61773C/5E3DBF7B" Ref="U?"  Part="1" 
 AR Path="/5F617CF8/5E3DBF7B" Ref="U?"  Part="1" 
 AR Path="/5F617CFE/5E3DBF7B" Ref="U?"  Part="1" 
-F 0 "U" H 5750 5100 50  0000 C CNN
+F 0 "U?" H 5750 5100 50  0000 C CNN
 F 1 "HMC951A" H 6400 4250 50  0000 C CNN
 F 2 "" H 5250 5000 50  0001 C CNN
 F 3 "" H 5250 5000 50  0001 C CNN
@@ -43,7 +43,7 @@ AR Path="/5F615D3F/5E3DD885" Ref="U?"  Part="1"
 AR Path="/5F61773C/5E3DD885" Ref="U?"  Part="1" 
 AR Path="/5F617CF8/5E3DD885" Ref="U?"  Part="1" 
 AR Path="/5F617CFE/5E3DD885" Ref="U?"  Part="1" 
-F 0 "U" H 2650 5000 60  0000 L CNN
+F 0 "U?" H 2650 5000 60  0000 L CNN
 F 1 "HMC717ALP3E" H 3200 4150 60  0000 L CNN
 F 2 "HCP_16_3" H 3050 5040 60  0001 C CNN
 F 3 "" H 2350 4700 60  0000 C CNN
@@ -127,7 +127,7 @@ AR Path="/5F615D3F/5E4D620B" Ref="#PWR?"  Part="1"
 AR Path="/5F61773C/5E4D620B" Ref="#PWR?"  Part="1" 
 AR Path="/5F617CF8/5E4D620B" Ref="#PWR?"  Part="1" 
 AR Path="/5F617CFE/5E4D620B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0123" H 6050 5450 50  0001 C CNN
+F 0 "#PWR?" H 6050 5450 50  0001 C CNN
 F 1 "GND" H 6055 5527 50  0000 C CNN
 F 2 "" H 6050 5700 50  0001 C CNN
 F 3 "" H 6050 5700 50  0001 C CNN
@@ -451,8 +451,6 @@ F 3 "~" H 6550 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6350 2350 6350 2400
-Wire Wire Line
 	6350 3700 6100 3700
 Wire Wire Line
 	6450 3000 6350 3000
@@ -461,7 +459,6 @@ Wire Wire Line
 	6350 3000 6350 3400
 Wire Wire Line
 	6450 2600 6350 2600
-Connection ~ 6350 2600
 Wire Wire Line
 	6350 2600 6350 3000
 Wire Wire Line
@@ -558,8 +555,6 @@ F 3 "~" H 5550 2600 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	5750 2350 5750 2600
-Wire Wire Line
 	5750 3700 6000 3700
 Wire Wire Line
 	5650 3000 5750 3000
@@ -568,7 +563,6 @@ Wire Wire Line
 	5750 3000 5750 3400
 Wire Wire Line
 	5650 2600 5750 2600
-Connection ~ 5750 2600
 Wire Wire Line
 	5750 2600 5750 3000
 Wire Wire Line
@@ -668,51 +662,80 @@ Text Notes 7700 3300 0    59   ~ 0
 Attenuation: 40 dB/dec
 Text Notes 7700 2850 0    79   ~ 0
 Second-Order Active Low-Pass
+Text Notes 3200 5400 0    50   ~ 0
+N/C may be connected\nto GND without affecting\nperformance
+Text Notes 6350 6950 0    50   Italic 10
+TODO: Add ferrite beads to power supplies
 $Comp
-L aps_radar_lib:+5V0 #PWR?
-U 1 1 5EC53FB4
-P 2750 2350
-F 0 "#PWR?" H 2750 2200 50  0001 C CNN
-F 1 "+5V0" H 2750 2500 50  0000 C CNN
-F 2 "" H 2750 2350 50  0001 C CNN
-F 3 "" H 2750 2350 50  0001 C CNN
-	1    2750 2350
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5F407877
+P 3050 2200
+F 0 "FB?" H 3150 2246 50  0000 L CNN
+F 1 "0" H 3150 2155 50  0000 L CNN
+F 2 "" V 2980 2200 50  0001 C CNN
+F 3 "~" H 3050 2200 50  0001 C CNN
+	1    3050 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L aps_radar_lib:+5V0 #PWR?
-U 1 1 5EC54BCA
-P 3350 2350
-F 0 "#PWR?" H 3350 2200 50  0001 C CNN
-F 1 "+5V0" H 3350 2500 50  0000 C CNN
-F 2 "" H 3350 2350 50  0001 C CNN
-F 3 "" H 3350 2350 50  0001 C CNN
-	1    3350 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:+5V0 #PWR?
-U 1 1 5EC54F96
-P 5750 2350
-F 0 "#PWR?" H 5750 2200 50  0001 C CNN
-F 1 "+5V0" H 5750 2500 50  0000 C CNN
-F 2 "" H 5750 2350 50  0001 C CNN
-F 3 "" H 5750 2350 50  0001 C CNN
-	1    5750 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:+5V0 #PWR?
-U 1 1 5EC5541F
-P 6350 2350
-F 0 "#PWR?" H 6350 2200 50  0001 C CNN
-F 1 "+5V0" H 6350 2500 50  0000 C CNN
-F 2 "" H 6350 2350 50  0001 C CNN
-F 3 "" H 6350 2350 50  0001 C CNN
-	1    6350 2350
-	1    0    0    -1  
-$EndComp
-Connection ~ 6350 2400
 Wire Wire Line
-	6350 2400 6350 2600
+	2750 2350 3050 2350
+Wire Wire Line
+	3050 2350 3050 2300
+Wire Wire Line
+	3050 2350 3350 2350
+Connection ~ 3050 2350
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5F40B124
+P 3050 2050
+AR Path="/5E3C637C/5F40B124" Ref="#PWR?"  Part="1" 
+AR Path="/5F617CF8/5F40B124" Ref="#PWR?"  Part="1" 
+AR Path="/5F617CFE/5F40B124" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 1900 50  0001 C CNN
+F 1 "+5V0" H 3050 2200 50  0000 C CNN
+F 2 "" H 3050 2050 50  0001 C CNN
+F 3 "" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2100 3050 2050
+Wire Wire Line
+	5750 2350 5750 2600
+Wire Wire Line
+	6350 2350 6350 2600
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5F410FEE
+P 6050 2200
+F 0 "FB?" H 6150 2246 50  0000 L CNN
+F 1 "0" H 6150 2155 50  0000 L CNN
+F 2 "" V 5980 2200 50  0001 C CNN
+F 3 "~" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2350 6050 2350
+Wire Wire Line
+	6050 2350 6050 2300
+Wire Wire Line
+	6050 2350 6350 2350
+Connection ~ 6050 2350
+$Comp
+L aps_radar_lib:+5V0 #PWR?
+U 1 1 5F410FF8
+P 6050 2050
+AR Path="/5E3C637C/5F410FF8" Ref="#PWR?"  Part="1" 
+AR Path="/5F617CF8/5F410FF8" Ref="#PWR?"  Part="1" 
+AR Path="/5F617CFE/5F410FF8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6050 1900 50  0001 C CNN
+F 1 "+5V0" H 6050 2200 50  0000 C CNN
+F 2 "" H 6050 2050 50  0001 C CNN
+F 3 "" H 6050 2050 50  0001 C CNN
+	1    6050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2100 6050 2050
 $EndSCHEMATC

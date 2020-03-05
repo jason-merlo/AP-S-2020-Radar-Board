@@ -440,7 +440,7 @@ Text Notes 1250 850  0    100  ~ 0
 Transmitter
 Text Notes 7800 2600 0    100  ~ 0
 Receivers
-Text Notes 2500 6000 0    100  ~ 0
+Text Notes 2250 6000 0    100  ~ 0
 Power Subsystem
 Wire Wire Line
 	2550 2550 3250 2550
@@ -690,4 +690,6 @@ Connection ~ 5300 7050
 Wire Wire Line
 	5600 7300 5600 6950
 Connection ~ 5600 6950
+Text Notes 6350 6950 0    50   Italic 10
+TODO: Add ferrite beads to power supplies
 $EndSCHEMATC
