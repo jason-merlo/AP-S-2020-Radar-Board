@@ -25,7 +25,7 @@ AR Path="/5F615D3F/5E3DBF7B" Ref="U?"  Part="1"
 AR Path="/5F61773C/5E3DBF7B" Ref="U2"  Part="1" 
 AR Path="/5F617CF8/5E3DBF7B" Ref="U6"  Part="1" 
 AR Path="/5F617CFE/5E3DBF7B" Ref="U10"  Part="1" 
-F 0 "U14" H 5800 5050 50  0000 C CNN
+F 0 "U2" H 5800 5050 50  0000 C CNN
 F 1 "HMC951A" H 6400 4250 50  0000 C CNN
 F 2 "aps_radar_lib:HMC-LP4" H 5250 5000 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc717a.pdf" H 5250 5000 50  0001 C CNN
@@ -49,7 +49,7 @@ AR Path="/5F615D3F/5E45CFE4" Ref="C?"  Part="1"
 AR Path="/5F61773C/5E45CFE4" Ref="C1"  Part="1" 
 AR Path="/5F617CF8/5E45CFE4" Ref="C19"  Part="1" 
 AR Path="/5F617CFE/5E45CFE4" Ref="C37"  Part="1" 
-F 0 "C55" V 1421 4600 50  0000 C CNN
+F 0 "C1" V 1421 4600 50  0000 C CNN
 F 1 "1.2pF" V 1512 4600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1650 4600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/210/Microwave_Caps-1535561.pdf" H 1650 4600 50  0001 C CNN
@@ -73,7 +73,7 @@ AR Path="/5F615D3F/5E47CA97" Ref="C?"  Part="1"
 AR Path="/5F61773C/5E47CA97" Ref="C11"  Part="1" 
 AR Path="/5F617CF8/5E47CA97" Ref="C29"  Part="1" 
 AR Path="/5F617CFE/5E47CA97" Ref="C47"  Part="1" 
-F 0 "C65" V 6400 3000 50  0000 C CNN
+F 0 "C11" V 6400 3000 50  0000 C CNN
 F 1 "100pF" V 6700 3000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6550 3000 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/40/U-Series-894201.pdf" H 6550 3000 50  0001 C CNN
@@ -93,7 +93,7 @@ AR Path="/5F615D3F/5E47D0B3" Ref="C?"  Part="1"
 AR Path="/5F61773C/5E47D0B3" Ref="C12"  Part="1" 
 AR Path="/5F617CF8/5E47D0B3" Ref="C30"  Part="1" 
 AR Path="/5F617CFE/5E47D0B3" Ref="C48"  Part="1" 
-F 0 "C66" V 6400 3400 50  0000 C CNN
+F 0 "C12" V 6400 3400 50  0000 C CNN
 F 1 "0.01uF" V 6700 3400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6550 3400 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/445/885382206004-1728027.pdf" H 6550 3400 50  0001 C CNN
@@ -146,7 +146,7 @@ AR Path="/5F615D3F/5F39BB55" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F39BB55" Ref="C2"  Part="1" 
 AR Path="/5F617CF8/5F39BB55" Ref="C20"  Part="1" 
 AR Path="/5F617CFE/5F39BB55" Ref="C38"  Part="1" 
-F 0 "C56" H 2292 5296 50  0000 L CNN
+F 0 "C2" H 2292 5296 50  0000 L CNN
 F 1 "10nF" H 2292 5205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2200 5250 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/40/X7RDielectric-777024.pdf" H 2200 5250 50  0001 C CNN
@@ -170,7 +170,7 @@ AR Path="/5F615D3F/5F39C80E" Ref="R?"  Part="1"
 AR Path="/5F61773C/5F39C80E" Ref="R5"  Part="1" 
 AR Path="/5F617CF8/5F39C80E" Ref="R12"  Part="1" 
 AR Path="/5F617CFE/5F39C80E" Ref="R19"  Part="1" 
-F 0 "R26" H 1942 5204 50  0000 R CNN
+F 0 "R5" H 1942 5204 50  0000 R CNN
 F 1 "825" H 1942 5295 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 5250 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 2000 5250 50  0001 C CNN
@@ -231,7 +231,7 @@ AR Path="/5F615D3F/5F3F54F6" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F3F54F6" Ref="C4"  Part="1" 
 AR Path="/5F617CF8/5F3F54F6" Ref="C22"  Part="1" 
 AR Path="/5F617CFE/5F3F54F6" Ref="C40"  Part="1" 
-F 0 "C58" V 2400 2600 50  0000 C CNN
+F 0 "C4" V 2400 2600 50  0000 C CNN
 F 1 "0.1uF" V 2700 2600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 2600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 2550 2600 50  0001 C CNN
@@ -251,7 +251,7 @@ AR Path="/5F615D3F/5F3F6765" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F3F6765" Ref="C3"  Part="1" 
 AR Path="/5F617CF8/5F3F6765" Ref="C21"  Part="1" 
 AR Path="/5F617CFE/5F3F6765" Ref="C39"  Part="1" 
-F 0 "C57" V 2400 3000 50  0000 C CNN
+F 0 "C3" V 2400 3000 50  0000 C CNN
 F 1 "1000pF" V 2700 3000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 3000 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/GCD188R71H102KA01-01-1668078.pdf" H 2550 3000 50  0001 C CNN
@@ -314,7 +314,7 @@ AR Path="/5F615D3F/5F41FB91" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F41FB91" Ref="C6"  Part="1" 
 AR Path="/5F617CF8/5F41FB91" Ref="C24"  Part="1" 
 AR Path="/5F617CFE/5F41FB91" Ref="C42"  Part="1" 
-F 0 "C60" V 3400 2600 50  0000 C CNN
+F 0 "C6" V 3400 2600 50  0000 C CNN
 F 1 "0.1uF" V 3700 2600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3550 2600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 3550 2600 50  0001 C CNN
@@ -334,7 +334,7 @@ AR Path="/5F615D3F/5F41FB97" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F41FB97" Ref="C5"  Part="1" 
 AR Path="/5F617CF8/5F41FB97" Ref="C23"  Part="1" 
 AR Path="/5F617CFE/5F41FB97" Ref="C41"  Part="1" 
-F 0 "C59" V 3400 3000 50  0000 C CNN
+F 0 "C5" V 3400 3000 50  0000 C CNN
 F 1 "1000pF" V 3700 3000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3550 3000 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/GCD188R71H102KA01-01-1668078.pdf" H 3550 3000 50  0001 C CNN
@@ -443,7 +443,7 @@ AR Path="/5F615D3F/5F447125" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F447125" Ref="C10"  Part="1" 
 AR Path="/5F617CF8/5F447125" Ref="C28"  Part="1" 
 AR Path="/5F617CFE/5F447125" Ref="C46"  Part="1" 
-F 0 "C64" V 6700 2600 50  0000 C CNN
+F 0 "C10" V 6700 2600 50  0000 C CNN
 F 1 "4.7uF" V 6400 2600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 2600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 6550 2600 50  0001 C CNN
@@ -513,7 +513,7 @@ AR Path="/5F615D3F/5F47782D" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F47782D" Ref="C8"  Part="1" 
 AR Path="/5F617CF8/5F47782D" Ref="C26"  Part="1" 
 AR Path="/5F617CFE/5F47782D" Ref="C44"  Part="1" 
-F 0 "C62" V 5400 3000 50  0000 C CNN
+F 0 "C8" V 5400 3000 50  0000 C CNN
 F 1 "100pF" V 5700 3000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5550 3000 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/40/U-Series-894201.pdf" H 5550 3000 50  0001 C CNN
@@ -533,7 +533,7 @@ AR Path="/5F615D3F/5F477833" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F477833" Ref="C9"  Part="1" 
 AR Path="/5F617CF8/5F477833" Ref="C27"  Part="1" 
 AR Path="/5F617CFE/5F477833" Ref="C45"  Part="1" 
-F 0 "C63" V 5400 3400 50  0000 C CNN
+F 0 "C9" V 5400 3400 50  0000 C CNN
 F 1 "0.01uF" V 5700 3400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5550 3400 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/445/885382206004-1728027.pdf" H 5550 3400 50  0001 C CNN
@@ -553,7 +553,7 @@ AR Path="/5F615D3F/5F477839" Ref="C?"  Part="1"
 AR Path="/5F61773C/5F477839" Ref="C7"  Part="1" 
 AR Path="/5F617CF8/5F477839" Ref="C25"  Part="1" 
 AR Path="/5F617CFE/5F477839" Ref="C43"  Part="1" 
-F 0 "C61" V 5700 2600 50  0000 C CNN
+F 0 "C7" V 5700 2600 50  0000 C CNN
 F 1 "4.7uF" V 5400 2600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5550 2600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 5550 2600 50  0001 C CNN
@@ -680,7 +680,7 @@ AR Path="/5F617CFE/5F407877" Ref="FB9"  Part="1"
 AR Path="/5F61773C/5F407877" Ref="FB1"  Part="1" 
 AR Path="/5F617CF8/5F407877" Ref="FB5"  Part="1" 
 AR Path="/5E3C637C/5F407877" Ref="FB13"  Part="1" 
-F 0 "FB13" H 3150 2246 50  0000 L CNN
+F 0 "FB1" H 3150 2246 50  0000 L CNN
 F 1 "0" H 3150 2155 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 2980 2200 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 3050 2200 50  0001 C CNN
@@ -725,7 +725,7 @@ AR Path="/5F617CFE/5F410FEE" Ref="FB10"  Part="1"
 AR Path="/5F61773C/5F410FEE" Ref="FB2"  Part="1" 
 AR Path="/5F617CF8/5F410FEE" Ref="FB6"  Part="1" 
 AR Path="/5E3C637C/5F410FEE" Ref="FB14"  Part="1" 
-F 0 "FB14" H 6150 2246 50  0000 L CNN
+F 0 "FB2" H 6150 2246 50  0000 L CNN
 F 1 "0" H 6150 2155 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 5980 2200 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 6050 2200 50  0001 C CNN
@@ -768,7 +768,7 @@ AR Path="/5F617CFE/5E86A118" Ref="U9"  Part="1"
 AR Path="/5F61773C/5E86A118" Ref="U1"  Part="1" 
 AR Path="/5F617CF8/5E86A118" Ref="U5"  Part="1" 
 AR Path="/5E3C637C/5E86A118" Ref="U13"  Part="1" 
-F 0 "U13" H 2650 5000 60  0000 L CNN
+F 0 "U1" H 2650 5000 60  0000 L CNN
 F 1 "HMC717A" H 3200 4150 60  0000 L CNN
 F 2 "aps_radar_lib:HMC-LP3" H 3050 5040 60  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc717a.pdf" H 2350 4700 60  0000 C CNN
