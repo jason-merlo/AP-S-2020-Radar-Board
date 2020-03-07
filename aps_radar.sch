@@ -30,8 +30,10 @@ U 1 1 5F61D7C7
 P 9450 3250
 F 0 "J5" H 9550 3225 50  0000 L CNN
 F 1 "Rx1_Ant" H 9550 3134 50  0000 L CNN
-F 2 "" H 9450 3250 50  0001 C CNN
-F 3 " ~" H 9450 3250 50  0001 C CNN
+F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 3250 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 3250 50  0001 C CNN
+F 4 "73251-1150" H 9450 3250 50  0001 C CNN "Part Number"
+F 5 "https://www.digikey.com/product-detail/en/0732511150/WM5534-ND/1465156/?itemSeq=316533008" H 9450 3250 50  0001 C CNN "URL"
 	1    9450 3250
 	1    0    0    -1  
 $EndComp
@@ -58,8 +60,10 @@ U 1 1 5F61E813
 P 9450 4200
 F 0 "J6" H 9550 4175 50  0000 L CNN
 F 1 "Rx2_Ant" H 9550 4084 50  0000 L CNN
-F 2 "" H 9450 4200 50  0001 C CNN
-F 3 " ~" H 9450 4200 50  0001 C CNN
+F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 4200 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 4200 50  0001 C CNN
+F 4 "73251-1150" H 9450 4200 50  0001 C CNN "Part Number"
+F 5 "https://www.digikey.com/product-detail/en/0732511150/WM5534-ND/1465156/?itemSeq=316533008" H 9450 4200 50  0001 C CNN "URL"
 	1    9450 4200
 	1    0    0    -1  
 $EndComp
@@ -84,8 +88,10 @@ U 1 1 5F620063
 P 9450 5150
 F 0 "J7" H 9550 5125 50  0000 L CNN
 F 1 "Rx3_Ant" H 9550 5034 50  0000 L CNN
-F 2 "" H 9450 5150 50  0001 C CNN
-F 3 " ~" H 9450 5150 50  0001 C CNN
+F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 5150 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 5150 50  0001 C CNN
+F 4 "73251-1150" H 9450 5150 50  0001 C CNN "Part Number"
+F 5 "https://www.digikey.com/product-detail/en/0732511150/WM5534-ND/1465156/?itemSeq=316533008" H 9450 5150 50  0001 C CNN "URL"
 	1    9450 5150
 	1    0    0    -1  
 $EndComp
@@ -110,8 +116,10 @@ U 1 1 5F620071
 P 9450 6100
 F 0 "J8" H 9550 6075 50  0000 L CNN
 F 1 "Rx4_Ant" H 9550 5984 50  0000 L CNN
-F 2 "" H 9450 6100 50  0001 C CNN
-F 3 " ~" H 9450 6100 50  0001 C CNN
+F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 6100 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 6100 50  0001 C CNN
+F 4 "73251-1150" H 9450 6100 50  0001 C CNN "Part Number"
+F 5 "https://www.digikey.com/product-detail/en/0732511150/WM5534-ND/1465156/?itemSeq=316533008" H 9450 6100 50  0001 C CNN "URL"
 	1    9450 6100
 	1    0    0    -1  
 $EndComp
@@ -168,130 +176,107 @@ F3 "LO_IN" I L 7800 3050 50
 F4 "IF_OUT_1" O L 7800 3250 50 
 F5 "IF_OUT_2" O L 7800 3450 50 
 $EndSheet
-$Comp
-L Connector_Generic:Conn_01x16 J2
-U 1 1 5F626A7F
-P 1500 4700
-F 0 "J2" H 1450 5550 50  0000 C CNN
-F 1 "IF_OUT" H 1450 3750 50  0000 C CNN
-F 2 "" H 1500 4700 50  0001 C CNN
-F 3 "~" H 1500 4700 50  0001 C CNN
-	1    1500 4700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	1700 4000 5950 4000
-Wire Wire Line
-	5950 4000 5950 3250
+	1700 4050 5950 4050
 Wire Wire Line
 	5950 3250 7800 3250
 Wire Wire Line
-	1700 4200 6100 4200
+	1700 4450 6250 4450
 Wire Wire Line
-	6100 4200 6100 3450
-Wire Wire Line
-	6100 3450 7800 3450
-Wire Wire Line
-	1700 4400 6250 4400
-Wire Wire Line
-	6250 4400 6250 4200
+	6250 4450 6250 4200
 Wire Wire Line
 	6250 4200 7800 4200
 Wire Wire Line
-	1700 4600 6400 4600
+	1700 4650 6400 4650
 Wire Wire Line
-	6400 4600 6400 4400
+	6400 4650 6400 4400
 Wire Wire Line
 	6400 4400 7800 4400
 Wire Wire Line
-	1700 4800 6450 4800
+	1700 4950 6400 4950
 Wire Wire Line
-	6450 4800 6450 5150
+	6400 5150 7800 5150
 Wire Wire Line
-	6450 5150 7800 5150
+	7800 5350 6250 5350
 Wire Wire Line
-	7800 5350 6300 5350
+	6250 5350 6250 5150
 Wire Wire Line
-	6300 5350 6300 5000
+	6250 5150 1700 5150
 Wire Wire Line
-	6300 5000 1700 5000
+	1700 5350 6100 5350
 Wire Wire Line
-	1700 5200 6150 5200
+	6100 6100 7800 6100
 Wire Wire Line
-	6150 5200 6150 6100
+	7800 6300 5950 6300
 Wire Wire Line
-	6150 6100 7800 6100
+	5950 6300 5950 5550
 Wire Wire Line
-	7800 6300 6000 6300
-Wire Wire Line
-	6000 6300 6000 5400
-Wire Wire Line
-	6000 5400 1700 5400
+	5950 5550 1700 5550
 $Comp
 L power:GND #PWR0105
 U 1 1 5F6369D4
-P 1850 5750
-F 0 "#PWR0105" H 1850 5500 50  0001 C CNN
-F 1 "GND" H 1855 5577 50  0000 C CNN
-F 2 "" H 1850 5750 50  0001 C CNN
-F 3 "" H 1850 5750 50  0001 C CNN
-	1    1850 5750
+P 1850 5900
+F 0 "#PWR0105" H 1850 5650 50  0001 C CNN
+F 1 "GND" H 1855 5727 50  0000 C CNN
+F 2 "" H 1850 5900 50  0001 C CNN
+F 3 "" H 1850 5900 50  0001 C CNN
+	1    1850 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 5750 1850 5500
+	1850 5900 1850 5650
 Wire Wire Line
-	1850 4100 1700 4100
+	1850 4150 1700 4150
 Wire Wire Line
-	1700 4300 1850 4300
-Connection ~ 1850 4300
+	1700 4350 1850 4350
+Connection ~ 1850 4350
 Wire Wire Line
-	1850 4300 1850 4100
+	1850 4350 1850 4150
 Wire Wire Line
-	1700 4500 1850 4500
-Connection ~ 1850 4500
+	1700 4550 1850 4550
+Connection ~ 1850 4550
 Wire Wire Line
-	1850 4500 1850 4300
+	1850 4550 1850 4350
 Wire Wire Line
-	1700 4700 1850 4700
-Connection ~ 1850 4700
+	1700 4750 1850 4750
+Connection ~ 1850 4750
 Wire Wire Line
-	1850 4700 1850 4500
+	1850 4750 1850 4550
 Wire Wire Line
-	1700 4900 1850 4900
-Connection ~ 1850 4900
+	1700 5050 1850 5050
+Connection ~ 1850 5050
 Wire Wire Line
-	1850 4900 1850 4700
+	1850 5050 1850 4750
 Wire Wire Line
-	1700 5100 1850 5100
-Connection ~ 1850 5100
+	1700 5250 1850 5250
+Connection ~ 1850 5250
 Wire Wire Line
-	1850 5100 1850 4900
+	1850 5250 1850 5050
 Wire Wire Line
-	1700 5300 1850 5300
-Connection ~ 1850 5300
+	1700 5450 1850 5450
+Connection ~ 1850 5450
 Wire Wire Line
-	1850 5300 1850 5100
+	1850 5450 1850 5250
 Wire Wire Line
-	1700 5500 1850 5500
-Connection ~ 1850 5500
+	1700 5650 1850 5650
+Connection ~ 1850 5650
 Wire Wire Line
-	1850 5500 1850 5300
-Text Label 2000 4000 0    50   ~ 0
+	1850 5650 1850 5450
+Text Label 2000 4050 0    50   ~ 0
 RX1_I
-Text Label 2000 4200 0    50   ~ 0
+Text Label 2000 4250 0    50   ~ 0
 RX1_Q
-Text Label 2000 4400 0    50   ~ 0
+Text Label 2000 4450 0    50   ~ 0
 RX2_I
-Text Label 2000 4600 0    50   ~ 0
+Text Label 2000 4650 0    50   ~ 0
 RX2_Q
-Text Label 2000 5000 0    50   ~ 0
+Text Label 2000 5150 0    50   ~ 0
 RX3_Q
-Text Label 2000 5400 0    50   ~ 0
+Text Label 2000 5550 0    50   ~ 0
 RX4_Q
-Text Label 2000 4800 0    50   ~ 0
+Text Label 2000 4950 0    50   ~ 0
 RX3_I
-Text Label 2000 5200 0    50   ~ 0
+Text Label 2000 5350 0    50   ~ 0
 RX4_I
 Text Label 2400 3550 2    50   ~ 0
 LMX_MOD
@@ -315,21 +300,21 @@ U 1 1 5E5DCFD0
 P 1500 3350
 F 0 "J1" H 1450 3600 50  0000 C CNN
 F 1 "TRIG_MUX_OUT" H 1450 3000 50  0000 C CNN
-F 2 "" H 1500 3350 50  0001 C CNN
-F 3 "~" H 1500 3350 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 1500 3350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 3350 50  0001 C CNN
+F 4 "282834-4" H 1500 3350 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-4?qs=%2Fha2pyFaduh%2FssB4aPVgJng2XbCZ%252BHCbwOqKz9cHulQ%3D" H 1500 3350 50  0001 C CNN "URL"
 	1    1500 3350
 	-1   0    0    -1  
 $EndComp
-Text Label 3250 2350 2    50   ~ 0
-LMX_MOD
 Text Label 3250 2250 2    50   ~ 0
-LMX_MUXOUT
+LMX_MOD
 Text Label 3250 2150 2    50   ~ 0
-LMX_TRIG2
+LMX_MUXOUT
 Text Label 3250 2050 2    50   ~ 0
+LMX_TRIG2
+Text Label 3250 1950 2    50   ~ 0
 LMX_TRIG1
-Wire Wire Line
-	2550 2350 3250 2350
 Wire Wire Line
 	2550 2250 3250 2250
 Wire Wire Line
@@ -337,67 +322,71 @@ Wire Wire Line
 Wire Wire Line
 	2550 2050 3250 2050
 Wire Wire Line
-	6900 1850 6900 5900
+	2550 1950 3250 1950
 Wire Wire Line
-	2550 1850 6900 1850
+	6900 1750 6900 5900
 Wire Wire Line
-	7150 1750 7150 4950
+	2550 1750 6900 1750
 Wire Wire Line
-	2550 1750 7150 1750
+	7150 1650 7150 4950
 Wire Wire Line
-	7350 1650 7350 4000
+	2550 1650 7150 1650
 Wire Wire Line
-	2550 1650 7350 1650
+	7350 1550 7350 4000
 Wire Wire Line
-	7500 1550 7500 3050
+	2550 1550 7350 1550
 Wire Wire Line
-	2550 1550 7500 1550
+	7500 1450 7500 3050
 Wire Wire Line
-	2550 1300 9200 1300
-Text Notes 9000 1050 0    59   ~ 0
+	2550 1450 7500 1450
+Wire Wire Line
+	2550 1200 9200 1200
+Text Notes 9000 950  0    59   ~ 0
 Transmitter Output
 Wire Wire Line
-	9400 1600 9400 1500
+	9400 1500 9400 1400
 $Comp
 L power:GND #PWR0106
 U 1 1 5F61A382
-P 9400 1600
-F 0 "#PWR0106" H 9400 1350 50  0001 C CNN
-F 1 "GND" H 9405 1427 50  0000 C CNN
-F 2 "" H 9400 1600 50  0001 C CNN
-F 3 "" H 9400 1600 50  0001 C CNN
-	1    9400 1600
+P 9400 1500
+F 0 "#PWR0106" H 9400 1250 50  0001 C CNN
+F 1 "GND" H 9405 1327 50  0000 C CNN
+F 2 "" H 9400 1500 50  0001 C CNN
+F 3 "" H 9400 1500 50  0001 C CNN
+	1    9400 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial J4
 U 1 1 5F6184CA
-P 9400 1300
-F 0 "J4" H 9500 1275 50  0000 L CNN
-F 1 "Tx_Ant" H 9500 1184 50  0000 L CNN
-F 2 "" H 9400 1300 50  0001 C CNN
-F 3 " ~" H 9400 1300 50  0001 C CNN
-	1    9400 1300
+P 9400 1200
+F 0 "J4" H 9500 1175 50  0000 L CNN
+F 1 "Tx_Ant" H 9500 1084 50  0000 L CNN
+F 2 "aps_radar_lib:SMA_Molex_Transition" H 9400 1200 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9400 1200 50  0001 C CNN
+F 4 "73251-1150" H 9400 1200 50  0001 C CNN "Part Number"
+F 5 "https://www.digikey.com/product-detail/en/0732511150/WM5534-ND/1465156/?itemSeq=316533008" H 9400 1200 50  0001 C CNN "URL"
+	1    9400 1200
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1450 1150 1100 1800
+S 1450 1050 1100 1800
 U 5E3C6313
 F0 "transmitter" 50
 F1 "transmitter.sch" 50
-F2 "TX_OUT" O R 2550 1300 50 
-F3 "LO_1" O R 2550 1550 50 
-F4 "LO_2" O R 2550 1650 50 
-F5 "LO_3" O R 2550 1750 50 
-F6 "LO_4" O R 2550 1850 50 
-F7 "LMX_TRIG1" O R 2550 2050 50 
-F8 "LMX_TRIG2" O R 2550 2150 50 
-F9 "LMX_MUXOUT" O R 2550 2250 50 
-F10 "LMX_MOD" O R 2550 2350 50 
-F11 "~ATTEN_8DB" O R 2550 2550 50 
-F12 "~ATTEN_4DB" O R 2550 2650 50 
-F13 "~ATTEN_2DB" O R 2550 2750 50 
-F14 "~ATTEN_1DB" O R 2550 2850 50 
+F2 "TX_OUT" O R 2550 1200 50 
+F3 "LO_1" O R 2550 1450 50 
+F4 "LO_2" O R 2550 1550 50 
+F5 "LO_3" O R 2550 1650 50 
+F6 "LO_4" O R 2550 1750 50 
+F7 "LMX_TRIG1" O R 2550 1950 50 
+F8 "LMX_TRIG2" O R 2550 2050 50 
+F9 "LMX_MUXOUT" O R 2550 2150 50 
+F10 "LMX_MOD" O R 2550 2250 50 
+F11 "~ATTEN_8DB" O R 2550 2450 50 
+F12 "~ATTEN_4DB" O R 2550 2550 50 
+F13 "~ATTEN_2DB" O R 2550 2650 50 
+F14 "~ATTEN_1DB" O R 2550 2750 50 
 $EndSheet
 $Comp
 L power:GND #PWR0107
@@ -432,20 +421,20 @@ Receivers
 Text Notes 2250 6000 0    100  ~ 0
 Power Subsystem
 Wire Wire Line
-	2550 2550 3250 2550
+	2550 2450 3250 2450
+Wire Wire Line
+	3250 2550 2550 2550
 Wire Wire Line
 	3250 2650 2550 2650
 Wire Wire Line
 	3250 2750 2550 2750
-Wire Wire Line
-	3250 2850 2550 2850
-Text Label 3250 2550 2    50   ~ 0
+Text Label 3250 2450 2    50   ~ 0
 ~ATTEN_8DB
-Text Label 3250 2650 2    50   ~ 0
+Text Label 3250 2550 2    50   ~ 0
 ~ATTEN_4DB
-Text Label 3250 2750 2    50   ~ 0
+Text Label 3250 2650 2    50   ~ 0
 ~ATTEN_2DB
-Text Label 3250 2850 2    50   ~ 0
+Text Label 3250 2750 2    50   ~ 0
 ~ATTEN_1DB
 Text Notes 4500 6000 0    100  ~ 0
 Tx Attenuator
@@ -458,7 +447,9 @@ P 4600 7400
 F 0 "JP1" V 4646 7352 50  0000 R CNN
 F 1 "1dB" V 4555 7352 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4600 7400 50  0001 C CNN
-F 3 "~" H 4600 7400 50  0001 C CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/g800lfxxxxxxeu.pdf?__cf_chl_jschl_tk__=0732d4eeabdcdd5cc55785d129a2e7dc5281c39d-1583608565-0-AZnjx8vGmmzhuHjgWXGU8ObyhI9ZRNc6jorEWmPO-UQd6HNk1S92d9agRDu0kQn1RIJBY0Zb_ICi-DobxedfHra5mAPiqamgOX_MZYMiYeHUcMKQlUXSrANR4zd0G4A6HIueaEpM6DbjjHndfX4izr0aAJyVMke1QDrUg0_CrQc3bQwcFz9cxHmvPuFmmcGmvXnoTszbZbJ1ra38DT0kxmfJVeAuIV1tKnG4FJriEuevjbMf4z55MjEyN5uDKcHy6SXs0HszeFNnW3VDmxewCHnJ5qTdOnrJCL5K2TT9Z1U8y3Sp-9fX3fKAqOd8d4eFGjg1YojrTL1wb7QNxtHKgYBPiGu1weez_e_gfBebQh2sFpBPGlD66vwJthJPn-ZIvRQEOP_-Y0DBLixjws17HLs" H 4600 7400 50  0001 C CNN
+F 4 "G800LF306018EU" H 4600 7400 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Amphenol-Commercial-Products/G800LF306018EU?qs=sGAEpiMZZMvlX3nhDDO4AAdJzoJ14uRxWrUIGXpX2Lc%3D" H 4600 7400 50  0001 C CNN "URL"
 	1    4600 7400
 	0    -1   -1   0   
 $EndComp
@@ -468,8 +459,10 @@ U 1 1 5EBE105F
 P 4600 6700
 F 0 "R1" H 4659 6746 50  0000 L CNN
 F 1 "10k" H 4659 6655 50  0000 L CNN
-F 2 "" H 4600 6700 50  0001 C CNN
-F 3 "~" H 4600 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 6700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4600 6700 50  0001 C CNN
+F 4 "MCT06030C1002FP500 " H 4600 6700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 4600 6700 50  0001 C CNN "URL"
 	1    4600 6700
 	1    0    0    -1  
 $EndComp
@@ -525,7 +518,9 @@ P 4950 7400
 F 0 "JP2" V 4996 7352 50  0000 R CNN
 F 1 "2dB" V 4905 7352 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4950 7400 50  0001 C CNN
-F 3 "~" H 4950 7400 50  0001 C CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/g800lfxxxxxxeu.pdf?__cf_chl_jschl_tk__=0732d4eeabdcdd5cc55785d129a2e7dc5281c39d-1583608565-0-AZnjx8vGmmzhuHjgWXGU8ObyhI9ZRNc6jorEWmPO-UQd6HNk1S92d9agRDu0kQn1RIJBY0Zb_ICi-DobxedfHra5mAPiqamgOX_MZYMiYeHUcMKQlUXSrANR4zd0G4A6HIueaEpM6DbjjHndfX4izr0aAJyVMke1QDrUg0_CrQc3bQwcFz9cxHmvPuFmmcGmvXnoTszbZbJ1ra38DT0kxmfJVeAuIV1tKnG4FJriEuevjbMf4z55MjEyN5uDKcHy6SXs0HszeFNnW3VDmxewCHnJ5qTdOnrJCL5K2TT9Z1U8y3Sp-9fX3fKAqOd8d4eFGjg1YojrTL1wb7QNxtHKgYBPiGu1weez_e_gfBebQh2sFpBPGlD66vwJthJPn-ZIvRQEOP_-Y0DBLixjws17HLs" H 4950 7400 50  0001 C CNN
+F 4 "G800LF306018EU" H 4950 7400 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Amphenol-Commercial-Products/G800LF306018EU?qs=sGAEpiMZZMvlX3nhDDO4AAdJzoJ14uRxWrUIGXpX2Lc%3D" H 4950 7400 50  0001 C CNN "URL"
 	1    4950 7400
 	0    -1   -1   0   
 $EndComp
@@ -550,8 +545,10 @@ U 1 1 5EC0C090
 P 4950 6700
 F 0 "R2" H 5009 6746 50  0000 L CNN
 F 1 "10k" H 5009 6655 50  0000 L CNN
-F 2 "" H 4950 6700 50  0001 C CNN
-F 3 "~" H 4950 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 6700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4950 6700 50  0001 C CNN
+F 4 "MCT06030C1002FP500 " H 4950 6700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 4950 6700 50  0001 C CNN "URL"
 	1    4950 6700
 	1    0    0    -1  
 $EndComp
@@ -564,8 +561,10 @@ U 1 1 5EC0EEBA
 P 5300 6700
 F 0 "R3" H 5359 6746 50  0000 L CNN
 F 1 "10k" H 5359 6655 50  0000 L CNN
-F 2 "" H 5300 6700 50  0001 C CNN
-F 3 "~" H 5300 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 6700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 5300 6700 50  0001 C CNN
+F 4 "MCT06030C1002FP500 " H 5300 6700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 5300 6700 50  0001 C CNN "URL"
 	1    5300 6700
 	1    0    0    -1  
 $EndComp
@@ -603,8 +602,10 @@ U 1 1 5EC18E1B
 P 5600 6700
 F 0 "R4" H 5659 6746 50  0000 L CNN
 F 1 "10k" H 5659 6655 50  0000 L CNN
-F 2 "" H 5600 6700 50  0001 C CNN
-F 3 "~" H 5600 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 6700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 5600 6700 50  0001 C CNN
+F 4 "MCT06030C1002FP500 " H 5600 6700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 5600 6700 50  0001 C CNN "URL"
 	1    5600 6700
 	1    0    0    -1  
 $EndComp
@@ -632,7 +633,9 @@ P 5300 7400
 F 0 "JP3" V 5346 7352 50  0000 R CNN
 F 1 "4dB" V 5255 7352 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5300 7400 50  0001 C CNN
-F 3 "~" H 5300 7400 50  0001 C CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/g800lfxxxxxxeu.pdf?__cf_chl_jschl_tk__=0732d4eeabdcdd5cc55785d129a2e7dc5281c39d-1583608565-0-AZnjx8vGmmzhuHjgWXGU8ObyhI9ZRNc6jorEWmPO-UQd6HNk1S92d9agRDu0kQn1RIJBY0Zb_ICi-DobxedfHra5mAPiqamgOX_MZYMiYeHUcMKQlUXSrANR4zd0G4A6HIueaEpM6DbjjHndfX4izr0aAJyVMke1QDrUg0_CrQc3bQwcFz9cxHmvPuFmmcGmvXnoTszbZbJ1ra38DT0kxmfJVeAuIV1tKnG4FJriEuevjbMf4z55MjEyN5uDKcHy6SXs0HszeFNnW3VDmxewCHnJ5qTdOnrJCL5K2TT9Z1U8y3Sp-9fX3fKAqOd8d4eFGjg1YojrTL1wb7QNxtHKgYBPiGu1weez_e_gfBebQh2sFpBPGlD66vwJthJPn-ZIvRQEOP_-Y0DBLixjws17HLs" H 5300 7400 50  0001 C CNN
+F 4 "G800LF306018EU" H 5300 7400 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Amphenol-Commercial-Products/G800LF306018EU?qs=sGAEpiMZZMvlX3nhDDO4AAdJzoJ14uRxWrUIGXpX2Lc%3D" H 5300 7400 50  0001 C CNN "URL"
 	1    5300 7400
 	0    -1   -1   0   
 $EndComp
@@ -656,7 +659,9 @@ P 5600 7400
 F 0 "JP4" V 5646 7352 50  0000 R CNN
 F 1 "8dB" V 5555 7352 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 7400 50  0001 C CNN
-F 3 "~" H 5600 7400 50  0001 C CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/g800lfxxxxxxeu.pdf?__cf_chl_jschl_tk__=0732d4eeabdcdd5cc55785d129a2e7dc5281c39d-1583608565-0-AZnjx8vGmmzhuHjgWXGU8ObyhI9ZRNc6jorEWmPO-UQd6HNk1S92d9agRDu0kQn1RIJBY0Zb_ICi-DobxedfHra5mAPiqamgOX_MZYMiYeHUcMKQlUXSrANR4zd0G4A6HIueaEpM6DbjjHndfX4izr0aAJyVMke1QDrUg0_CrQc3bQwcFz9cxHmvPuFmmcGmvXnoTszbZbJ1ra38DT0kxmfJVeAuIV1tKnG4FJriEuevjbMf4z55MjEyN5uDKcHy6SXs0HszeFNnW3VDmxewCHnJ5qTdOnrJCL5K2TT9Z1U8y3Sp-9fX3fKAqOd8d4eFGjg1YojrTL1wb7QNxtHKgYBPiGu1weez_e_gfBebQh2sFpBPGlD66vwJthJPn-ZIvRQEOP_-Y0DBLixjws17HLs" H 5600 7400 50  0001 C CNN
+F 4 "G800LF306018EU" H 5600 7400 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Amphenol-Commercial-Products/G800LF306018EU?qs=sGAEpiMZZMvlX3nhDDO4AAdJzoJ14uRxWrUIGXpX2Lc%3D" H 5600 7400 50  0001 C CNN "URL"
 	1    5600 7400
 	0    -1   -1   0   
 $EndComp
@@ -679,17 +684,55 @@ Connection ~ 5300 7050
 Wire Wire Line
 	5600 7300 5600 6950
 Connection ~ 5600 6950
-Text Notes 6350 6950 0    50   Italic 10
-TODO: Add ferrite beads to power supplies
 $Comp
 L aps_radar_lib:POWER_IN J3
 U 1 1 5F458B35
 P 1500 6950
 F 0 "J3" H 1550 7100 50  0000 C CNN
 F 1 "POWER_IN" H 1550 6700 50  0000 C CNN
-F 2 "" H 1500 6950 50  0001 C CNN
-F 3 "~" H 1500 6950 50  0001 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1500 6950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 6950 50  0001 C CNN
+F 4 "282834-2" H 1500 6950 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-2?qs=A%252Bip%252BNCYi6N8cVKuk8xDog%3D%3D" H 1500 6950 50  0001 C CNN "URL"
 	1    1500 6950
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5E65EDD0
+P 1500 4350
+F 0 "J2" H 1418 4867 50  0000 C CNN
+F 1 "RX1_RX2" H 1418 4776 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-8_1x08_P2.54mm_Horizontal" H 1500 4350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 4350 50  0001 C CNN
+F 4 "282834-8" H 1500 4350 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-8?qs=%2Fha2pyFaduinz6L7fnht%2FSJgdmOWUxTbf3Cx7xwF684%3D" H 1500 4350 50  0001 C CNN "URL"
+	1    1500 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J10
+U 1 1 5E65FF9C
+P 1500 5250
+F 0 "J10" H 1500 4700 50  0000 C CNN
+F 1 "RX3_RX4" H 1500 4600 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-8_1x08_P2.54mm_Horizontal" H 1500 5250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 5250 50  0001 C CNN
+F 4 "282834-8" H 1500 5250 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-8?qs=%2Fha2pyFaduinz6L7fnht%2FSJgdmOWUxTbf3Cx7xwF684%3D" H 1500 5250 50  0001 C CNN "URL"
+	1    1500 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3450 7800 3450
+Wire Wire Line
+	1700 4250 6100 4250
+Wire Wire Line
+	6100 4250 6100 3450
+Wire Wire Line
+	6100 5350 6100 6100
+Wire Wire Line
+	6400 4950 6400 5150
+Wire Wire Line
+	5950 3250 5950 4050
 $EndSCHEMATC
