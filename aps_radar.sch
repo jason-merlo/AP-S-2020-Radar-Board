@@ -735,4 +735,50 @@ Wire Wire Line
 	6400 4950 6400 5150
 Wire Wire Line
 	5950 3250 5950 4050
+Text Notes 3900 2200 0    100  ~ 0
+Mounting Holes
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E6E847B
+P 4100 2500
+F 0 "H1" H 4200 2546 50  0000 L CNN
+F 1 "MountingHole" H 4200 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 2500 50  0001 C CNN
+F 3 "~" H 4100 2500 50  0001 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E6E8DEA
+P 4100 2750
+F 0 "H2" H 4200 2796 50  0000 L CNN
+F 1 "MountingHole" H 4200 2705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 2750 50  0001 C CNN
+F 3 "~" H 4100 2750 50  0001 C CNN
+	1    4100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E6E9032
+P 4100 3000
+F 0 "H3" H 4200 3046 50  0000 L CNN
+F 1 "MountingHole" H 4200 2955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 3000 50  0001 C CNN
+F 3 "~" H 4100 3000 50  0001 C CNN
+	1    4100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E6E9357
+P 4100 3300
+F 0 "H4" H 4200 3346 50  0000 L CNN
+F 1 "MountingHole" H 4200 3255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 3300 50  0001 C CNN
+F 3 "~" H 4100 3300 50  0001 C CNN
+	1    4100 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

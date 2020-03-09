@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 15
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -166,7 +166,7 @@ $EndComp
 Wire Wire Line
 	4650 3900 4850 3900
 $Comp
-L aps_radar_lib:OPA227 U?
+L aps_radar_lib:OPA192 U?
 U 1 1 5F59FBBE
 P 5750 4000
 AR Path="/5E3C637C/5F59FBBE" Ref="U?"  Part="1" 
@@ -185,11 +185,11 @@ AR Path="/5F617CF8/5F5B2AB1/5F59FBBE" Ref="U8"  Part="1"
 AR Path="/5F617CFE/5F594231/5F59FBBE" Ref="U11"  Part="1" 
 AR Path="/5F617CFE/5F5B2AB1/5F59FBBE" Ref="U12"  Part="1" 
 F 0 "U16" H 5800 4200 50  0000 L CNN
-F 1 "OPA227" H 5900 3900 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5800 4050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa227.pdf" H 5800 4150 50  0001 C CNN
-F 4 "OPA227UA/2K5" H 5750 4000 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA227UA-2K5?qs=sGAEpiMZZMvtNjJQt4UgLd0UjFS%252BBnCWIxDGyaZ7kNA%3D" H 5750 4000 50  0001 C CNN "URL"
+F 1 "OPA192" H 5900 3900 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 5800 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa192.pdf" H 5800 4150 50  0001 C CNN
+F 4 "OPA192IDGKR " H 5750 4000 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA192IDGKR?qs=sGAEpiMZZMvtNjJQt4UgLUeuh4yU0b6tOlzZPftIZzmIAgV5Vkw7bw%3D%3D" H 5750 4000 50  0001 C CNN "URL"
 	1    5750 4000
 	1    0    0    -1  
 $EndComp
@@ -295,8 +295,6 @@ Wire Wire Line
 	4850 3900 4850 4600
 Wire Wire Line
 	6050 4000 6800 4000
-Text Notes 5750 4750 0    50   ~ 0
-Leave TRIM floating, but \nconnected, if unused
 Wire Wire Line
 	6500 4500 5200 4500
 Wire Wire Line
@@ -456,10 +454,4 @@ Wire Wire Line
 Connection ~ 5650 2700
 Wire Wire Line
 	5650 2400 5650 2350
-Wire Wire Line
-	5750 4300 5750 4400
-Wire Wire Line
-	5750 4400 5850 4400
-Wire Wire Line
-	5850 4400 5850 4300
 $EndSCHEMATC

@@ -14,30 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L aps_radar_lib:GNDOSC #PWR3
-U 1 1 5E439880
-P 2250 2050
-F 0 "#PWR3" H 2250 2100 50  0001 C CNN
-F 1 "GNDOSC" H 2250 1900 50  0001 C CNN
-F 2 "" H 2250 1950 50  0001 C CNN
-F 3 "" H 2250 1950 50  0001 C CNN
-	1    2250 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 2050 2250 1850
-$Comp
-L aps_radar_lib:GNDOSC #PWR1
-U 1 1 5E440D64
-P 1450 2050
-F 0 "#PWR1" H 1450 2100 50  0001 C CNN
-F 1 "GNDOSC" H 1450 1900 50  0001 C CNN
-F 2 "" H 1450 1950 50  0001 C CNN
-F 3 "" H 1450 1950 50  0001 C CNN
-	1    1450 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 2050 1450 1800
 Text Notes 650  1400 0    50   ~ 0
@@ -59,22 +37,11 @@ P 2100 1000
 F 0 "C77" H 2192 1046 50  0000 L CNN
 F 1 "0.01uF" H 2192 955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2100 1000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/445/885382206004-1728027.pdf" H 2100 1000 50  0001 C CNN
+F 3 "~" H 2100 1000 50  0001 C CNN
 F 4 "885382206004 " H 2100 1000 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Wurth-Elektronik/885382206004?qs=sGAEpiMZZMs0AnBnWHyRQN7%2FAA2D2lPP5BtGB60vX731wj6H6jz6tA%3D%3D" H 2100 1000 50  0001 C CNN "URL"
 	1    2100 1000
 	-1   0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:GNDOSC #PWR2
-U 1 1 5E4448C3
-P 2100 1100
-F 0 "#PWR2" H 2100 1150 50  0001 C CNN
-F 1 "GNDOSC" H 2100 950 50  0001 C CNN
-F 2 "" H 2100 1000 50  0001 C CNN
-F 3 "" H 2100 1000 50  0001 C CNN
-	1    2100 1100
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2250 850  2100 850 
@@ -90,7 +57,7 @@ P 1450 1700
 F 0 "JP5" V 1450 1750 50  0000 L CNN
 F 1 "~OSC_STBY" V 1450 1250 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 1700 50  0001 C CNN
-F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/drawing/g800lfxxxxxxeu.pdf?__cf_chl_jschl_tk__=0732d4eeabdcdd5cc55785d129a2e7dc5281c39d-1583608565-0-AZnjx8vGmmzhuHjgWXGU8ObyhI9ZRNc6jorEWmPO-UQd6HNk1S92d9agRDu0kQn1RIJBY0Zb_ICi-DobxedfHra5mAPiqamgOX_MZYMiYeHUcMKQlUXSrANR4zd0G4A6HIueaEpM6DbjjHndfX4izr0aAJyVMke1QDrUg0_CrQc3bQwcFz9cxHmvPuFmmcGmvXnoTszbZbJ1ra38DT0kxmfJVeAuIV1tKnG4FJriEuevjbMf4z55MjEyN5uDKcHy6SXs0HszeFNnW3VDmxewCHnJ5qTdOnrJCL5K2TT9Z1U8y3Sp-9fX3fKAqOd8d4eFGjg1YojrTL1wb7QNxtHKgYBPiGu1weez_e_gfBebQh2sFpBPGlD66vwJthJPn-ZIvRQEOP_-Y0DBLixjws17HLs" H 1450 1700 50  0001 C CNN
+F 3 "~" H 1450 1700 50  0001 C CNN
 F 4 "G800LF306018EU" H 1450 1700 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Amphenol-Commercial-Products/G800LF306018EU?qs=sGAEpiMZZMvlX3nhDDO4AAdJzoJ14uRxWrUIGXpX2Lc%3D" H 1450 1700 50  0001 C CNN "URL"
 	1    1450 1700
@@ -105,7 +72,7 @@ P 9100 2750
 F 0 "U22" H 8650 3750 60  0000 C CNN
 F 1 "LMX2491RTWR" H 9450 1950 60  0000 C CNN
 F 2 "aps_radar_lib:LMX2491RTWR" H 9100 2690 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmx2491.pdf" H 9100 2750 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmx2491.pdf" H 9100 2750 60  0001 C CNN
 F 4 "LMX2491RTWR " H 9100 2750 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/LMX2491RTWR?qs=sGAEpiMZZMuVnCuI0aQamFRdY3RtE0SzgySceeIjCidS2pyN1AhPpw%3D%3D" H 9100 2750 50  0001 C CNN "URL"
 	1    9100 2750
@@ -117,10 +84,10 @@ U 1 1 5E459685
 P 7200 3050
 F 0 "R55" V 7004 3050 50  0000 C CNN
 F 1 "18" V 7095 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 3050 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 7200 3050 50  0001 C CNN
-F 4 "CPF0402B18RE1 " H 7200 3050 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Holsworthy/CPF0402B18RE1?qs=sGAEpiMZZMu61qfTUdNhGxAfPTOoMd3MEMLlPZ1UsA4%3D" H 7200 3050 50  0001 C CNN "URL"
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7200 3050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 7200 3050 50  0001 C CNN
+F 4 "ERA-2AKD180X" H 7200 3050 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AKD180X?qs=sGAEpiMZZMu61qfTUdNhG30u3hgzjZBwdwxSjXjq%252BxQ%3D" H 7200 3050 50  0001 C CNN "URL"
 	1    7200 3050
 	0    1    1    0   
 $EndComp
@@ -130,10 +97,10 @@ U 1 1 5E45AA28
 P 7500 3050
 F 0 "R57" V 7304 3050 50  0000 C CNN
 F 1 "18" V 7395 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 3050 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 7500 3050 50  0001 C CNN
-F 4 "CPF0402B18RE1 " H 7500 3050 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Holsworthy/CPF0402B18RE1?qs=sGAEpiMZZMu61qfTUdNhGxAfPTOoMd3MEMLlPZ1UsA4%3D" H 7500 3050 50  0001 C CNN "URL"
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7500 3050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 7500 3050 50  0001 C CNN
+F 4 "ERA-2AKD180X" H 7500 3050 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AKD180X?qs=sGAEpiMZZMu61qfTUdNhG30u3hgzjZBwdwxSjXjq%252BxQ%3D" H 7500 3050 50  0001 C CNN "URL"
 	1    7500 3050
 	0    1    1    0   
 $EndComp
@@ -143,10 +110,10 @@ U 1 1 5E45B17B
 P 7350 3250
 F 0 "R56" H 7409 3296 50  0000 L CNN
 F 1 "68" H 7409 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7350 3250 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 7350 3250 50  0001 C CNN
-F 4 "CPF0402B68RE1 " H 7350 3250 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Neohm/CPF0402B68RE1?qs=%2Fha2pyFadugnNeTHmeXFfJtPlrwSLlWXk5fm5rirdGQi9eLv035DCg%3D%3D" H 7350 3250 50  0001 C CNN "URL"
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7350 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 7350 3250 50  0001 C CNN
+F 4 "ERA-2AED680X" H 7350 3250 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AED680X?qs=sGAEpiMZZMu61qfTUdNhG30u3hgzjZBwYiztwBSVwlg%3D" H 7350 3250 50  0001 C CNN "URL"
 	1    7350 3250
 	1    0    0    -1  
 $EndComp
@@ -157,17 +124,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 3050 7400 3050
 Connection ~ 7350 3050
-$Comp
-L aps_radar_lib:GNDOSC #PWR4
-U 1 1 5E45C1AE
-P 7350 3550
-F 0 "#PWR4" H 7350 3600 50  0001 C CNN
-F 1 "GNDOSC" H 7350 3400 50  0001 C CNN
-F 2 "" H 7350 3450 50  0001 C CNN
-F 3 "" H 7350 3450 50  0001 C CNN
-	1    7350 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 3550 7350 3350
 Wire Wire Line
@@ -183,22 +139,11 @@ P 7700 3400
 F 0 "R58" H 7641 3354 50  0000 R CNN
 F 1 "51" H 7641 3445 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7700 3400 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 7700 3400 50  0001 C CNN
+F 3 "~" H 7700 3400 50  0001 C CNN
 F 4 "CPF0402B51RE1 " H 7700 3400 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Neohm/CPF0402B51RE1?qs=%2Fha2pyFadugnNeTHmeXFfII932U5pBYgjBVIBHqpqdFyTiVy4sy7%2Fg%3D%3D" H 7700 3400 50  0001 C CNN "URL"
 	1    7700 3400
 	-1   0    0    1   
-$EndComp
-$Comp
-L aps_radar_lib:GNDOSC #PWR5
-U 1 1 5E464818
-P 7700 3550
-F 0 "#PWR5" H 7700 3600 50  0001 C CNN
-F 1 "GNDOSC" H 7700 3400 50  0001 C CNN
-F 2 "" H 7700 3450 50  0001 C CNN
-F 3 "" H 7700 3450 50  0001 C CNN
-	1    7700 3550
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7700 3550 7700 3500
@@ -245,101 +190,32 @@ REF_OUT
 Text Label 6700 3050 0    50   ~ 0
 REF_OUT
 Wire Wire Line
-	9800 2050 10400 2050
-Text Label 10400 2050 2    50   ~ 0
+	9800 2050 9850 2050
+Text Label 10500 2050 2    50   ~ 0
 LMX_CPOUT
 $Comp
-L aps_radar_lib:OPA227 U19
-U 1 1 5E5960DD
-P 2850 5250
-F 0 "U19" H 2950 5400 50  0000 L CNN
-F 1 "OPA227" H 2950 5100 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2900 5300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa227.pdf" H 2900 5400 50  0001 C CNN
-F 4 "OPA227UA/2K5" H 2850 5250 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/OPA227UA-2K5?qs=sGAEpiMZZMvtNjJQt4UgLd0UjFS%252BBnCWIxDGyaZ7kNA%3D" H 2850 5250 50  0001 C CNN "URL"
-	1    2850 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:splitter TL2
-U 1 1 5E5A0054
-P 4850 7400
-F 0 "TL2" H 4850 7725 50  0000 C CNN
-F 1 "wilkinson_3dB" H 4850 7634 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 4850 7400 50  0001 C CNN
-F 3 "~" H 4850 7400 50  0001 C CNN
-F 4 "wilkinson_3db" H 4850 7400 50  0001 C CNN "Part Number"
-	1    4850 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:splitter TL3
+L aps_radar_lib:splitter_fenced TL3
 U 1 1 5E5A04FA
-P 5450 7150
-F 0 "TL3" H 5450 7475 50  0000 C CNN
-F 1 "wilkinson_3dB" H 5450 7384 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 5450 7150 50  0001 C CNN
-F 3 "~" H 5450 7150 50  0001 C CNN
-F 4 "wilkinson_3db" H 5450 7150 50  0001 C CNN "Part Number"
-	1    5450 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:splitter TL4
-U 1 1 5E5A0EC4
-P 5450 7750
-F 0 "TL4" H 5450 8075 50  0000 C CNN
-F 1 "wilkinson_3dB" H 5450 7984 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 5450 7750 50  0001 C CNN
-F 3 "~" H 5450 7750 50  0001 C CNN
-F 4 "wilkinson_3db" H 5450 7750 50  0001 C CNN "Part Number"
-	1    5450 7750
+P 5550 6900
+F 0 "TL3" H 5400 7150 50  0000 C CNN
+F 1 "wilkinson_3dB" H 5800 7150 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 5550 6900 50  0001 C CNN
+F 3 "~" H 5550 6900 50  0001 C CNN
+F 4 "wilkinson_3db" H 5550 6900 50  0001 C CNN "Part Number"
+	1    5550 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 7300 5150 7300
+	5800 6800 5950 6800
 Wire Wire Line
-	5150 7300 5150 7150
-Wire Wire Line
-	5150 7150 5200 7150
-Wire Wire Line
-	5100 7500 5150 7500
-Wire Wire Line
-	5150 7500 5150 7750
-Wire Wire Line
-	5150 7750 5200 7750
-Wire Wire Line
-	5700 7050 5850 7050
-Wire Wire Line
-	5700 7250 5850 7250
-Wire Wire Line
-	5700 7650 5850 7650
-Wire Wire Line
-	5700 7850 5850 7850
-$Comp
-L aps_radar_lib:splitter TL1
-U 1 1 5E5A3DC7
-P 4250 6800
-F 0 "TL1" H 4250 7125 50  0000 C CNN
-F 1 "coupled_line_14dB" H 4250 7034 50  0000 C CNN
-F 2 "aps_radar_lib:coupled_line_14db" H 4250 6800 50  0001 C CNN
-F 3 "~" H 4250 6800 50  0001 C CNN
-F 4 "coupled_line_14db" H 4250 6800 50  0001 C CNN "Part Number"
-	1    4250 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 6900 4550 6900
-Wire Wire Line
-	4550 7400 4600 7400
+	5800 7000 5950 7000
 $Comp
 L RF:HMC431 U20
 U 1 1 5E5A887F
 P 4900 5250
 F 0 "U20" H 4600 5500 50  0000 L CNN
 F 1 "HMC431" H 5000 5000 50  0000 L CNN
-F 2 "aps_radar_lib:HMC-LP4" H 4900 5250 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.8x2.8mm" H 4900 5250 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc431.pdf" H 4900 5250 50  0001 C CNN
 F 4 "HMC431LP4ETR " H 4900 5250 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Analog-Devices-Hittite/HMC431LP4ETR?qs=sGAEpiMZZMuxN8ppjVrcxiCDNgdaUA3vmLRu%252BUaBrMtXLHFEtBbEFw%3D%3D" H 4900 5250 50  0001 C CNN "URL"
@@ -353,14 +229,12 @@ P 9950 3250
 F 0 "C99" V 10179 3250 50  0000 C CNN
 F 1 "10pF" V 10088 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9950 3250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c02e-1068346.pdf" H 9950 3250 50  0001 C CNN
+F 3 "~" H 9950 3250 50  0001 C CNN
 F 4 "GJM1555C1H100FB01D " H 9950 3250 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 9950 3250 50  0001 C CNN "URL"
 	1    9950 3250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9800 3050 9850 3050
 Wire Wire Line
 	9850 3250 9800 3250
 Wire Wire Line
@@ -380,7 +254,7 @@ Wire Wire Line
 	10050 3050 10400 3050
 Text Label 10400 3050 2    50   ~ 0
 LMX_FIN
-Text Notes 10000 1900 0    50   ~ 0
+Text Notes 10100 1950 0    50   ~ 0
 0-2.625V
 $Comp
 L power:GND #PWR0198
@@ -400,7 +274,7 @@ P 2900 4550
 F 0 "C82" H 2992 4596 50  0000 L CNN
 F 1 "0.1uF" H 2992 4505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2900 4550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 2900 4550 50  0001 C CNN
+F 3 "~" H 2900 4550 50  0001 C CNN
 F 4 "GCD21BR71H104KA01L " H 2900 4550 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 2900 4550 50  0001 C CNN "URL"
 	1    2900 4550
@@ -428,7 +302,7 @@ P 3500 5250
 F 0 "R47" V 3304 5250 50  0000 C CNN
 F 1 "8.2" V 3395 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 5250 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 3500 5250 50  0001 C CNN
+F 3 "~" H 3500 5250 50  0001 C CNN
 F 4 "CPF0603B8R2E1 " H 3500 5250 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Neohm/CPF0603B8R2E1?qs=sGAEpiMZZMu61qfTUdNhGxAfPTOoMd3MPIVwBykhesk%3D" H 3500 5250 50  0001 C CNN "URL"
 	1    3500 5250
@@ -441,7 +315,7 @@ P 3900 5250
 F 0 "R50" V 3704 5250 50  0000 C CNN
 F 1 "22" V 3795 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 5250 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 3900 5250 50  0001 C CNN
+F 3 "~" H 3900 5250 50  0001 C CNN
 F 4 "CPF0603B22RE1 " H 3900 5250 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Neohm/CPF0603B22RE1?qs=sGAEpiMZZMu61qfTUdNhGxAfPTOoMd3MbENC1hj0%2FVE%3D" H 3900 5250 50  0001 C CNN "URL"
 	1    3900 5250
@@ -456,7 +330,7 @@ P 2500 5650
 F 0 "R44" V 2304 5650 50  0000 C CNN
 F 1 "1.24k" V 2395 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2500 5650 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 2500 5650 50  0001 C CNN
+F 3 "~" H 2500 5650 50  0001 C CNN
 F 4 "MCT06030C1241FP500 " H 2500 5650 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1241FP500?qs=%2Fha2pyFadughkIXC22QiYtik5NOPM6s2P3liRCx%252BmEzb2WREdq%252BdMNkRqYgTlbWW" H 2500 5650 50  0001 C CNN "URL"
 	1    2500 5650
@@ -486,7 +360,7 @@ P 1900 5850
 F 0 "R40" H 1959 5896 50  0000 L CNN
 F 1 "1.0k" H 1959 5805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 5850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1900 5850 50  0001 C CNN
+F 3 "~" H 1900 5850 50  0001 C CNN
 F 4 "MCT06030C1001FP500 " H 1900 5850 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1001FP500?qs=%2Fha2pyFadughkIXC22QiYtrFzwOcctIEKEUg7pOtZAzbqCmtrkpt9w%3D%3D" H 1900 5850 50  0001 C CNN "URL"
 	1    1900 5850
@@ -515,7 +389,7 @@ P 3700 5600
 F 0 "C83" H 3792 5646 50  0000 L CNN
 F 1 "1.8nF" H 3792 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 5600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD188R71H182KA01-01-1668083.pdf" H 3700 5600 50  0001 C CNN
+F 3 "~" H 3700 5600 50  0001 C CNN
 F 4 "GCD188R71H182KA01J " H 3700 5600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD188R71H182KA01J?qs=sGAEpiMZZMs0AnBnWHyRQAsAWwhBCY7bTNmSDqLFMYV23FSQLqPo7w%3D%3D" H 3700 5600 50  0001 C CNN "URL"
 	1    3700 5600
@@ -546,7 +420,7 @@ P 4100 5600
 F 0 "C85" H 4192 5646 50  0000 L CNN
 F 1 "0.82nF" H 4192 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4100 5600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD188R71H822KA01-01-1668169.pdf" H 4100 5600 50  0001 C CNN
+F 3 "~" H 4100 5600 50  0001 C CNN
 F 4 "GCD188R71H822KA01D " H 4100 5600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD188R71H822KA01D?qs=sGAEpiMZZMs0AnBnWHyRQAsAWwhBCY7bAvRIGut5f8%252BPX3tCvGVaxQ%3D%3D" H 4100 5600 50  0001 C CNN "URL"
 	1    4100 5600
@@ -567,9 +441,6 @@ F 3 "" H 4100 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4100 6000 4100 5700
-Connection ~ 4100 5250
-Wire Wire Line
-	4100 5250 4500 5250
 $Comp
 L Device:C_Small C78
 U 1 1 5E5F7B46
@@ -577,7 +448,7 @@ P 2250 5850
 F 0 "C78" H 2342 5896 50  0000 L CNN
 F 1 "0.1uF" H 2342 5805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2250 5850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 2250 5850 50  0001 C CNN
+F 3 "~" H 2250 5850 50  0001 C CNN
 F 4 "GCD21BR71H104KA01L " H 2250 5850 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 2250 5850 50  0001 C CNN "URL"
 	1    2250 5850
@@ -607,10 +478,10 @@ U 1 1 5E622CF8
 P 1500 5450
 F 0 "C76" H 1592 5496 50  0000 L CNN
 F 1 "0.68nF" H 1592 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1500 5450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 1500 5450 50  0001 C CNN
-F 4 "GCM21BR7YA684KA55L " H 1500 5450 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCM21BR7YA684KA55L?qs=sGAEpiMZZMs0AnBnWHyRQKFZIQ7b73cdrmZb%2F3Y7GRr0SaHJ9xjRIQ%3D%3D" H 1500 5450 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 5450 50  0001 C CNN
+F 3 "~" H 1500 5450 50  0001 C CNN
+F 4 "GRM1885C1H682JA01D" H 1500 5450 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM1885C1H682JA01D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYkgJ%2FV%252BKFLZc%3D" H 1500 5450 50  0001 C CNN "URL"
 	1    1500 5450
 	1    0    0    -1  
 $EndComp
@@ -625,7 +496,7 @@ P 1500 5850
 F 0 "R36" H 1559 5896 50  0000 L CNN
 F 1 "1.2k" H 1559 5805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1500 5850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1500 5850 50  0001 C CNN
+F 3 "~" H 1500 5850 50  0001 C CNN
 F 4 "MCT06030C1201FP500 " H 1500 5850 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1201FP500?qs=%2Fha2pyFadughkIXC22QiYuuhAOxhYrSkkMdYnLPmHp6TNYKiIY6IEw%3D%3D" H 1500 5850 50  0001 C CNN "URL"
 	1    1500 5850
@@ -653,7 +524,7 @@ P 1150 5600
 F 0 "C73" H 1242 5646 50  0000 L CNN
 F 1 "68pF" H 1242 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1150 5600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/40/U-Series-894201.pdf" H 1150 5600 50  0001 C CNN
+F 3 "~" H 1150 5600 50  0001 C CNN
 F 4 "06035U680GAT2A " H 1150 5600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/AVX/06035U680GAT2A?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdAudmHbyd3DCY%3D" H 1150 5600 50  0001 C CNN "URL"
 	1    1150 5600
@@ -683,29 +554,27 @@ Connection ~ 1150 5150
 Text Label 600  5150 0    50   ~ 0
 LMX_CPOUT
 Wire Wire Line
-	4550 6900 4550 7400
-Wire Wire Line
-	4500 6700 5850 6700
+	4500 6550 5950 6550
 Wire Notes Line
 	500  4050 10500 4050
 Text Notes 700  4350 0    100  ~ 0
 Loop Filter
-Text Notes 3550 7750 0    100  ~ 0
+Text Notes 3700 7800 0    100  ~ 0
 Power Fan-out
-Text Notes 3550 7900 0    50   ~ 0
+Text Notes 3700 7950 0    50   ~ 0
 To Transmitters and Mixers
 Text Notes 4450 800  2    100  ~ 0
 PLL Synthesizer
 Text Notes 700  800  0    100  ~ 0
 Reference Clock
-Text Notes 4000 5200 0    50   ~ 0
+Text Notes 4000 4950 0    50   ~ 0
 0.7-6.5625V
 Text Notes 2150 5100 0    50   ~ 0
 0-2.625V
-Text Notes 5300 5150 0    50   ~ 0
+Text Notes 5300 5400 0    50   ~ 0
 +2dBm
 Wire Wire Line
-	3550 6800 4000 6800
+	3700 6550 4000 6550
 Wire Notes Line
 	6850 4050 6850 6750
 Wire Notes Line
@@ -769,7 +638,7 @@ P 9350 6100
 F 0 "R60" H 9409 6146 50  0000 L CNN
 F 1 "10k" H 9409 6055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9350 6100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 9350 6100 50  0001 C CNN
+F 3 "~" H 9350 6100 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 9350 6100 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 9350 6100 50  0001 C CNN "URL"
 	1    9350 6100
@@ -807,28 +676,13 @@ $EndComp
 Wire Wire Line
 	8650 6300 8650 5950
 Wire Wire Line
-	9200 5450 10050 5450
+	9200 5450 9350 5450
 Wire Wire Line
-	8100 5450 7200 5450
+	8100 5450 7950 5450
 Text Label 7200 5450 0    50   ~ 0
 ATTEN_OUT
 Text Label 10050 5450 2    50   ~ 0
 PA_OUT
-$Comp
-L Device:C_Small C96
-U 1 1 5E7648A3
-P 9150 4700
-F 0 "C96" H 9242 4746 50  0000 L CNN
-F 1 "0.1uF" H 9242 4655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9150 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 9150 4700 50  0001 C CNN
-F 4 "GCD21BR71H104KA01L " H 9150 4700 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 9150 4700 50  0001 C CNN "URL"
-	1    9150 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 4600 9000 4600
 $Comp
 L power:GND #PWR0210
 U 1 1 5E76AEFB
@@ -838,19 +692,6 @@ F 1 "GND" H 9155 4627 50  0000 C CNN
 F 2 "" H 9150 4800 50  0001 C CNN
 F 3 "" H 9150 4800 50  0001 C CNN
 	1    9150 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C97
-U 1 1 5E77ECAD
-P 9700 4700
-F 0 "C97" H 9792 4746 50  0000 L CNN
-F 1 "0.1uF" H 9792 4655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9700 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 9700 4700 50  0001 C CNN
-F 4 "GCD21BR71H104KA01L " H 9700 4700 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 9700 4700 50  0001 C CNN "URL"
-	1    9700 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -870,10 +711,10 @@ U 1 1 5E7824AA
 P 10150 4700
 F 0 "C100" H 10242 4746 50  0000 L CNN
 F 1 "10uF" H 10242 4655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 10150 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GRT31CR61H106ME01-01-1065064.pdf" H 10150 4700 50  0001 C CNN
-F 4 "GRT31CR61H106ME01L " H 10150 4700 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRT31CR61H106ME01L?qs=sGAEpiMZZMs0AnBnWHyRQKtaB%2FEehnE2ftAEJ5A0yJMpr0%252B0wrmL9Q%3D%3D" H 10150 4700 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10150 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 10150 4700 50  0001 C CNN
+F 4 "GRM188R6YA106MA73J" H 10150 4700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM188R6YA106MA73J?qs=sGAEpiMZZMs0AnBnWHyRQN7%2FAA2D2lPPfzIkh%252B90YjvGcic1vJjUfw%3D%3D" H 10150 4700 50  0001 C CNN "URL"
 	1    10150 4700
 	1    0    0    -1  
 $EndComp
@@ -890,11 +731,6 @@ F 3 "" H 10150 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8750 5150 9550 5150
-Wire Wire Line
-	9550 4600 9700 4600
-Wire Wire Line
-	9700 4600 10150 4600
-Connection ~ 9700 4600
 Text Notes 10250 4900 0    50   ~ 0
 0603
 $Comp
@@ -914,10 +750,10 @@ U 1 1 5E7A16DD
 P 8600 4700
 F 0 "C95" H 8692 4746 50  0000 L CNN
 F 1 "0.1uF" H 8692 4655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8600 4700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 8600 4700 50  0001 C CNN
-F 4 "GCD21BR71H104KA01L " H 8600 4700 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 8600 4700 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8600 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 8600 4700 50  0001 C CNN
+F 4 "GRM155R71H104KE14D" H 8600 4700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM155R71H104KE14D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYv1H4972kkgg%3D" H 8600 4700 50  0001 C CNN "URL"
 	1    8600 4700
 	1    0    0    -1  
 $EndComp
@@ -929,10 +765,10 @@ U 1 1 5E7EB892
 P 6950 1850
 F 0 "C91" H 7042 1896 50  0000 L CNN
 F 1 "0.1uF" H 7042 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6950 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 6950 1850 50  0001 C CNN
-F 4 "GCD21BR71H104KA01L " H 6950 1850 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 6950 1850 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6950 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 6950 1850 50  0001 C CNN
+F 4 "GRM155R71H104KE14D" H 6950 1850 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM155R71H104KE14D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYv1H4972kkgg%3D" H 6950 1850 50  0001 C CNN "URL"
 	1    6950 1850
 	-1   0    0    -1  
 $EndComp
@@ -942,10 +778,10 @@ U 1 1 5E7EBE72
 P 6400 1850
 F 0 "C90" H 6492 1896 50  0000 L CNN
 F 1 "0.1uF" H 6492 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6400 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 6400 1850 50  0001 C CNN
-F 4 "GCD21BR71H104KA01L " H 6400 1850 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 6400 1850 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6400 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 6400 1850 50  0001 C CNN
+F 4 "GRM155R71H104KE14D" H 6400 1850 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM155R71H104KE14D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYv1H4972kkgg%3D" H 6400 1850 50  0001 C CNN "URL"
 	1    6400 1850
 	-1   0    0    -1  
 $EndComp
@@ -955,10 +791,10 @@ U 1 1 5E7EC6A5
 P 5800 1850
 F 0 "C89" H 5892 1896 50  0000 L CNN
 F 1 "100pF" H 5892 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/40/U-Series-894201.pdf" H 5800 1850 50  0001 C CNN
-F 4 "06035U101KAT2A " H 5800 1850 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/AVX/06035U101KAT2A?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdASZvHrjWXgOE%3D" H 5800 1850 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5800 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 5800 1850 50  0001 C CNN
+F 4 "GCM1555C1H101JA16D" H 5800 1850 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCM1555C1H101JA16D?qs=sGAEpiMZZMs0AnBnWHyRQNchIam%2FLmo3iuqktC2QpG0%3D" H 5800 1850 50  0001 C CNN "URL"
 	1    5800 1850
 	-1   0    0    -1  
 $EndComp
@@ -1067,10 +903,10 @@ U 1 1 5E8FB907
 P 7550 1850
 F 0 "C92" H 7642 1896 50  0000 L CNN
 F 1 "0.1uF" H 7642 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7550 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD21BR71H104KA01-01-1668337.pdf" H 7550 1850 50  0001 C CNN
-F 4 "GCD21BR71H104KA01L " H 7550 1850 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD21BR71H104KA01L?qs=sGAEpiMZZMs0AnBnWHyRQJmvo6K1yq%2Fe3jHsWxVjiCA%3D" H 7550 1850 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7550 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 7550 1850 50  0001 C CNN
+F 4 "GRM155R71H104KE14D" H 7550 1850 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM155R71H104KE14D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYv1H4972kkgg%3D" H 7550 1850 50  0001 C CNN "URL"
 	1    7550 1850
 	-1   0    0    -1  
 $EndComp
@@ -1146,10 +982,10 @@ U 1 1 5E9FEDEB
 P 5200 1850
 F 0 "C87" H 5292 1896 50  0000 L CNN
 F 1 "100pF" H 5292 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5200 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/40/U-Series-894201.pdf" H 5200 1850 50  0001 C CNN
-F 4 "06035U101KAT2A " H 5200 1850 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/AVX/06035U101KAT2A?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdASZvHrjWXgOE%3D" H 5200 1850 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5200 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 5200 1850 50  0001 C CNN
+F 4 "GCM1555C1H101JA16D" H 5200 1850 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCM1555C1H101JA16D?qs=sGAEpiMZZMs0AnBnWHyRQNchIam%2FLmo3iuqktC2QpG0%3D" H 5200 1850 50  0001 C CNN "URL"
 	1    5200 1850
 	-1   0    0    -1  
 $EndComp
@@ -1187,10 +1023,10 @@ U 1 1 5EAF0ED8
 P 3950 1850
 F 0 "C84" H 4042 1896 50  0000 L CNN
 F 1 "100pF" H 4042 1805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3950 1850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/40/U-Series-894201.pdf" H 3950 1850 50  0001 C CNN
-F 4 "06035U101KAT2A " H 3950 1850 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/AVX/06035U101KAT2A?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdASZvHrjWXgOE%3D" H 3950 1850 50  0001 C CNN "URL"
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3950 1850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 3950 1850 50  0001 C CNN
+F 4 "GCM1555C1H101JA16D" H 3950 1850 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCM1555C1H101JA16D?qs=sGAEpiMZZMs0AnBnWHyRQNchIam%2FLmo3iuqktC2QpG0%3D" H 3950 1850 50  0001 C CNN "URL"
 	1    3950 1850
 	-1   0    0    -1  
 $EndComp
@@ -1201,7 +1037,7 @@ P 3750 1500
 F 0 "FB19" V 3650 1500 50  0000 C CNN
 F 1 "120 ohm" V 3850 1500 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 3680 1500 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c31e-794748.pdf" H 3750 1500 50  0001 C CNN
+F 3 "~" H 3750 1500 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Murata-Electronics/BLM18SG121TN1D?qs=OMB6gcCnelWdy%252B7xRA0fBw%3D%3D" V 3750 1500 50  0001 C CNN "URL"
 F 5 "BLM18SG121TN1D" V 3750 1500 50  0001 C CNN "Part Number"
 	1    3750 1500
@@ -1335,7 +1171,7 @@ P 1150 2700
 F 0 "R33" V 1050 2700 50  0000 C CNN
 F 1 "10k" V 1250 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1150 2700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1150 2700 50  0001 C CNN
+F 3 "~" H 1150 2700 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 1150 2700 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 1150 2700 50  0001 C CNN "URL"
 	1    1150 2700
@@ -1348,7 +1184,7 @@ P 1300 3600
 F 0 "R34" H 1241 3554 50  0000 R CNN
 F 1 "10k" H 1241 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1300 3600 50  0001 C CNN
+F 3 "~" H 1300 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 1300 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 1300 3600 50  0001 C CNN "URL"
 	1    1300 3600
@@ -1370,7 +1206,7 @@ P 1600 3600
 F 0 "R37" H 1541 3554 50  0000 R CNN
 F 1 "10k" H 1541 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1600 3600 50  0001 C CNN
+F 3 "~" H 1600 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 1600 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 1600 3600 50  0001 C CNN "URL"
 	1    1600 3600
@@ -1386,7 +1222,7 @@ P 1750 3100
 F 0 "R38" V 1650 3100 50  0000 C CNN
 F 1 "10k" V 1850 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 3100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1750 3100 50  0001 C CNN
+F 3 "~" H 1750 3100 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 1750 3100 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 1750 3100 50  0001 C CNN "URL"
 	1    1750 3100
@@ -1403,7 +1239,7 @@ P 1450 2900
 F 0 "R35" V 1350 2900 50  0000 C CNN
 F 1 "10k" V 1550 2900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1450 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1450 2900 50  0001 C CNN
+F 3 "~" H 1450 2900 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 1450 2900 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 1450 2900 50  0001 C CNN "URL"
 	1    1450 2900
@@ -1422,7 +1258,7 @@ P 1900 3600
 F 0 "R39" H 1841 3554 50  0000 R CNN
 F 1 "10k" H 1841 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 1900 3600 50  0001 C CNN
+F 3 "~" H 1900 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 1900 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 1900 3600 50  0001 C CNN "URL"
 	1    1900 3600
@@ -1440,7 +1276,7 @@ P 2050 3300
 F 0 "R41" V 1950 3300 50  0000 C CNN
 F 1 "10k" V 2150 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 3300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 2050 3300 50  0001 C CNN
+F 3 "~" H 2050 3300 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 2050 3300 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 2050 3300 50  0001 C CNN "URL"
 	1    2050 3300
@@ -1453,7 +1289,7 @@ P 2200 3600
 F 0 "R42" H 2141 3554 50  0000 R CNN
 F 1 "10k" H 2141 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2200 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 2200 3600 50  0001 C CNN
+F 3 "~" H 2200 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 2200 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 2200 3600 50  0001 C CNN "URL"
 	1    2200 3600
@@ -1557,7 +1393,7 @@ P 2750 2900
 F 0 "J9" H 2800 3317 50  0000 C CNN
 F 1 "LMX2491_CONN" H 2800 2600 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 2750 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/18/52601-1362837.pdf" H 2750 2900 50  0001 C CNN
+F 3 "~" H 2750 2900 50  0001 C CNN
 F 4 "52601-G10-4LF" H 2750 2900 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Amphenol-FCI/52601-G10-4LF?qs=QPQicS5vByL7h2oChhmV1Q%3D%3D" H 2750 2900 50  0001 C CNN "URL"
 	1    2750 2900
@@ -1592,7 +1428,7 @@ P 4550 2700
 F 0 "R54" V 4450 2700 50  0000 C CNN
 F 1 "10k" V 4650 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4550 2700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4550 2700 50  0001 C CNN
+F 3 "~" H 4550 2700 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 4550 2700 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 4550 2700 50  0001 C CNN "URL"
 	1    4550 2700
@@ -1605,7 +1441,7 @@ P 4400 3600
 F 0 "R53" H 4341 3554 50  0000 R CNN
 F 1 "10k" H 4341 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4400 3600 50  0001 C CNN
+F 3 "~" H 4400 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 4400 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 4400 3600 50  0001 C CNN "URL"
 	1    4400 3600
@@ -1627,7 +1463,7 @@ P 4100 3600
 F 0 "R51" H 4041 3554 50  0000 R CNN
 F 1 "10k" H 4041 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4100 3600 50  0001 C CNN
+F 3 "~" H 4100 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 4100 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 4100 3600 50  0001 C CNN "URL"
 	1    4100 3600
@@ -1647,7 +1483,7 @@ P 4250 2900
 F 0 "R52" V 4150 2900 50  0000 C CNN
 F 1 "10k" V 4350 2900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4250 2900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4250 2900 50  0001 C CNN
+F 3 "~" H 4250 2900 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 4250 2900 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 4250 2900 50  0001 C CNN "URL"
 	1    4250 2900
@@ -1662,7 +1498,7 @@ P 3750 3100
 F 0 "R49" V 3650 3100 50  0000 C CNN
 F 1 "10k" V 3850 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 3100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 3750 3100 50  0001 C CNN
+F 3 "~" H 3750 3100 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 3750 3100 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 3750 3100 50  0001 C CNN "URL"
 	1    3750 3100
@@ -1675,7 +1511,7 @@ P 3600 3600
 F 0 "R48" H 3541 3554 50  0000 R CNN
 F 1 "10k" H 3541 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3600 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 3600 3600 50  0001 C CNN
+F 3 "~" H 3600 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 3600 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 3600 3600 50  0001 C CNN "URL"
 	1    3600 3600
@@ -1755,7 +1591,7 @@ P 3350 3600
 F 0 "R46" H 3291 3554 50  0000 R CNN
 F 1 "10k" H 3291 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3350 3600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 3350 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 3350 3600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 3350 3600 50  0001 C CNN "URL"
 	1    3350 3600
@@ -1768,7 +1604,7 @@ P 3200 3100
 F 0 "R45" V 3100 3100 50  0000 C CNN
 F 1 "10k" V 3300 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3200 3100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 3200 3100 50  0001 C CNN
+F 3 "~" H 3200 3100 50  0001 C CNN
 F 4 "MCT06030C1002FP500 " H 3200 3100 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030C1002FP500?qs=sGAEpiMZZMu61qfTUdNhG5m1so8SgZHVggp%2FcwiAK9c%3D" H 3200 3100 50  0001 C CNN "URL"
 	1    3200 3100
@@ -1800,16 +1636,12 @@ LMX_CLK
 Text Notes 700  2500 0    100  ~ 0
 LMX2491 Programming Header
 Connection ~ 3950 1500
-Text HLabel 5850 6700 2    50   Output ~ 0
+Text HLabel 5950 6550 2    50   Output ~ 0
 TX_OUT
-Text HLabel 5850 7050 2    50   Output ~ 0
+Text HLabel 5950 6800 2    50   Output ~ 0
 LO_1
-Text HLabel 5850 7250 2    50   Output ~ 0
+Text HLabel 5950 7000 2    50   Output ~ 0
 LO_2
-Text HLabel 5850 7650 2    50   Output ~ 0
-LO_3
-Text HLabel 5850 7850 2    50   Output ~ 0
-LO_4
 Wire Wire Line
 	2400 3250 2400 3100
 Wire Wire Line
@@ -1899,7 +1731,7 @@ P 5050 4550
 F 0 "C86" H 5142 4596 50  0000 L CNN
 F 1 "10nF" H 5142 4505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 4550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/40/X7RDielectric-777024.pdf" H 5050 4550 50  0001 C CNN
+F 3 "~" H 5050 4550 50  0001 C CNN
 F 4 "06035C103KAT4A " H 5050 4550 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/AVX/06035C103KAT4A?qs=sGAEpiMZZMs0AnBnWHyRQE2IRmxFPR1eMTsat74AxTs%3D" H 5050 4550 50  0001 C CNN "URL"
 	1    5050 4550
@@ -1912,7 +1744,7 @@ P 5400 4550
 F 0 "C88" H 5491 4596 50  0000 L CNN
 F 1 "4.7uF" H 5491 4505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5400 4550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 5400 4550 50  0001 C CNN
+F 3 "~" H 5400 4550 50  0001 C CNN
 F 4 "GRM21BZ7YA475ME15L " H 5400 4550 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BZ7YA475ME15L?qs=sGAEpiMZZMs0AnBnWHyRQB9G40cLJQs4Uw4UClvObZ3uHHf160%2FdrQ%3D%3D" H 5400 4550 50  0001 C CNN "URL"
 	1    5400 4550
@@ -1979,69 +1811,65 @@ F 3 "" H 4900 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 6000 4900 5550
-Text Notes 6100 5300 0    50   ~ 0
+Text Notes 6500 5850 0    50   ~ 0
 -1dBm
 $Comp
 L aps_radar_lib:splitter TL5
 U 1 1 5E6D3290
-P 5850 5250
-F 0 "TL5" H 5850 5575 50  0000 C CNN
-F 1 "wilkinson_3dB" H 5850 5484 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 5850 5250 50  0001 C CNN
-F 3 "~" H 5850 5250 50  0001 C CNN
-F 4 "wilkinson_3db" H 5850 5250 50  0001 C CNN "Part Number"
-	1    5850 5250
+P 6000 5450
+F 0 "TL5" H 6000 5775 50  0000 C CNN
+F 1 "wilkinson_3dB" H 6000 5684 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 6000 5450 50  0001 C CNN
+F 3 "~" H 6000 5450 50  0001 C CNN
+F 4 "wilkinson_3db" H 6000 5450 50  0001 C CNN "Part Number"
+	1    6000 5450
 	1    0    0    -1  
 $EndComp
-Text Notes 6100 5100 0    50   ~ 0
+Text Notes 6500 4500 0    50   ~ 0
 -1dBm
-Text Label 6700 5150 2    50   ~ 0
+Text Label 6800 5950 2    50   ~ 0
 VCO_OUT
-Wire Wire Line
-	6100 5150 6700 5150
-Text Label 6700 5350 2    50   ~ 0
+Text Label 6800 4600 2    50   ~ 0
 LMX_FIN
 Wire Wire Line
-	6100 5350 6700 5350
-Wire Wire Line
-	5300 5250 5600 5250
+	6450 5950 6800 5950
 Wire Notes Line
-	3400 6300 3400 8000
+	3650 6300 3650 8000
 $Comp
 L Device:C_Small C74
 U 1 1 5E801E4D
-P 1350 7350
-F 0 "C74" V 1450 7350 50  0000 C CNN
-F 1 "10pF" V 1250 7350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1350 7350 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c02e-1068346.pdf" H 1350 7350 50  0001 C CNN
-F 4 "GJM1555C1H100FB01D " H 1350 7350 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 1350 7350 50  0001 C CNN "URL"
-	1    1350 7350
+P 1050 7350
+F 0 "C74" V 1150 7350 50  0000 C CNN
+F 1 "10pF" V 950 7350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1050 7350 50  0001 C CNN
+F 3 "~" H 1050 7350 50  0001 C CNN
+F 4 "GJM1555C1H100FB01D " H 1050 7350 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 1050 7350 50  0001 C CNN "URL"
+	1    1050 7350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C80
 U 1 1 5E814DE9
-P 2800 7350
-F 0 "C80" V 2900 7350 50  0000 C CNN
-F 1 "10pF" V 2700 7350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2800 7350 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c02e-1068346.pdf" H 2800 7350 50  0001 C CNN
-F 4 "GJM1555C1H100FB01D " H 2800 7350 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 2800 7350 50  0001 C CNN "URL"
-	1    2800 7350
+P 3050 7350
+F 0 "C80" V 3150 7350 50  0000 C CNN
+F 1 "10pF" V 2950 7350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3050 7350 50  0001 C CNN
+F 3 "~" H 3050 7350 50  0001 C CNN
+F 4 "GJM1555C1H100FB01D " H 3050 7350 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 3050 7350 50  0001 C CNN "URL"
+	1    3050 7350
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1450 7350 1500 7350
+	1150 7350 1250 7350
 Wire Wire Line
-	1250 7350 550  7350
+	950  7350 550  7350
 Wire Wire Line
-	2900 7350 3300 7350
+	3150 7350 3600 7350
 Text Label 550  7350 0    50   ~ 0
 VCO_OUT
-Text Label 3300 7350 2    50   ~ 0
+Text Label 3600 7350 2    50   ~ 0
 ATTEN_OUT
 Text Notes 550  6500 0    100  ~ 0
 Attenuator
@@ -2052,7 +1880,7 @@ P 1350 7750
 F 0 "C75" V 1250 7750 50  0000 C CNN
 F 1 "330pF" V 1450 7750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1350 7750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 1350 7750 50  0001 C CNN
+F 3 "~" H 1350 7750 50  0001 C CNN
 F 4 "GCM1885C2A331JA16D " H 1350 7750 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCM1885C2A331JA16D?qs=sGAEpiMZZMs0AnBnWHyRQNchIam%2FLmo3%2FKdGTrZUXKo%3D" H 1350 7750 50  0001 C CNN "URL"
 	1    1350 7750
@@ -2065,7 +1893,7 @@ P 2750 7750
 F 0 "C81" V 2650 7750 50  0000 C CNN
 F 1 "330pF" V 2850 7750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 7750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 2750 7750 50  0001 C CNN
+F 3 "~" H 2750 7750 50  0001 C CNN
 F 4 "GCM1885C2A331JA16D " H 2750 7750 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCM1885C2A331JA16D?qs=sGAEpiMZZMs0AnBnWHyRQNchIam%2FLmo3%2FKdGTrZUXKo%3D" H 2750 7750 50  0001 C CNN "URL"
 	1    2750 7750
@@ -2134,7 +1962,7 @@ P 2750 6700
 F 0 "C79" H 2842 6746 50  0000 L CNN
 F 1 "1.8nF" H 2842 6655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 6700 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/GCD188R71H182KA01-01-1668083.pdf" H 2750 6700 50  0001 C CNN
+F 3 "~" H 2750 6700 50  0001 C CNN
 F 4 "GCD188R71H182KA01J " H 2750 6700 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GCD188R71H182KA01J?qs=sGAEpiMZZMs0AnBnWHyRQAsAWwhBCY7bTNmSDqLFMYV23FSQLqPo7w%3D%3D" H 2750 6700 50  0001 C CNN "URL"
 	1    2750 6700
@@ -2202,7 +2030,7 @@ P 2450 850
 F 0 "FB17" V 2300 850 50  0000 C CNN
 F 1 "0" V 2600 850 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 2380 850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 2450 850 50  0001 C CNN
+F 3 "~" H 2450 850 50  0001 C CNN
 F 4 "MCT06030Z0000ZP500 " H 2450 850 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030Z0000ZP500?qs=sGAEpiMZZMu61qfTUdNhGz6EOFjMoBbmD96yBuPyrag%3D" H 2450 850 50  0001 C CNN "URL"
 	1    2450 850 
@@ -2221,7 +2049,7 @@ P 2550 4400
 F 0 "FB18" V 2400 4400 50  0000 C CNN
 F 1 "0" V 2700 4400 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 2480 4400 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 2550 4400 50  0001 C CNN
+F 3 "~" H 2550 4400 50  0001 C CNN
 F 4 "MCT06030Z0000ZP500 " H 2550 4400 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030Z0000ZP500?qs=sGAEpiMZZMu61qfTUdNhGz6EOFjMoBbmD96yBuPyrag%3D" H 2550 4400 50  0001 C CNN "URL"
 	1    2550 4400
@@ -2240,7 +2068,7 @@ P 4700 4400
 F 0 "FB20" V 4550 4400 50  0000 C CNN
 F 1 "0" V 4850 4400 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 4630 4400 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 4700 4400 50  0001 C CNN
+F 3 "~" H 4700 4400 50  0001 C CNN
 F 4 "MCT06030Z0000ZP500 " H 4700 4400 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030Z0000ZP500?qs=sGAEpiMZZMu61qfTUdNhGz6EOFjMoBbmD96yBuPyrag%3D" H 4700 4400 50  0001 C CNN "URL"
 	1    4700 4400
@@ -2260,7 +2088,7 @@ P 8200 4600
 F 0 "FB26" V 8050 4600 50  0000 C CNN
 F 1 "0" V 8350 4600 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 8130 4600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/mcx0x0xpro-1762245.pdf" H 8200 4600 50  0001 C CNN
+F 3 "~" H 8200 4600 50  0001 C CNN
 F 4 "MCT06030Z0000ZP500 " H 8200 4600 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCT06030Z0000ZP500?qs=sGAEpiMZZMu61qfTUdNhGz6EOFjMoBbmD96yBuPyrag%3D" H 8200 4600 50  0001 C CNN "URL"
 	1    8200 4600
@@ -2276,9 +2104,6 @@ Wire Wire Line
 	8600 4600 9000 4600
 Connection ~ 8600 4600
 Connection ~ 9000 4600
-Wire Wire Line
-	9150 4600 9550 4600
-Connection ~ 9150 4600
 Connection ~ 9550 4600
 Wire Notes Line
 	8500 4550 8500 5050
@@ -2311,46 +2136,12 @@ Near pin 19
 Text Notes 9600 4500 0    50   ~ 0
 Near pin 19
 NoConn ~ 7800 2050
-Text Label 3550 6800 0    50   ~ 0
+Text Label 3700 6550 0    50   ~ 0
 PA_OUT
 Text Notes 550  6750 0    50   ~ 0
 warning: atten. must be \n> 8dB or damage to \ndemodulator may occur
-Wire Wire Line
-	2850 5550 2850 5600
-Wire Wire Line
-	2850 5600 2950 5600
-Wire Wire Line
-	2950 5600 2950 5550
-$Comp
-L aps_radar_lib:GNDOSC #PWR6
-U 1 1 5F61A63C
-P 2600 2050
-F 0 "#PWR6" H 2600 2100 50  0001 C CNN
-F 1 "GNDOSC" H 2600 1900 50  0001 C CNN
-F 2 "" H 2600 1950 50  0001 C CNN
-F 3 "" H 2600 1950 50  0001 C CNN
-	1    2600 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0284
-U 1 1 5F61AA71
-P 2800 2050
-F 0 "#PWR0284" H 2800 1800 50  0001 C CNN
-F 1 "GND" H 2805 1877 50  0000 C CNN
-F 2 "" H 2800 2050 50  0001 C CNN
-F 3 "" H 2800 2050 50  0001 C CNN
-	1    2800 2050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 2050 2600 1950
-Wire Wire Line
-	2600 1950 2800 1950
-Wire Wire Line
-	2800 1950 2800 2050
-Text Notes 650  2000 0    50   ~ 0
-Solid GND are\noscillator GND.
+Text Notes 600  2150 0    50   ~ 0
+Oscillator should \nhave split gnd \nplane from main \nboard.
 $Comp
 L power:GND #PWR0285
 U 1 1 5E68DA00
@@ -2363,7 +2154,7 @@ F 3 "" H 2300 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 7350 2650 7350
+	2950 7350 2900 7350
 Wire Wire Line
 	2300 7800 2300 7700
 Wire Wire Line
@@ -2377,7 +2168,7 @@ P 2050 7150
 F 0 "U17" H 1600 7650 50  0000 L CNN
 F 1 "HMC540S" H 2300 6650 50  0000 L CNN
 F 2 "aps_radar_lib:HMC-LP3" H 2400 7450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/609/hmc540s-1503888.pdf" H 2400 7450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc540s.pdf" H 2400 7450 50  0001 C CNN
 F 4 "HMC540SLP3E " H 2050 7150 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Analog-Devices/HMC540SLP3E?qs=sGAEpiMZZMu8UjT63VDmaQQRy%252BWULou0rFBkSnqAwKM%3D" H 2050 7150 50  0001 C CNN "URL"
 	1    2050 7150
@@ -2394,7 +2185,7 @@ P 7600 6200
 F 0 "SW1" H 7600 6000 50  0000 C CNN
 F 1 "PA_EN" H 7600 6450 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 7600 6200 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/js-1382693.pdf" H 7600 6200 50  0001 C CNN
+F 3 "~" H 7600 6200 50  0001 C CNN
 F 4 "JS202011AQN " H 7600 6200 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 7600 6200 50  0001 C CNN "URL"
 	1    7600 6200
@@ -2407,7 +2198,7 @@ P 7600 5800
 F 0 "SW1" H 7600 5567 50  0000 C CNN
 F 1 "PA_EN" H 7600 5566 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 7600 5800 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/js-1382693.pdf" H 7600 5800 50  0001 C CNN
+F 3 "~" H 7600 5800 50  0001 C CNN
 F 4 "JS202011AQN " H 7600 5800 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 7600 5800 50  0001 C CNN "URL"
 	2    7600 5800
@@ -2439,7 +2230,7 @@ P 4950 1600
 F 0 "FB21" V 4850 1600 50  0000 C CNN
 F 1 "120 ohm" V 5050 1600 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 4880 1600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c31e-794748.pdf" H 4950 1600 50  0001 C CNN
+F 3 "~" H 4950 1600 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Murata-Electronics/BLM18SG121TN1D?qs=OMB6gcCnelWdy%252B7xRA0fBw%3D%3D" V 4950 1600 50  0001 C CNN "URL"
 F 5 "BLM18SG121TN1D" V 4950 1600 50  0001 C CNN "Part Number"
 	1    4950 1600
@@ -2452,7 +2243,7 @@ P 5550 1450
 F 0 "FB22" V 5450 1450 50  0000 C CNN
 F 1 "120 ohm" V 5650 1450 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 5480 1450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c31e-794748.pdf" H 5550 1450 50  0001 C CNN
+F 3 "~" H 5550 1450 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Murata-Electronics/BLM18SG121TN1D?qs=OMB6gcCnelWdy%252B7xRA0fBw%3D%3D" V 5550 1450 50  0001 C CNN "URL"
 F 5 "BLM18SG121TN1D" V 5550 1450 50  0001 C CNN "Part Number"
 	1    5550 1450
@@ -2465,7 +2256,7 @@ P 6200 1300
 F 0 "FB23" V 6100 1300 50  0000 C CNN
 F 1 "120 ohm" V 6300 1300 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 6130 1300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c31e-794748.pdf" H 6200 1300 50  0001 C CNN
+F 3 "~" H 6200 1300 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Murata-Electronics/BLM18SG121TN1D?qs=OMB6gcCnelWdy%252B7xRA0fBw%3D%3D" V 6200 1300 50  0001 C CNN "URL"
 F 5 "BLM18SG121TN1D" V 6200 1300 50  0001 C CNN "Part Number"
 	1    6200 1300
@@ -2478,7 +2269,7 @@ P 6750 1150
 F 0 "FB24" V 6650 1150 50  0000 C CNN
 F 1 "120 ohm" V 6850 1150 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 6680 1150 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c31e-794748.pdf" H 6750 1150 50  0001 C CNN
+F 3 "~" H 6750 1150 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Murata-Electronics/BLM18SG121TN1D?qs=OMB6gcCnelWdy%252B7xRA0fBw%3D%3D" V 6750 1150 50  0001 C CNN "URL"
 F 5 "BLM18SG121TN1D" V 6750 1150 50  0001 C CNN "Part Number"
 	1    6750 1150
@@ -2491,7 +2282,7 @@ P 7350 1000
 F 0 "FB25" V 7250 1000 50  0000 C CNN
 F 1 "120 ohm" V 7450 1000 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 7280 1000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c31e-794748.pdf" H 7350 1000 50  0001 C CNN
+F 3 "~" H 7350 1000 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Murata-Electronics/BLM18SG121TN1D?qs=OMB6gcCnelWdy%252B7xRA0fBw%3D%3D" V 7350 1000 50  0001 C CNN "URL"
 F 5 "BLM18SG121TN1D" V 7350 1000 50  0001 C CNN "Part Number"
 	1    7350 1000
@@ -2506,7 +2297,7 @@ P 10200 3400
 F 0 "R59" H 10141 3354 50  0000 R CNN
 F 1 "51" H 10141 3445 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10200 3400 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F1773200%7FM%7Fpdf%7FEnglish%7FENG_DS_1773200_M.pdf" H 10200 3400 50  0001 C CNN
+F 3 "~" H 10200 3400 50  0001 C CNN
 F 4 "CPF0402B51RE1 " H 10200 3400 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity-Neohm/CPF0402B51RE1?qs=%2Fha2pyFadugnNeTHmeXFfII932U5pBYgjBVIBHqpqdFyTiVy4sy7%2Fg%3D%3D" H 10200 3400 50  0001 C CNN "URL"
 	1    10200 3400
@@ -2523,7 +2314,7 @@ P 9950 3050
 F 0 "C98" V 10179 3050 50  0000 C CNN
 F 1 "10pF" V 10088 3050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9950 3050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c02e-1068346.pdf" H 9950 3050 50  0001 C CNN
+F 3 "~" H 9950 3050 50  0001 C CNN
 F 4 "GJM1555C1H100FB01D " H 9950 3050 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 9950 3050 50  0001 C CNN "URL"
 	1    9950 3050
@@ -2536,7 +2327,7 @@ P 8250 3050
 F 0 "C93" V 8479 3050 50  0000 C CNN
 F 1 "10pF" V 8388 3050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8250 3050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c02e-1068346.pdf" H 8250 3050 50  0001 C CNN
+F 3 "~" H 8250 3050 50  0001 C CNN
 F 4 "GJM1555C1H100FB01D " H 8250 3050 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 8250 3050 50  0001 C CNN "URL"
 	1    8250 3050
@@ -2549,10 +2340,444 @@ P 8250 3250
 F 0 "C94" V 8479 3250 50  0000 C CNN
 F 1 "10pF" V 8388 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8250 3250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/281/c02e-1068346.pdf" H 8250 3250 50  0001 C CNN
+F 3 "~" H 8250 3250 50  0001 C CNN
 F 4 "GJM1555C1H100FB01D " H 8250 3250 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GJM1555C1H100FB01D?qs=sGAEpiMZZMs0AnBnWHyRQL%2FJ1HPfTA2trchj9%2FXsoyY%3D" H 8250 3250 50  0001 C CNN "URL"
 	1    8250 3250
 	0    1    1    0   
+$EndComp
+$Comp
+L aps_radar_lib:OPA192 U19
+U 1 1 5E6F9B0B
+P 2850 5250
+F 0 "U19" H 2850 5450 50  0000 L CNN
+F 1 "OPA192" H 2850 5050 50  0000 L CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 2900 5300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa227.pdf" H 2900 5400 50  0001 C CNN
+	1    2850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5E681884
+P 4350 7450
+F 0 "#PWR07" H 4350 7200 50  0001 C CNN
+F 1 "GND" H 4355 7277 50  0000 C CNN
+F 2 "" H 4350 7450 50  0001 C CNN
+F 3 "" H 4350 7450 50  0001 C CNN
+	1    4350 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5E681F70
+P 5550 7150
+F 0 "#PWR09" H 5550 6900 50  0001 C CNN
+F 1 "GND" H 5650 7150 50  0000 C CNN
+F 2 "" H 5550 7150 50  0001 C CNN
+F 3 "" H 5550 7150 50  0001 C CNN
+	1    5550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:splitter_coupled_line TL1
+U 1 1 5E69AFC4
+P 4250 6600
+F 0 "TL1" H 4100 6800 50  0000 C CNN
+F 1 "coupled_line_14db" H 4600 6800 50  0000 C CNN
+F 2 "aps_radar_lib:coupled_line_14db" H 4250 6600 50  0001 C CNN
+F 3 "" H 4250 6600 50  0001 C CNN
+	1    4250 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6750 4150 6900
+$Comp
+L Device:R_Small R81
+U 1 1 5E6CA060
+P 4350 7200
+F 0 "R81" H 4409 7246 50  0000 L CNN
+F 1 "50" H 4409 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 7200 50  0001 C CNN
+F 3 "~" H 4350 7200 50  0001 C CNN
+F 4 "ERA-2AEB49R9X" H 4350 7200 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AEB49R9X?qs=sGAEpiMZZMu61qfTUdNhGyU6qtUrbEpefLWX5owIKB8%3D" H 4350 7200 50  0001 C CNN "URL"
+	1    4350 7200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 7450 4350 7300
+Wire Wire Line
+	4350 7100 4350 6750
+Wire Wire Line
+	4150 6900 4500 6900
+Wire Wire Line
+	4500 6900 4500 7200
+$Comp
+L aps_radar_lib:mitered_bend TL6
+U 1 1 5E789F09
+P 5150 7300
+F 0 "TL6" H 5200 7350 50  0000 L CNN
+F 1 "mitered_bend" H 5278 7227 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5100 7650 50  0001 C CNN
+F 3 "" H 5150 7300 50  0001 C CNN
+	1    5150 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL8
+U 1 1 5E7E4953
+P 5200 7050
+F 0 "TL8" V 5300 7050 50  0000 L CNN
+F 1 "mitered_bend" H 5328 6977 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5150 7400 50  0001 C CNN
+F 3 "" H 5200 7050 50  0001 C CNN
+	1    5200 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL7
+U 1 1 5E7E5577
+P 5200 6950
+F 0 "TL7" V 5300 7050 50  0000 C CNN
+F 1 "mitered_bend" H 5328 6877 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5150 7300 50  0001 C CNN
+F 3 "" H 5200 6950 50  0001 C CNN
+	1    5200 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5E681B29
+P 4850 7450
+F 0 "#PWR08" H 4850 7200 50  0001 C CNN
+F 1 "GND" H 4855 7277 50  0000 C CNN
+F 2 "" H 4850 7450 50  0001 C CNN
+F 3 "" H 4850 7450 50  0001 C CNN
+	1    4850 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 7200 4600 7200
+$Comp
+L aps_radar_lib:splitter_fenced TL2
+U 1 1 5E5A0054
+P 4850 7200
+F 0 "TL2" H 4850 7525 50  0000 C CNN
+F 1 "wilkinson_3dB" H 4850 7434 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 4850 7200 50  0001 C CNN
+F 3 "~" H 4850 7200 50  0001 C CNN
+F 4 "wilkinson_3db" H 4850 7200 50  0001 C CNN "Part Number"
+	1    4850 7200
+	1    0    0    -1  
+$EndComp
+Text HLabel 5950 7400 2    50   Output ~ 0
+LO_3
+$Comp
+L aps_radar_lib:mitered_bend TL9
+U 1 1 5E7CCD0E
+P 5250 7500
+F 0 "TL9" H 5350 7550 50  0000 L CNN
+F 1 "mitered_bend" H 5378 7517 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5200 7850 50  0001 C CNN
+F 3 "" H 5250 7500 50  0001 C CNN
+	1    5250 7500
+	-1   0    0    1   
+$EndComp
+Text HLabel 5950 7600 2    50   Output ~ 0
+LO_4
+$Comp
+L power:GND #PWR010
+U 1 1 5E682668
+P 5550 7750
+F 0 "#PWR010" H 5550 7500 50  0001 C CNN
+F 1 "GND" H 5555 7577 50  0000 C CNN
+F 2 "" H 5550 7750 50  0001 C CNN
+F 3 "" H 5550 7750 50  0001 C CNN
+	1    5550 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:splitter_fenced TL4
+U 1 1 5E5A0EC4
+P 5550 7500
+F 0 "TL4" H 5400 7750 50  0000 C CNN
+F 1 "wilkinson_3dB" H 5800 7700 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 5550 7500 50  0001 C CNN
+F 3 "~" H 5550 7500 50  0001 C CNN
+F 4 "wilkinson_3db" H 5550 7500 50  0001 C CNN "Part Number"
+	1    5550 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7400 5950 7400
+Wire Wire Line
+	5800 7600 5950 7600
+$Comp
+L aps_radar_lib:ic_taper TL13
+U 1 1 5E976AF9
+P 5500 5250
+F 0 "TL13" H 5500 5475 50  0000 C CNN
+F 1 "ic_taper" H 5500 5384 50  0000 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.25_0.35" H 5500 5250 50  0001 C CNN
+F 3 "" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5250 5400 5250
+$Comp
+L aps_radar_lib:ic_taper TL12
+U 1 1 5E9B8A75
+P 4300 5250
+F 0 "TL12" H 4300 5035 50  0000 C CNN
+F 1 "ic_taper" H 4300 5126 50  0000 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.25_0.35" H 4300 5250 50  0001 C CNN
+F 3 "" H 4300 5250 50  0001 C CNN
+	1    4300 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 5250 4500 5250
+Wire Wire Line
+	4100 5250 4200 5250
+Connection ~ 4100 5250
+$Comp
+L aps_radar_lib:ic_taper TL15
+U 1 1 5E9FB0E1
+P 9450 5450
+F 0 "TL15" H 9450 5675 50  0000 C CNN
+F 1 "ic_taper" H 9450 5584 50  0000 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.25_0.35" H 9450 5450 50  0001 C CNN
+F 3 "" H 9450 5450 50  0001 C CNN
+	1    9450 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5450 10050 5450
+$Comp
+L aps_radar_lib:ic_taper TL14
+U 1 1 5E9FBC8B
+P 7850 5450
+F 0 "TL14" H 7850 5675 50  0000 C CNN
+F 1 "ic_taper" H 7850 5584 50  0000 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.25_0.35" H 7850 5450 50  0001 C CNN
+F 3 "" H 7850 5450 50  0001 C CNN
+	1    7850 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5450 7200 5450
+$Comp
+L aps_radar_lib:ic_taper TL10
+U 1 1 5EA129B4
+P 1350 7350
+F 0 "TL10" H 1350 7250 50  0000 C CNN
+F 1 "ic_taper" H 1350 7450 50  0000 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 1350 7350 50  0001 C CNN
+F 3 "" H 1350 7350 50  0001 C CNN
+	1    1350 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 7350 1500 7350
+$Comp
+L aps_radar_lib:ic_taper TL11
+U 1 1 5EADC699
+P 2800 7350
+F 0 "TL11" H 2800 7250 50  0000 C CNN
+F 1 "ic_taper" H 2800 7450 50  0000 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 2800 7350 50  0001 C CNN
+F 3 "" H 2800 7350 50  0001 C CNN
+	1    2800 7350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 7350 2650 7350
+$Comp
+L aps_radar_lib:mitered_bend TL16
+U 1 1 5EBB54E5
+P 5700 5300
+F 0 "TL16" V 5450 5300 50  0000 C CNN
+F 1 "mitered_bend" H 5828 5227 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5650 5650 50  0001 C CNN
+F 3 "" H 5700 5300 50  0001 C CNN
+	1    5700 5300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5700 5350 5700 5450
+Wire Wire Line
+	5700 5450 5750 5450
+$Comp
+L aps_radar_lib:mitered_bend TL17
+U 1 1 5EC8892B
+P 6350 5300
+F 0 "TL17" V 6300 5450 50  0000 C CNN
+F 1 "mitered_bend" H 6478 5227 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 6300 5650 50  0001 C CNN
+F 3 "" H 6350 5300 50  0001 C CNN
+	1    6350 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL18
+U 1 1 5EC89194
+P 6300 4850
+F 0 "TL18" H 6550 4850 50  0000 C CNN
+F 1 "mitered_bend" H 6428 4777 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 6250 5200 50  0001 C CNN
+F 3 "" H 6300 4850 50  0001 C CNN
+	1    6300 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 4850 6350 5250
+$Comp
+L aps_radar_lib:mitered_bend TL19
+U 1 1 5ED01161
+P 6300 4600
+F 0 "TL19" H 6350 4750 50  0000 C CNN
+F 1 "mitered_bend" H 6428 4527 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 6250 4950 50  0001 C CNN
+F 3 "" H 6300 4600 50  0001 C CNN
+	1    6300 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4750 6250 4700
+Wire Wire Line
+	6350 4600 6800 4600
+$Comp
+L aps_radar_lib:mitered_bend TL20
+U 1 1 5ED50981
+P 6300 5550
+F 0 "TL20" H 6500 5500 50  0000 C CNN
+F 1 "mitered_bend" H 6428 5477 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 6250 5900 50  0001 C CNN
+F 3 "" H 6300 5550 50  0001 C CNN
+	1    6300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL21
+U 1 1 5ED52E4B
+P 6400 5950
+F 0 "TL21" H 6450 6100 50  0000 C CNN
+F 1 "mitered_bend" H 6528 5877 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 6350 6300 50  0001 C CNN
+F 3 "" H 6400 5950 50  0001 C CNN
+	1    6400 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 5850 6350 5650
+Wire Wire Line
+	9000 4600 9150 4600
+Wire Wire Line
+	9150 4600 9550 4600
+Connection ~ 9150 4600
+Wire Wire Line
+	9550 4600 9700 4600
+Wire Wire Line
+	9700 4600 10150 4600
+Connection ~ 9700 4600
+$Comp
+L Device:C_Small C96
+U 1 1 5EDD5A03
+P 9150 4700
+F 0 "C96" H 9242 4746 50  0000 L CNN
+F 1 "0.1uF" H 9242 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9150 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 9150 4700 50  0001 C CNN
+F 4 "GRM155R71H104KE14D" H 9150 4700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM155R71H104KE14D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYv1H4972kkgg%3D" H 9150 4700 50  0001 C CNN "URL"
+	1    9150 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C97
+U 1 1 5EDD5EC5
+P 9700 4700
+F 0 "C97" H 9792 4746 50  0000 L CNN
+F 1 "0.1uF" H 9792 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9700 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 9700 4700 50  0001 C CNN
+F 4 "GRM155R71H104KE14D" H 9700 4700 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM155R71H104KE14D?qs=sGAEpiMZZMs0AnBnWHyRQP81ohtk65EYv1H4972kkgg%3D" H 9700 4700 50  0001 C CNN "URL"
+	1    9700 4700
+	1    0    0    -1  
+$EndComp
+Text Notes 5250 750  2    50   ~ 0
+Near pin 19
+$Comp
+L aps_radar_lib:ic_taper TL22
+U 1 1 5EEC53EC
+P 9950 2050
+F 0 "TL22" H 9950 2183 50  0000 C CNN
+F 1 "ic_taper" H 9950 2184 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.25_0.35" H 9950 2050 50  0001 C CNN
+F 3 "" H 9950 2050 50  0001 C CNN
+	1    9950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3050 9850 3050
+Wire Wire Line
+	10050 2050 10500 2050
+$Comp
+L power:GND #PWR0284
+U 1 1 5F01A1FB
+P 2250 2050
+F 0 "#PWR0284" H 2250 1800 50  0001 C CNN
+F 1 "GND" H 2255 1877 50  0000 C CNN
+F 2 "" H 2250 2050 50  0001 C CNN
+F 3 "" H 2250 2050 50  0001 C CNN
+	1    2250 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0286
+U 1 1 5F01A5B9
+P 1450 2050
+F 0 "#PWR0286" H 1450 1800 50  0001 C CNN
+F 1 "GND" H 1455 1877 50  0000 C CNN
+F 2 "" H 1450 2050 50  0001 C CNN
+F 3 "" H 1450 2050 50  0001 C CNN
+	1    1450 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0287
+U 1 1 5F01AD41
+P 2100 1100
+F 0 "#PWR0287" H 2100 850 50  0001 C CNN
+F 1 "GND" H 2105 927 50  0000 C CNN
+F 2 "" H 2100 1100 50  0001 C CNN
+F 3 "" H 2100 1100 50  0001 C CNN
+	1    2100 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0288
+U 1 1 5F031D3A
+P 7700 3550
+F 0 "#PWR0288" H 7700 3300 50  0001 C CNN
+F 1 "GND" H 7705 3377 50  0000 C CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0289
+U 1 1 5F03200A
+P 7350 3550
+F 0 "#PWR0289" H 7350 3300 50  0001 C CNN
+F 1 "GND" H 7355 3377 50  0000 C CNN
+F 2 "" H 7350 3550 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+	1    7350 3550
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
