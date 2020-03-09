@@ -1,0 +1,9 @@
+Unit=MM
+XScale=1.0
+YScale=1.0
+
+$COORD
+0 0.11
+1 0.175
+
+$ENDCOORD
