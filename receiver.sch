@@ -125,8 +125,6 @@ F 3 "" H 6050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 4600 2350 4600
-Wire Wire Line
 	2350 4850 2100 4850
 Wire Wire Line
 	2100 4850 2100 5050
@@ -212,13 +210,11 @@ Text Notes 1000 1800 0    100  ~ 0
 Low-noise Amplifier
 Text Notes 950  5300 0    50   ~ 0
 Recommended Rbias \n825 for 4.5-5.5Vdd
-Wire Wire Line
-	3750 4600 4200 4600
-Text Label 4200 4600 2    50   ~ 0
+Text Label 4350 4600 2    50   ~ 0
 LNA_OUT
 Wire Wire Line
-	5100 4600 5650 4600
-Text Label 5100 4600 0    50   ~ 0
+	4800 4600 5250 4600
+Text Label 4800 4600 0    50   ~ 0
 LNA_OUT
 $Comp
 L Device:C_Small C58
@@ -777,4 +773,57 @@ F 5 "https://www.digikey.com/product-detail/en/analog-devices-inc/HMC717ALP3E/11
 	1    3050 4600
 	1    0    0    -1  
 $EndComp
+$Comp
+L aps_radar_lib:ic_taper TL28
+U 1 1 5F5E2A8D
+P 2100 4600
+AR Path="/5E3C637C/5F5E2A8D" Ref="TL28"  Part="1" 
+AR Path="/5F61773C/5F5E2A8D" Ref="TL25"  Part="1" 
+AR Path="/5F617CF8/5F5E2A8D" Ref="TL26"  Part="1" 
+AR Path="/5F617CFE/5F5E2A8D" Ref="TL27"  Part="1" 
+F 0 "TL28" H 2100 4477 50  0000 C CNN
+F 1 "ic_taper" H 2100 4475 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 2100 4600 50  0001 C CNN
+F 3 "" H 2100 4600 50  0001 C CNN
+	1    2100 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 4600 2000 4600
+Wire Wire Line
+	2200 4600 2350 4600
+$Comp
+L aps_radar_lib:ic_taper TL32
+U 1 1 5F5EF15C
+P 3850 4600
+AR Path="/5E3C637C/5F5EF15C" Ref="TL32"  Part="1" 
+AR Path="/5F61773C/5F5EF15C" Ref="TL29"  Part="1" 
+AR Path="/5F617CF8/5F5EF15C" Ref="TL30"  Part="1" 
+AR Path="/5F617CFE/5F5EF15C" Ref="TL31"  Part="1" 
+F 0 "TL32" H 3850 4733 50  0000 C CNN
+F 1 "ic_taper" H 3850 4475 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 3850 4600 50  0001 C CNN
+F 3 "" H 3850 4600 50  0001 C CNN
+	1    3850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4600 4350 4600
+$Comp
+L aps_radar_lib:ic_taper TL36
+U 1 1 5F5F86BA
+P 5350 4600
+AR Path="/5E3C637C/5F5F86BA" Ref="TL36"  Part="1" 
+AR Path="/5F61773C/5F5F86BA" Ref="TL33"  Part="1" 
+AR Path="/5F617CF8/5F5F86BA" Ref="TL34"  Part="1" 
+AR Path="/5F617CFE/5F5F86BA" Ref="TL35"  Part="1" 
+F 0 "TL36" H 5350 4477 50  0000 C CNN
+F 1 "ic_taper" H 5350 4475 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 5350 4600 50  0001 C CNN
+F 3 "" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 4600 5650 4600
 $EndSCHEMATC

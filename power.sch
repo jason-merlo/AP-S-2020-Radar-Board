@@ -14,8 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 950  1100 0    50   Input ~ 0
-+12V0_IN
+Text HLabel 1350 1100 0    50   Input ~ 0
++12V0_IN_CONN
 $Comp
 L aps_radar_lib:TPS82140 U24
 U 1 1 5EC65C44
@@ -106,22 +106,9 @@ Wire Wire Line
 $Comp
 L Device:CP1_Small C106
 U 1 1 5EC69DB6
-P 1900 1250
-F 0 "C106" H 1991 1296 50  0000 L CNN
-F 1 "68uF" H 1991 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x11.9" H 1900 1250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/445/875075555003-1726738.pdf" H 1900 1250 50  0001 C CNN
-F 4 "875075555003 " H 1900 1250 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Wurth-Elektronik/875075555003?qs=sGAEpiMZZMs9%2FSpGH%2Fyc7PVSKt3A63De8uYtGOYeT2qmySlLctS%2Fow%3D%3D" H 1900 1250 50  0001 C CNN "URL"
-	1    1900 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C107
-U 1 1 5EC6ABD4
 P 2300 1250
-F 0 "C107" H 2391 1296 50  0000 L CNN
-F 1 "DNP" H 2391 1205 50  0000 L CNN
+F 0 "C106" H 2391 1296 50  0000 L CNN
+F 1 "68uF" H 2391 1205 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_8x11.9" H 2300 1250 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/445/875075555003-1726738.pdf" H 2300 1250 50  0001 C CNN
 F 4 "875075555003 " H 2300 1250 50  0001 C CNN "Part Number"
@@ -129,35 +116,46 @@ F 5 "https://www.mouser.com/ProductDetail/Wurth-Elektronik/875075555003?qs=sGAEp
 	1    2300 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 1150 1900 1000
-Wire Wire Line
-	1900 1000 2300 1000
+$Comp
+L Device:CP1_Small C107
+U 1 1 5EC6ABD4
+P 2700 1250
+F 0 "C107" H 2791 1296 50  0000 L CNN
+F 1 "DNP" H 2791 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x11.9" H 2700 1250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/445/875075555003-1726738.pdf" H 2700 1250 50  0001 C CNN
+F 4 "875075555003 " H 2700 1250 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Wurth-Elektronik/875075555003?qs=sGAEpiMZZMs9%2FSpGH%2Fyc7PVSKt3A63De8uYtGOYeT2qmySlLctS%2Fow%3D%3D" H 2700 1250 50  0001 C CNN "URL"
+	1    2700 1250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2300 1150 2300 1000
-Connection ~ 2300 1000
 Wire Wire Line
 	2300 1000 2700 1000
+Wire Wire Line
+	2700 1150 2700 1000
+Connection ~ 2700 1000
 $Comp
 L power:GND #PWR0245
 U 1 1 5EC6C6F7
-P 1900 1450
-F 0 "#PWR0245" H 1900 1200 50  0001 C CNN
-F 1 "GND" H 1905 1277 50  0000 C CNN
-F 2 "" H 1900 1450 50  0001 C CNN
-F 3 "" H 1900 1450 50  0001 C CNN
-	1    1900 1450
+P 2300 1450
+F 0 "#PWR0245" H 2300 1200 50  0001 C CNN
+F 1 "GND" H 2305 1277 50  0000 C CNN
+F 2 "" H 2300 1450 50  0001 C CNN
+F 3 "" H 2300 1450 50  0001 C CNN
+	1    2300 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0246
 U 1 1 5EC6C6FE
-P 2300 1450
-F 0 "#PWR0246" H 2300 1200 50  0001 C CNN
-F 1 "GND" H 2305 1277 50  0000 C CNN
-F 2 "" H 2300 1450 50  0001 C CNN
-F 3 "" H 2300 1450 50  0001 C CNN
-	1    2300 1450
+P 2700 1450
+F 0 "#PWR0246" H 2700 1200 50  0001 C CNN
+F 1 "GND" H 2705 1277 50  0000 C CNN
+F 2 "" H 2700 1450 50  0001 C CNN
+F 3 "" H 2700 1450 50  0001 C CNN
+	1    2700 1450
 	1    0    0    -1  
 $EndComp
 Text Notes 1200 3550 0    50   ~ 0
@@ -993,12 +991,11 @@ Text Notes 8300 2350 0    50   ~ 0
 where V_REF=0.8v\n\nCalculated V_OUT = 5.249v
 Text Notes 8300 1900 0    50   ~ 0
 Feedback resistor eqn.
-Connection ~ 2700 1000
 Wire Wire Line
 	2700 1000 3550 1000
 Wire Wire Line
-	950  1100 1000 1100
-Connection ~ 1900 1000
+	1350 1100 1400 1100
+Connection ~ 2300 1000
 $Comp
 L Device:C_Small C119
 U 1 1 5ED3F0BA
@@ -1810,9 +1807,9 @@ $EndComp
 Text Label 6300 6400 2    50   ~ 0
 3V0_OUT
 Wire Wire Line
-	1900 1350 1900 1450
-Wire Wire Line
 	2300 1350 2300 1450
+Wire Wire Line
+	2700 1350 2700 1450
 $Comp
 L Device:LED_Small_ALT D1
 U 1 1 5EEBD760
@@ -1873,7 +1870,7 @@ F 5 "https://www.mouser.com/ProductDetail/Lite-On/LTST-C170KGKT?qs=%2Fha2pyFadug
 	1    4850 1400
 	-1   0    0    1   
 $EndComp
-Text Label 4000 1400 0    50   ~ 0
+Text Label -200 1300 0    50   ~ 0
 10V0_OUT
 $Comp
 L Device:R_Small R68
@@ -2258,45 +2255,45 @@ Wire Wire Line
 $Comp
 L Switch:SW_DPDT_x2 SW2
 U 1 1 5E76BB62
-P 1250 1100
-F 0 "SW2" H 1250 900 50  0000 C CNN
-F 1 "ON/OFF" H 1250 900 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 1250 1100 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/js-1382693.pdf" H 1250 1100 50  0001 C CNN
-F 4 "JS202011AQN " H 1250 1100 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 1250 1100 50  0001 C CNN "URL"
-	1    1250 1100
+P 1650 1100
+F 0 "SW2" H 1650 900 50  0000 C CNN
+F 1 "ON/OFF" H 1650 900 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 1650 1100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/60/js-1382693.pdf" H 1650 1100 50  0001 C CNN
+F 4 "JS202011AQN " H 1650 1100 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 1650 1100 50  0001 C CNN "URL"
+	1    1650 1100
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	1000 1100 1000 1500
+	1400 1100 1400 1500
 Wire Wire Line
-	1000 1500 1050 1500
-Connection ~ 1000 1100
+	1400 1500 1450 1500
+Connection ~ 1400 1100
 Wire Wire Line
-	1000 1100 1050 1100
+	1400 1100 1450 1100
 Wire Wire Line
-	1450 1400 1650 1400
+	1850 1400 2050 1400
 Wire Wire Line
-	1650 1400 1650 1000
+	2050 1400 2050 1000
 Wire Wire Line
-	1450 1000 1650 1000
-Connection ~ 1650 1000
+	1850 1000 2050 1000
+Connection ~ 2050 1000
 Wire Wire Line
-	1650 1000 1900 1000
-NoConn ~ 1450 1200
-NoConn ~ 1450 1600
+	2050 1000 2300 1000
+NoConn ~ 1850 1200
+NoConn ~ 1850 1600
 $Comp
 L Switch:SW_DPDT_x2 SW2
 U 2 1 5E784DA1
-P 1250 1500
-F 0 "SW2" H 1250 1350 50  0000 C CNN
-F 1 "ON/OFF" H 1250 1700 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 1250 1500 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/js-1382693.pdf" H 1250 1500 50  0001 C CNN
-F 4 "JS202011AQN " H 1250 1500 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 1250 1500 50  0001 C CNN "URL"
-	2    1250 1500
+P 1650 1500
+F 0 "SW2" H 1650 1350 50  0000 C CNN
+F 1 "ON/OFF" H 1650 1700 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 1650 1500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/60/js-1382693.pdf" H 1650 1500 50  0001 C CNN
+F 4 "JS202011AQN " H 1650 1500 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 1650 1500 50  0001 C CNN "URL"
+	2    1650 1500
 	1    0    0    1   
 $EndComp
 $EndSCHEMATC

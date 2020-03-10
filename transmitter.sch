@@ -554,7 +554,7 @@ Connection ~ 1150 5150
 Text Label 600  5150 0    50   ~ 0
 LMX_CPOUT
 Wire Wire Line
-	4500 6550 5950 6550
+	4450 6550 5950 6550
 Wire Notes Line
 	500  4050 10500 4050
 Text Notes 700  4350 0    100  ~ 0
@@ -574,7 +574,7 @@ Text Notes 2150 5100 0    50   ~ 0
 Text Notes 5300 5400 0    50   ~ 0
 +2dBm
 Wire Wire Line
-	3700 6550 4000 6550
+	3700 6550 3950 6550
 Wire Notes Line
 	6850 4050 6850 6750
 Wire Notes Line
@@ -2356,12 +2356,12 @@ $EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5E681884
-P 4350 7450
-F 0 "#PWR07" H 4350 7200 50  0001 C CNN
-F 1 "GND" H 4355 7277 50  0000 C CNN
-F 2 "" H 4350 7450 50  0001 C CNN
-F 3 "" H 4350 7450 50  0001 C CNN
-	1    4350 7450
+P 4300 7450
+F 0 "#PWR07" H 4300 7200 50  0001 C CNN
+F 1 "GND" H 4305 7277 50  0000 C CNN
+F 2 "" H 4300 7450 50  0001 C CNN
+F 3 "" H 4300 7450 50  0001 C CNN
+	1    4300 7450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2378,37 +2378,29 @@ $EndComp
 $Comp
 L aps_radar_lib:splitter_coupled_line TL1
 U 1 1 5E69AFC4
-P 4250 6600
-F 0 "TL1" H 4100 6800 50  0000 C CNN
-F 1 "coupled_line_14db" H 4600 6800 50  0000 C CNN
-F 2 "aps_radar_lib:coupled_line_14db" H 4250 6600 50  0001 C CNN
-F 3 "" H 4250 6600 50  0001 C CNN
-	1    4250 6600
+P 4200 6600
+F 0 "TL1" H 4050 6800 50  0000 C CNN
+F 1 "coupled_line_14db" H 4550 6800 50  0000 C CNN
+F 2 "aps_radar_lib:coupled_line_14db" H 4200 6600 50  0001 C CNN
+F 3 "" H 4200 6600 50  0001 C CNN
+	1    4200 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 6750 4150 6900
 $Comp
 L Device:R_Small R81
 U 1 1 5E6CA060
-P 4350 7200
-F 0 "R81" H 4409 7246 50  0000 L CNN
-F 1 "50" H 4409 7155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 7200 50  0001 C CNN
-F 3 "~" H 4350 7200 50  0001 C CNN
-F 4 "ERA-2AEB49R9X" H 4350 7200 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AEB49R9X?qs=sGAEpiMZZMu61qfTUdNhGyU6qtUrbEpefLWX5owIKB8%3D" H 4350 7200 50  0001 C CNN "URL"
-	1    4350 7200
+P 4300 7200
+F 0 "R81" H 4359 7246 50  0000 L CNN
+F 1 "50" H 4359 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4300 7200 50  0001 C CNN
+F 3 "~" H 4300 7200 50  0001 C CNN
+F 4 "ERA-2AEB49R9X" H 4300 7200 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AEB49R9X?qs=sGAEpiMZZMu61qfTUdNhGyU6qtUrbEpefLWX5owIKB8%3D" H 4300 7200 50  0001 C CNN "URL"
+	1    4300 7200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 7450 4350 7300
-Wire Wire Line
-	4350 7100 4350 6750
-Wire Wire Line
-	4150 6900 4500 6900
-Wire Wire Line
-	4500 6900 4500 7200
+	4300 7450 4300 7300
 $Comp
 L aps_radar_lib:mitered_bend TL6
 U 1 1 5E789F09
@@ -2453,8 +2445,6 @@ F 3 "" H 4850 7450 50  0001 C CNN
 	1    4850 7450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 7200 4600 7200
 $Comp
 L aps_radar_lib:splitter_fenced TL2
 U 1 1 5E5A0054
@@ -2780,4 +2770,34 @@ Wire Wire Line
 	3050 3100 3200 3100
 Wire Wire Line
 	3500 3300 5050 3300
+Wire Wire Line
+	4550 7200 4600 7200
+Wire Wire Line
+	4300 7100 4300 6750
+$Comp
+L aps_radar_lib:mitered_bend TL23
+U 1 1 5F55349D
+P 4400 7000
+F 0 "TL23" H 4400 7150 50  0000 L CNN
+F 1 "mitered_bend" H 4528 6927 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 4350 7350 50  0001 C CNN
+F 3 "" H 4400 7000 50  0001 C CNN
+	1    4400 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL24
+U 1 1 5F5534A3
+P 4500 7200
+F 0 "TL24" H 4500 7350 50  0000 L CNN
+F 1 "mitered_bend" H 4628 7217 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 4450 7550 50  0001 C CNN
+F 3 "" H 4500 7200 50  0001 C CNN
+	1    4500 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 7000 4350 7000
+Wire Wire Line
+	4100 6750 4100 7000
 $EndSCHEMATC

@@ -404,14 +404,12 @@ Wire Wire Line
 Wire Wire Line
 	1850 6950 1700 6950
 $Sheet
-S 2300 6800 650  650 
+S 2300 6800 900  650 
 U 5E5EE446
 F0 "power" 50
 F1 "power.sch" 50
-F2 "+12V0_IN" I L 2300 7050 50 
+F2 "+12V0_IN_CONN" I L 2300 7050 50 
 $EndSheet
-Text Label 1900 7050 0    50   ~ 0
-+12V_IN
 Wire Wire Line
 	1700 7050 2300 7050
 Text Notes 1250 850  0    100  ~ 0
