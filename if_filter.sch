@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 15
+Sheet 13 15
 Title ""
 Date ""
 Rev ""
@@ -402,7 +402,7 @@ $EndComp
 Wire Wire Line
 	5850 3100 5850 3000
 Text Notes 1650 2000 0    79   ~ 0
-Fc = 31,207 Hz
+Fc = 31,207 kHz
 Text Notes 1650 2200 0    79   ~ 0
 G = 1–101
 Text Notes 1650 2350 0    59   ~ 0

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 15
+Sheet 11 15
 Title ""
 Date ""
 Rev ""
@@ -771,7 +771,7 @@ AR Path="/5E3C637C/5E86A118" Ref="U13"  Part="1"
 F 0 "U13" H 2650 5000 60  0000 L CNN
 F 1 "HMC717A" H 3200 4150 60  0000 L CNN
 F 2 "aps_radar_lib:HMC-LP3" H 3050 5040 60  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc717a.pdf" H 2350 4700 60  0000 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc717a.pdf" H 2350 4700 60  0001 C CNN
 F 4 "HMC717ALP3E" H 3050 4600 50  0001 C CNN "Part Number"
 F 5 "https://www.digikey.com/product-detail/en/analog-devices-inc/HMC717ALP3E/1127-3400-ND/6569571" H 3050 4600 50  0001 C CNN "URL"
 	1    3050 4600

@@ -23,7 +23,7 @@ P 2150 2750
 F 0 "U24" H 1900 3250 60  0000 C CNN
 F 1 "TPS82140" H 2450 2200 60  0000 C CNN
 F 2 "aps_radar_lib:TPS82140SILR" H 1200 2600 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps82140.pdf" H 1950 2550 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps82140.pdf" H 1950 2550 60  0001 C CNN
 F 4 "TPS82140SILR " H 2150 2750 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/TPS82140SILR?qs=sGAEpiMZZMve4%2FbfQkoj%252BAPKSi1ytnKBw6P4VZUTx40%3D" H 2150 2750 50  0001 C CNN "URL"
 	1    2150 2750
@@ -311,7 +311,7 @@ P 2150 4850
 F 0 "U25" H 1850 5400 60  0000 C CNN
 F 1 "TPS7A49" H 2400 4400 60  0000 C CNN
 F 2 "aps_radar_lib:TPS7A4901_DGN_8" H 1400 4300 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 2150 4850 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps7a49.pdf" H 2150 4850 60  0001 C CNN
 F 4 "TPS7A4901DGNR " H 2150 4850 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/TPS7A4901DGNR?qs=sGAEpiMZZMsrdGQtIVc3ghRa08PxubvD" H 2150 4850 50  0001 C CNN "URL"
 	1    2150 4850
@@ -993,32 +993,6 @@ Text Notes 8300 2350 0    50   ~ 0
 where V_REF=0.8v\n\nCalculated V_OUT = 5.249v
 Text Notes 8300 1900 0    50   ~ 0
 Feedback resistor eqn.
-$Comp
-L Device:CP1_Small C109
-U 1 1 5ED2C3CD
-P 2700 1250
-F 0 "C109" H 2791 1296 50  0000 L CNN
-F 1 "DNP" H 2791 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x11.9" H 2700 1250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/445/875075555003-1726738.pdf" H 2700 1250 50  0001 C CNN
-F 4 "875075555003 " H 2700 1250 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Wurth-Elektronik/875075555003?qs=sGAEpiMZZMs9%2FSpGH%2Fyc7PVSKt3A63De8uYtGOYeT2qmySlLctS%2Fow%3D%3D" H 2700 1250 50  0001 C CNN "URL"
-	1    2700 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 1150 2700 1000
-$Comp
-L power:GND #PWR0260
-U 1 1 5ED2C3D4
-P 2700 1450
-F 0 "#PWR0260" H 2700 1200 50  0001 C CNN
-F 1 "GND" H 2705 1277 50  0000 C CNN
-F 2 "" H 2700 1450 50  0001 C CNN
-F 3 "" H 2700 1450 50  0001 C CNN
-	1    2700 1450
-	1    0    0    -1  
-$EndComp
 Connection ~ 2700 1000
 Wire Wire Line
 	2700 1000 3550 1000
@@ -1591,7 +1565,7 @@ P 1700 6550
 F 0 "U23" H 1450 6900 60  0000 C CNN
 F 1 "LP5900-TL3.3" H 2100 6350 60  0000 C CNN
 F 2 "aps_radar_lib:LP5900_NGF_6" H 2500 6790 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp5900.pdf" H 1200 6700 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp5900.pdf" H 1200 6700 60  0001 C CNN
 F 4 "LP5900SD-3.3/NOPB" H 1700 6550 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/LP5900SD-33-NOPB?qs=sGAEpiMZZMsGz1a6aV8DcBojudwDyMGaczfhz%252BXJZBk%3D" H 1700 6550 50  0001 C CNN "URL"
 	1    1700 6550
@@ -1724,7 +1698,7 @@ P 4750 6550
 F 0 "U26" H 4500 6900 60  0000 C CNN
 F 1 "LP5900-TL3.0" H 5150 6350 60  0000 C CNN
 F 2 "aps_radar_lib:LP5900_NGF_6" H 5550 6790 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp5900.pdf" H 4250 6700 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp5900.pdf" H 4250 6700 60  0001 C CNN
 F 4 "LP5900SD-3.0/NOPB" H 4750 6550 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Texas-Instruments/LP5900SD-30-NOPB?qs=sGAEpiMZZMsGz1a6aV8DcBojudwDyMGaENRdkiDjGYU%3D" H 4750 6550 50  0001 C CNN "URL"
 	1    4750 6550
@@ -1839,8 +1813,6 @@ Wire Wire Line
 	1900 1350 1900 1450
 Wire Wire Line
 	2300 1350 2300 1450
-Wire Wire Line
-	2700 1350 2700 1450
 $Comp
 L Device:LED_Small_ALT D1
 U 1 1 5EEBD760
