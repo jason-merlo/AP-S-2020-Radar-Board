@@ -29,3 +29,5 @@ fp-info-cache
 
 *-cache.lib
 *-rescue.dcm
+
+*.log
