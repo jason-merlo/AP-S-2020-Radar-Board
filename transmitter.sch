@@ -196,19 +196,15 @@ LMX_CPOUT
 $Comp
 L aps_radar_lib:splitter_fenced TL3
 U 1 1 5E5A04FA
-P 5550 6900
-F 0 "TL3" H 5400 7150 50  0000 C CNN
-F 1 "wilkinson_3dB" H 5800 7150 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 5550 6900 50  0001 C CNN
-F 3 "~" H 5550 6900 50  0001 C CNN
-F 4 "wilkinson_3db" H 5550 6900 50  0001 C CNN "Part Number"
-	1    5550 6900
+P 5350 6900
+F 0 "TL3" H 5200 7150 50  0000 C CNN
+F 1 "wilkinson_3dB" H 5600 7150 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 5350 6900 50  0001 C CNN
+F 3 "~" H 5350 6900 50  0001 C CNN
+F 4 "wilkinson_3db" H 5350 6900 50  0001 C CNN "Part Number"
+	1    5350 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 6800 5950 6800
-Wire Wire Line
-	5800 7000 5950 7000
 $Comp
 L RF:HMC431 U20
 U 1 1 5E5A887F
@@ -559,9 +555,9 @@ Wire Notes Line
 	500  4050 10500 4050
 Text Notes 700  4350 0    100  ~ 0
 Loop Filter
-Text Notes 3700 7800 0    100  ~ 0
+Text Notes 3500 7800 0    100  ~ 0
 Power Fan-out
-Text Notes 3700 7950 0    50   ~ 0
+Text Notes 3500 7950 0    50   ~ 0
 To Transmitters and Mixers
 Text Notes 4450 800  2    100  ~ 0
 PLL Synthesizer
@@ -584,8 +580,6 @@ Power Amplifier
 Wire Wire Line
 	7800 6200 8000 6200
 Wire Wire Line
-	8000 6200 8000 5800
-Wire Wire Line
 	8000 5650 8100 5650
 $Comp
 L power:+3.3V #PWR0206
@@ -600,8 +594,6 @@ F 3 "" H 7050 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 5850 7050 6100
-Wire Wire Line
-	7050 6100 7250 6100
 $Comp
 L power:GND #PWR0207
 U 1 1 5E73D9E7
@@ -1634,9 +1626,9 @@ LMX2491 Programming Header
 Connection ~ 3950 1500
 Text HLabel 5950 6550 2    50   Output ~ 0
 TX_OUT
-Text HLabel 5950 6800 2    50   Output ~ 0
+Text HLabel 6000 6750 2    50   Output ~ 0
 LO_1
-Text HLabel 5950 7000 2    50   Output ~ 0
+Text HLabel 6000 7050 2    50   Output ~ 0
 LO_2
 Wire Wire Line
 	2400 3250 2400 3100
@@ -1810,7 +1802,7 @@ Wire Wire Line
 Text Notes 6500 5850 0    50   ~ 0
 -1dBm
 $Comp
-L aps_radar_lib:splitter TL5
+L aps_radar_lib:splitter_fenced TL5
 U 1 1 5E6D3290
 P 6000 5450
 F 0 "TL5" H 6000 5775 50  0000 C CNN
@@ -2187,24 +2179,6 @@ F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYC
 	1    7600 6200
 	-1   0    0    1   
 $EndComp
-$Comp
-L Switch:SW_DPDT_x2 SW1
-U 2 1 5E6E07F1
-P 7600 5800
-F 0 "SW1" H 7600 5567 50  0000 C CNN
-F 1 "PA_EN" H 7600 5566 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 7600 5800 50  0001 C CNN
-F 3 "~" H 7600 5800 50  0001 C CNN
-F 4 "JS202011AQN " H 7600 5800 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 7600 5800 50  0001 C CNN "URL"
-	2    7600 5800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7800 5800 8000 5800
-Connection ~ 8000 5800
-Wire Wire Line
-	8000 5800 8000 5650
 Wire Wire Line
 	7400 5900 7350 5900
 Wire Wire Line
@@ -2212,13 +2186,6 @@ Wire Wire Line
 Connection ~ 7350 6300
 Wire Wire Line
 	7350 6300 7400 6300
-Wire Wire Line
-	7250 6100 7250 5700
-Wire Wire Line
-	7250 5700 7400 5700
-Connection ~ 7250 6100
-Wire Wire Line
-	7250 6100 7400 6100
 $Comp
 L Device:Ferrite_Bead_Small FB21
 U 1 1 5E81379F
@@ -2356,23 +2323,23 @@ $EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5E681884
-P 4300 7450
-F 0 "#PWR07" H 4300 7200 50  0001 C CNN
-F 1 "GND" H 4305 7277 50  0000 C CNN
-F 2 "" H 4300 7450 50  0001 C CNN
-F 3 "" H 4300 7450 50  0001 C CNN
-	1    4300 7450
+P 4150 7450
+F 0 "#PWR07" H 4150 7200 50  0001 C CNN
+F 1 "GND" H 4155 7277 50  0000 C CNN
+F 2 "" H 4150 7450 50  0001 C CNN
+F 3 "" H 4150 7450 50  0001 C CNN
+	1    4150 7450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5E681F70
-P 5550 7150
-F 0 "#PWR09" H 5550 6900 50  0001 C CNN
-F 1 "GND" H 5650 7150 50  0000 C CNN
-F 2 "" H 5550 7150 50  0001 C CNN
-F 3 "" H 5550 7150 50  0001 C CNN
-	1    5550 7150
+P 5350 7150
+F 0 "#PWR09" H 5350 6900 50  0001 C CNN
+F 1 "GND" H 5450 7150 50  0000 C CNN
+F 2 "" H 5350 7150 50  0001 C CNN
+F 3 "" H 5350 7150 50  0001 C CNN
+	1    5350 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2389,116 +2356,112 @@ $EndComp
 $Comp
 L Device:R_Small R81
 U 1 1 5E6CA060
-P 4300 7200
-F 0 "R81" H 4359 7246 50  0000 L CNN
-F 1 "50" H 4359 7155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4300 7200 50  0001 C CNN
-F 3 "~" H 4300 7200 50  0001 C CNN
-F 4 "ERA-2AEB49R9X" H 4300 7200 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AEB49R9X?qs=sGAEpiMZZMu61qfTUdNhGyU6qtUrbEpefLWX5owIKB8%3D" H 4300 7200 50  0001 C CNN "URL"
-	1    4300 7200
+P 4150 7200
+F 0 "R81" H 4209 7246 50  0000 L CNN
+F 1 "50" H 4209 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4150 7200 50  0001 C CNN
+F 3 "~" H 4150 7200 50  0001 C CNN
+F 4 "ERA-2AEB49R9X" H 4150 7200 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/Panasonic/ERA-2AEB49R9X?qs=sGAEpiMZZMu61qfTUdNhGyU6qtUrbEpefLWX5owIKB8%3D" H 4150 7200 50  0001 C CNN "URL"
+	1    4150 7200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 7450 4300 7300
+	4150 7450 4150 7300
 $Comp
 L aps_radar_lib:mitered_bend TL6
 U 1 1 5E789F09
-P 5150 7300
-F 0 "TL6" H 5200 7350 50  0000 L CNN
-F 1 "mitered_bend" H 5278 7227 50  0001 L CNN
-F 2 "aps_radar_lib:mitered_bend_50" H 5100 7650 50  0001 C CNN
-F 3 "" H 5150 7300 50  0001 C CNN
-	1    5150 7300
+P 4950 7300
+F 0 "TL6" H 5000 7350 50  0000 L CNN
+F 1 "mitered_bend" H 5078 7227 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 4900 7650 50  0001 C CNN
+F 3 "" H 4950 7300 50  0001 C CNN
+	1    4950 7300
 	1    0    0    -1  
 $EndComp
 $Comp
 L aps_radar_lib:mitered_bend TL8
 U 1 1 5E7E4953
-P 5200 7050
-F 0 "TL8" V 5300 7050 50  0000 L CNN
-F 1 "mitered_bend" H 5328 6977 50  0001 L CNN
-F 2 "aps_radar_lib:mitered_bend_50" H 5150 7400 50  0001 C CNN
-F 3 "" H 5200 7050 50  0001 C CNN
-	1    5200 7050
+P 5000 7050
+F 0 "TL8" V 5100 7050 50  0000 L CNN
+F 1 "mitered_bend" H 5128 6977 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 4950 7400 50  0001 C CNN
+F 3 "" H 5000 7050 50  0001 C CNN
+	1    5000 7050
 	0    1    1    0   
 $EndComp
 $Comp
 L aps_radar_lib:mitered_bend TL7
 U 1 1 5E7E5577
-P 5200 6950
-F 0 "TL7" V 5300 7050 50  0000 C CNN
-F 1 "mitered_bend" H 5328 6877 50  0001 L CNN
-F 2 "aps_radar_lib:mitered_bend_50" H 5150 7300 50  0001 C CNN
-F 3 "" H 5200 6950 50  0001 C CNN
-	1    5200 6950
+P 5000 6950
+F 0 "TL7" V 5100 7050 50  0000 C CNN
+F 1 "mitered_bend" H 5128 6877 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 4950 7300 50  0001 C CNN
+F 3 "" H 5000 6950 50  0001 C CNN
+	1    5000 6950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5E681B29
-P 4850 7450
-F 0 "#PWR08" H 4850 7200 50  0001 C CNN
-F 1 "GND" H 4855 7277 50  0000 C CNN
-F 2 "" H 4850 7450 50  0001 C CNN
-F 3 "" H 4850 7450 50  0001 C CNN
-	1    4850 7450
+P 4650 7450
+F 0 "#PWR08" H 4650 7200 50  0001 C CNN
+F 1 "GND" H 4655 7277 50  0000 C CNN
+F 2 "" H 4650 7450 50  0001 C CNN
+F 3 "" H 4650 7450 50  0001 C CNN
+	1    4650 7450
 	1    0    0    -1  
 $EndComp
 $Comp
 L aps_radar_lib:splitter_fenced TL2
 U 1 1 5E5A0054
-P 4850 7200
-F 0 "TL2" H 4850 7525 50  0000 C CNN
-F 1 "wilkinson_3dB" H 4850 7434 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 4850 7200 50  0001 C CNN
-F 3 "~" H 4850 7200 50  0001 C CNN
-F 4 "wilkinson_3db" H 4850 7200 50  0001 C CNN "Part Number"
-	1    4850 7200
+P 4650 7200
+F 0 "TL2" H 4650 7525 50  0000 C CNN
+F 1 "wilkinson_3dB" H 4650 7434 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 4650 7200 50  0001 C CNN
+F 3 "~" H 4650 7200 50  0001 C CNN
+F 4 "wilkinson_3db" H 4650 7200 50  0001 C CNN "Part Number"
+	1    4650 7200
 	1    0    0    -1  
 $EndComp
-Text HLabel 5950 7400 2    50   Output ~ 0
+Text HLabel 6000 7350 2    50   Output ~ 0
 LO_3
 $Comp
 L aps_radar_lib:mitered_bend TL9
 U 1 1 5E7CCD0E
-P 5250 7500
-F 0 "TL9" H 5350 7550 50  0000 L CNN
-F 1 "mitered_bend" H 5378 7517 50  0001 L CNN
-F 2 "aps_radar_lib:mitered_bend_50" H 5200 7850 50  0001 C CNN
-F 3 "" H 5250 7500 50  0001 C CNN
-	1    5250 7500
+P 5050 7500
+F 0 "TL9" H 5150 7550 50  0000 L CNN
+F 1 "mitered_bend" H 5178 7517 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5000 7850 50  0001 C CNN
+F 3 "" H 5050 7500 50  0001 C CNN
+	1    5050 7500
 	-1   0    0    1   
 $EndComp
-Text HLabel 5950 7600 2    50   Output ~ 0
+Text HLabel 6000 7650 2    50   Output ~ 0
 LO_4
 $Comp
 L power:GND #PWR010
 U 1 1 5E682668
-P 5550 7750
-F 0 "#PWR010" H 5550 7500 50  0001 C CNN
-F 1 "GND" H 5555 7577 50  0000 C CNN
-F 2 "" H 5550 7750 50  0001 C CNN
-F 3 "" H 5550 7750 50  0001 C CNN
-	1    5550 7750
+P 5350 7750
+F 0 "#PWR010" H 5350 7500 50  0001 C CNN
+F 1 "GND" H 5355 7577 50  0000 C CNN
+F 2 "" H 5350 7750 50  0001 C CNN
+F 3 "" H 5350 7750 50  0001 C CNN
+	1    5350 7750
 	1    0    0    -1  
 $EndComp
 $Comp
 L aps_radar_lib:splitter_fenced TL4
 U 1 1 5E5A0EC4
-P 5550 7500
-F 0 "TL4" H 5400 7750 50  0000 C CNN
-F 1 "wilkinson_3dB" H 5800 7700 50  0000 C CNN
-F 2 "aps_radar_lib:wilkinson_3db" H 5550 7500 50  0001 C CNN
-F 3 "~" H 5550 7500 50  0001 C CNN
-F 4 "wilkinson_3db" H 5550 7500 50  0001 C CNN "Part Number"
-	1    5550 7500
+P 5350 7500
+F 0 "TL4" H 5200 7750 50  0000 C CNN
+F 1 "wilkinson_3dB" H 5350 7700 50  0000 C CNN
+F 2 "aps_radar_lib:wilkinson_3db" H 5350 7500 50  0001 C CNN
+F 3 "~" H 5350 7500 50  0001 C CNN
+F 4 "wilkinson_3db" H 5350 7500 50  0001 C CNN "Part Number"
+	1    5350 7500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 7400 5950 7400
-Wire Wire Line
-	5800 7600 5950 7600
 $Comp
 L aps_radar_lib:ic_taper TL13
 U 1 1 5E976AF9
@@ -2771,33 +2734,169 @@ Wire Wire Line
 Wire Wire Line
 	3500 3300 5050 3300
 Wire Wire Line
-	4550 7200 4600 7200
+	4100 6750 4100 7000
 Wire Wire Line
-	4300 7100 4300 6750
+	7050 6100 7400 6100
 $Comp
-L aps_radar_lib:mitered_bend TL23
-U 1 1 5F55349D
-P 4400 7000
-F 0 "TL23" H 4400 7150 50  0000 L CNN
-F 1 "mitered_bend" H 4528 6927 50  0001 L CNN
-F 2 "aps_radar_lib:mitered_bend_50" H 4350 7350 50  0001 C CNN
-F 3 "" H 4400 7000 50  0001 C CNN
-	1    4400 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L aps_radar_lib:mitered_bend TL24
-U 1 1 5F5534A3
-P 4500 7200
-F 0 "TL24" H 4500 7350 50  0000 L CNN
-F 1 "mitered_bend" H 4628 7217 50  0001 L CNN
-F 2 "aps_radar_lib:mitered_bend_50" H 4450 7550 50  0001 C CNN
-F 3 "" H 4500 7200 50  0001 C CNN
-	1    4500 7200
+L Switch:SW_DPDT_x2 SW1
+U 2 1 5E6E07F1
+P 7600 5800
+F 0 "SW1" H 7600 5567 50  0000 C CNN
+F 1 "PA_EN" H 7600 5566 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 7600 5800 50  0001 C CNN
+F 3 "~" H 7600 5800 50  0001 C CNN
+F 4 "JS202011AQN " H 7600 5800 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/CK/JS202011AQN?qs=%2Fha2pyFadujEk0HYYCwwdJkSxyCAIOu0euEjgF8rpzTvMYr2j%252BbGXw%3D%3D" H 7600 5800 50  0001 C CNN "URL"
+	2    7600 5800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4100 7000 4350 7000
+	7400 5700 7350 5700
 Wire Wire Line
-	4100 6750 4100 7000
+	7350 5700 7350 5900
+Connection ~ 7350 5900
+Wire Wire Line
+	8000 5650 8000 6200
+Wire Wire Line
+	7800 5800 7800 5650
+Wire Wire Line
+	7800 5650 7350 5650
+Wire Wire Line
+	7350 5650 7350 5700
+Connection ~ 7350 5700
+$Comp
+L aps_radar_lib:mitered_bend TL52
+U 1 1 5FA0C622
+P 5650 7600
+F 0 "TL52" H 5650 7450 50  0000 L CNN
+F 1 "mitered_bend" H 5778 7527 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5600 7950 50  0001 C CNN
+F 3 "" H 5650 7600 50  0001 C CNN
+	1    5650 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL58
+U 1 1 5FA0C628
+P 5950 7650
+F 0 "TL58" H 5950 7750 50  0000 L CNN
+F 1 "mitered_bend" H 6078 7667 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5900 8000 50  0001 C CNN
+F 3 "" H 5950 7650 50  0001 C CNN
+	1    5950 7650
+	-1   0    0    1   
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL54
+U 1 1 5FA4FD76
+P 5700 7350
+F 0 "TL54" V 5600 7300 50  0000 L CNN
+F 1 "mitered_bend" H 5828 7277 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5650 7700 50  0001 C CNN
+F 3 "" H 5700 7350 50  0001 C CNN
+	1    5700 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL56
+U 1 1 5FA4FD7C
+P 5900 7400
+F 0 "TL56" V 6050 7400 50  0000 C CNN
+F 1 "mitered_bend" H 6028 7327 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5850 7750 50  0001 C CNN
+F 3 "" H 5900 7400 50  0001 C CNN
+	1    5900 7400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 7300 5800 7300
+Wire Wire Line
+	5800 7300 5800 7450
+Wire Wire Line
+	5800 7450 5900 7450
+Wire Wire Line
+	5700 7700 5800 7700
+Wire Wire Line
+	5800 7700 5800 7550
+Wire Wire Line
+	5800 7550 5900 7550
+$Comp
+L aps_radar_lib:mitered_bend TL51
+U 1 1 5FB8DF10
+P 5650 7000
+F 0 "TL51" H 5650 6850 50  0000 L CNN
+F 1 "mitered_bend" H 5778 6927 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5600 7350 50  0001 C CNN
+F 3 "" H 5650 7000 50  0001 C CNN
+	1    5650 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL57
+U 1 1 5FB8DF16
+P 5950 7050
+F 0 "TL57" H 5950 7150 50  0000 L CNN
+F 1 "mitered_bend" H 6078 7067 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5900 7400 50  0001 C CNN
+F 3 "" H 5950 7050 50  0001 C CNN
+	1    5950 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL53
+U 1 1 5FB8DF1C
+P 5700 6750
+F 0 "TL53" V 5600 6700 50  0000 L CNN
+F 1 "mitered_bend" H 5828 6677 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5650 7100 50  0001 C CNN
+F 3 "" H 5700 6750 50  0001 C CNN
+	1    5700 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L aps_radar_lib:mitered_bend TL55
+U 1 1 5FB8DF22
+P 5900 6800
+F 0 "TL55" V 6050 6800 50  0000 C CNN
+F 1 "mitered_bend" H 6028 6727 50  0001 L CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 5850 7150 50  0001 C CNN
+F 3 "" H 5900 6800 50  0001 C CNN
+	1    5900 6800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 6700 5800 6700
+Wire Wire Line
+	5800 6700 5800 6850
+Wire Wire Line
+	5800 6850 5900 6850
+Wire Wire Line
+	5700 7100 5800 7100
+Wire Wire Line
+	5800 7100 5800 6950
+Wire Wire Line
+	5800 6950 5900 6950
+Wire Wire Line
+	4150 7100 4150 6800
+Wire Wire Line
+	4150 6800 4300 6800
+Wire Wire Line
+	4300 6800 4300 6750
+Wire Wire Line
+	4350 7000 4350 7200
+Wire Wire Line
+	4350 7200 4400 7200
+Wire Wire Line
+	4100 7000 4350 7000
+$Comp
+L power:GND #PWR?
+U 1 1 5FE2D84C
+P 6000 5700
+F 0 "#PWR?" H 6000 5450 50  0001 C CNN
+F 1 "GND" H 6005 5527 50  0000 C CNN
+F 2 "" H 6000 5700 50  0001 C CNN
+F 3 "" H 6000 5700 50  0001 C CNN
+	1    6000 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

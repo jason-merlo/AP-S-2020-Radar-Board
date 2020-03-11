@@ -1,4 +1,4 @@
-update=Tuesday, March 10, 2020 at 12:33:29 AM
+update=Wednesday, March 11, 2020 at 12:59:46 AM
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -238,7 +248,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=50-ohm
-Clearance=0.32
+Clearance=0.325
 TrackWidth=0.35
 ViaDiameter=0.508
 ViaDrill=0.254

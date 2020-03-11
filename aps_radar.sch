@@ -177,23 +177,23 @@ F4 "IF_OUT_1" O L 7800 3250 50
 F5 "IF_OUT_2" O L 7800 3450 50 
 $EndSheet
 Wire Wire Line
-	1700 4050 5950 4050
+	4050 4050 5950 4050
 Wire Wire Line
 	5950 3250 7800 3250
 Wire Wire Line
-	1700 4450 6250 4450
+	4050 4450 6250 4450
 Wire Wire Line
 	6250 4450 6250 4200
 Wire Wire Line
 	6250 4200 7800 4200
 Wire Wire Line
-	1700 4650 6400 4650
+	4050 4650 6400 4650
 Wire Wire Line
 	6400 4650 6400 4400
 Wire Wire Line
 	6400 4400 7800 4400
 Wire Wire Line
-	1700 4950 6400 4950
+	4050 4950 6400 4950
 Wire Wire Line
 	6400 5150 7800 5150
 Wire Wire Line
@@ -201,9 +201,9 @@ Wire Wire Line
 Wire Wire Line
 	6250 5350 6250 5150
 Wire Wire Line
-	6250 5150 1700 5150
+	6250 5150 4050 5150
 Wire Wire Line
-	1700 5350 6100 5350
+	4050 5350 6100 5350
 Wire Wire Line
 	6100 6100 7800 6100
 Wire Wire Line
@@ -211,72 +211,22 @@ Wire Wire Line
 Wire Wire Line
 	5950 6300 5950 5550
 Wire Wire Line
-	5950 5550 1700 5550
-$Comp
-L power:GND #PWR0105
-U 1 1 5F6369D4
-P 1850 5900
-F 0 "#PWR0105" H 1850 5650 50  0001 C CNN
-F 1 "GND" H 1855 5727 50  0000 C CNN
-F 2 "" H 1850 5900 50  0001 C CNN
-F 3 "" H 1850 5900 50  0001 C CNN
-	1    1850 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 5900 1850 5650
-Wire Wire Line
-	1850 4150 1700 4150
-Wire Wire Line
-	1700 4350 1850 4350
-Connection ~ 1850 4350
-Wire Wire Line
-	1850 4350 1850 4150
-Wire Wire Line
-	1700 4550 1850 4550
-Connection ~ 1850 4550
-Wire Wire Line
-	1850 4550 1850 4350
-Wire Wire Line
-	1700 4750 1850 4750
-Connection ~ 1850 4750
-Wire Wire Line
-	1850 4750 1850 4550
-Wire Wire Line
-	1700 5050 1850 5050
-Connection ~ 1850 5050
-Wire Wire Line
-	1850 5050 1850 4750
-Wire Wire Line
-	1700 5250 1850 5250
-Connection ~ 1850 5250
-Wire Wire Line
-	1850 5250 1850 5050
-Wire Wire Line
-	1700 5450 1850 5450
-Connection ~ 1850 5450
-Wire Wire Line
-	1850 5450 1850 5250
-Wire Wire Line
-	1700 5650 1850 5650
-Connection ~ 1850 5650
-Wire Wire Line
-	1850 5650 1850 5450
-Text Label 2000 4050 0    50   ~ 0
+	5950 5550 4050 5550
+Text Label 4050 4050 0    50   ~ 0
 RX1_I
-Text Label 2000 4250 0    50   ~ 0
+Text Label 4050 4250 0    50   ~ 0
 RX1_Q
-Text Label 2000 4450 0    50   ~ 0
+Text Label 4050 4450 0    50   ~ 0
 RX2_I
-Text Label 2000 4650 0    50   ~ 0
+Text Label 4050 4650 0    50   ~ 0
 RX2_Q
-Text Label 2000 5150 0    50   ~ 0
+Text Label 4050 5150 0    50   ~ 0
 RX3_Q
-Text Label 2000 5550 0    50   ~ 0
+Text Label 4050 5550 0    50   ~ 0
 RX4_Q
-Text Label 2000 4950 0    50   ~ 0
+Text Label 4050 4950 0    50   ~ 0
 RX3_I
-Text Label 2000 5350 0    50   ~ 0
+Text Label 4050 5350 0    50   ~ 0
 RX4_I
 Text Label 2400 3550 2    50   ~ 0
 LMX_MOD
@@ -695,36 +645,10 @@ F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-2?qs=A%252Bip%2
 	1    1500 6950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J2
-U 1 1 5E65EDD0
-P 1500 4350
-F 0 "J2" H 1418 4867 50  0000 C CNN
-F 1 "RX1_RX2" H 1418 4776 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-8_1x08_P2.54mm_Horizontal" H 1500 4350 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 4350 50  0001 C CNN
-F 4 "282834-8" H 1500 4350 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-8?qs=%2Fha2pyFaduinz6L7fnht%2FSJgdmOWUxTbf3Cx7xwF684%3D" H 1500 4350 50  0001 C CNN "URL"
-	1    1500 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J10
-U 1 1 5E65FF9C
-P 1500 5250
-F 0 "J10" H 1500 4700 50  0000 C CNN
-F 1 "RX3_RX4" H 1500 4600 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-8_1x08_P2.54mm_Horizontal" H 1500 5250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 5250 50  0001 C CNN
-F 4 "282834-8" H 1500 5250 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-8?qs=%2Fha2pyFaduinz6L7fnht%2FSJgdmOWUxTbf3Cx7xwF684%3D" H 1500 5250 50  0001 C CNN "URL"
-	1    1500 5250
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 3450 7800 3450
 Wire Wire Line
-	1700 4250 6100 4250
+	4050 4250 6100 4250
 Wire Wire Line
 	6100 4250 6100 3450
 Wire Wire Line
@@ -741,7 +665,7 @@ U 1 1 5E6E847B
 P 4100 2500
 F 0 "H1" H 4200 2546 50  0000 L CNN
 F 1 "MountingHole" H 4200 2455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 2500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 2500 50  0001 C CNN
 F 3 "~" H 4100 2500 50  0001 C CNN
 	1    4100 2500
 	1    0    0    -1  
@@ -752,7 +676,7 @@ U 1 1 5E6E8DEA
 P 4100 2750
 F 0 "H2" H 4200 2796 50  0000 L CNN
 F 1 "MountingHole" H 4200 2705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 2750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 2750 50  0001 C CNN
 F 3 "~" H 4100 2750 50  0001 C CNN
 	1    4100 2750
 	1    0    0    -1  
@@ -763,7 +687,7 @@ U 1 1 5E6E9032
 P 4100 3000
 F 0 "H3" H 4200 3046 50  0000 L CNN
 F 1 "MountingHole" H 4200 2955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 3000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 3000 50  0001 C CNN
 F 3 "~" H 4100 3000 50  0001 C CNN
 	1    4100 3000
 	1    0    0    -1  
@@ -774,9 +698,112 @@ U 1 1 5E6E9357
 P 4100 3300
 F 0 "H4" H 4200 3346 50  0000 L CNN
 F 1 "MountingHole" H 4200 3255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 3300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 3300 50  0001 C CNN
 F 3 "~" H 4100 3300 50  0001 C CNN
 	1    4100 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J2
+U 1 1 5F6EACF3
+P 2050 4750
+F 0 "J2" H 2100 5267 50  0000 C CNN
+F 1 "IF_OUT" H 2100 5176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 2050 4750 50  0001 C CNN
+F 3 "~" H 2050 4750 50  0001 C CNN
+	1    2050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4550 2700 4550
+Wire Wire Line
+	2350 4950 2700 4950
+Wire Wire Line
+	2350 5150 2700 5150
+Text Label 2700 4550 2    50   ~ 0
+RX1_I
+Text Label 2700 4750 2    50   ~ 0
+RX1_Q
+Text Label 2700 4950 2    50   ~ 0
+RX2_I
+Text Label 2700 5150 2    50   ~ 0
+RX2_Q
+Wire Wire Line
+	2350 4750 2700 4750
+Wire Wire Line
+	1850 4450 1500 4450
+Wire Wire Line
+	1500 4650 1850 4650
+Wire Wire Line
+	1850 4850 1500 4850
+Wire Wire Line
+	1500 5050 1850 5050
+Text Label 1500 4650 0    50   ~ 0
+RX3_Q
+Text Label 1500 5050 0    50   ~ 0
+RX4_Q
+Text Label 1500 4450 0    50   ~ 0
+RX3_I
+Text Label 1500 4850 0    50   ~ 0
+RX4_I
+$Comp
+L power:GND #PWR02
+U 1 1 5F733F40
+P 2400 5350
+F 0 "#PWR02" H 2400 5100 50  0001 C CNN
+F 1 "GND" H 2405 5177 50  0000 C CNN
+F 2 "" H 2400 5350 50  0001 C CNN
+F 3 "" H 2400 5350 50  0001 C CNN
+	1    2400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F734327
+P 1800 5350
+F 0 "#PWR01" H 1800 5100 50  0001 C CNN
+F 1 "GND" H 1805 5177 50  0000 C CNN
+F 2 "" H 1800 5350 50  0001 C CNN
+F 3 "" H 1800 5350 50  0001 C CNN
+	1    1800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5350 1800 5150
+Wire Wire Line
+	1800 5150 1850 5150
+Wire Wire Line
+	1800 5150 1800 4950
+Wire Wire Line
+	1800 4950 1850 4950
+Connection ~ 1800 5150
+Wire Wire Line
+	1800 4950 1800 4750
+Wire Wire Line
+	1800 4750 1850 4750
+Connection ~ 1800 4950
+Wire Wire Line
+	1800 4750 1800 4550
+Wire Wire Line
+	1800 4550 1850 4550
+Connection ~ 1800 4750
+Wire Wire Line
+	2350 5050 2400 5050
+Wire Wire Line
+	2400 5050 2400 5350
+Wire Wire Line
+	2350 4850 2400 4850
+Wire Wire Line
+	2400 4850 2400 5050
+Connection ~ 2400 5050
+Wire Wire Line
+	2350 4650 2400 4650
+Wire Wire Line
+	2400 4650 2400 4850
+Connection ~ 2400 4850
+Wire Wire Line
+	2350 4450 2400 4450
+Wire Wire Line
+	2400 4450 2400 4650
+Connection ~ 2400 4650
 $EndSCHEMATC

@@ -36,7 +36,7 @@ F 5 "https://www.digikey.com/product-detail/en/analog-devices-inc/HMC717ALP3E/11
 $EndComp
 Text HLabel 1300 4600 0    50   Input ~ 0
 ANT_IN
-Text HLabel 5100 4850 0    50   Input ~ 0
+Text HLabel 4800 4700 0    50   Input ~ 0
 LO_IN
 $Comp
 L Device:C_Small C55
@@ -59,7 +59,7 @@ F 5 "https://www.mouser.com/ProductDetail/Walsin/RF15N1R2C250CT?qs=sGAEpiMZZMs0A
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5550 4850 5100 4850
+	5550 4850 5450 4850
 Wire Wire Line
 	1550 4600 1300 4600
 $Comp
@@ -103,9 +103,9 @@ F 5 "https://www.mouser.com/ProductDetail/Wurth-Elektronik/885382206004?qs=sGAEp
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6450 4600 6950 4600
+	6450 4600 6550 4600
 Wire Wire Line
-	6450 4700 6950 4700
+	6450 4700 6550 4700
 $Comp
 L power:GND #PWR0123
 U 1 1 5E4D620B
@@ -608,9 +608,9 @@ Wire Wire Line
 Connection ~ 5350 3000
 Wire Wire Line
 	6000 3700 6000 4200
-Text Label 6950 4600 2    50   ~ 0
+Text Label 7200 4600 2    50   ~ 0
 IF1_RAW
-Text Label 6950 4700 2    50   ~ 0
+Text Label 7200 4700 2    50   ~ 0
 IF2_RAW
 Wire Wire Line
 	6050 5700 6050 5050
@@ -826,4 +826,74 @@ F 3 "" H 5350 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 4600 5650 4600
+$Comp
+L aps_radar_lib:ic_taper TL44
+U 1 1 5F97A62B
+P 5350 4850
+AR Path="/5E3C637C/5F97A62B" Ref="TL44"  Part="1" 
+AR Path="/5F61773C/5F97A62B" Ref="TL23"  Part="1" 
+AR Path="/5F617CF8/5F97A62B" Ref="TL38"  Part="1" 
+AR Path="/5F617CFE/5F97A62B" Ref="TL41"  Part="1" 
+F 0 "TL44" H 5350 4727 50  0000 C CNN
+F 1 "ic_taper" H 5350 4725 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 5350 4850 50  0001 C CNN
+F 3 "" H 5350 4850 50  0001 C CNN
+	1    5350 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L aps_radar_lib:ic_taper TL45
+U 1 1 5F97D0C5
+P 6650 4600
+AR Path="/5E3C637C/5F97D0C5" Ref="TL45"  Part="1" 
+AR Path="/5F61773C/5F97D0C5" Ref="TL24"  Part="1" 
+AR Path="/5F617CF8/5F97D0C5" Ref="TL39"  Part="1" 
+AR Path="/5F617CFE/5F97D0C5" Ref="TL42"  Part="1" 
+F 0 "TL45" H 6650 4477 50  0000 C CNN
+F 1 "ic_taper" H 6650 4475 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 6650 4600 50  0001 C CNN
+F 3 "" H 6650 4600 50  0001 C CNN
+	1    6650 4600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6750 4600 7200 4600
+$Comp
+L aps_radar_lib:ic_taper TL46
+U 1 1 5F97D975
+P 6650 4700
+AR Path="/5E3C637C/5F97D975" Ref="TL46"  Part="1" 
+AR Path="/5F61773C/5F97D975" Ref="TL37"  Part="1" 
+AR Path="/5F617CF8/5F97D975" Ref="TL40"  Part="1" 
+AR Path="/5F617CFE/5F97D975" Ref="TL43"  Part="1" 
+F 0 "TL46" H 6650 4577 50  0000 C CNN
+F 1 "ic_taper" H 6650 4575 50  0001 C CNN
+F 2 "aps_radar_lib:IC_Taper_0.22_0.35" H 6650 4700 50  0001 C CNN
+F 3 "" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4700 7200 4700
+$Comp
+L aps_radar_lib:mitered_bend TL49
+U 1 1 5F99002F
+P 4950 4700
+AR Path="/5F617CFE/5F99002F" Ref="TL49"  Part="1" 
+AR Path="/5F61773C/5F99002F" Ref="TL47"  Part="1" 
+AR Path="/5F617CF8/5F99002F" Ref="TL48"  Part="1" 
+AR Path="/5E3C637C/5F99002F" Ref="TL50"  Part="1" 
+F 0 "TL50" H 5078 4672 50  0000 L CNN
+F 1 "mitered_bend" H 5300 4700 50  0001 C CNN
+F 2 "aps_radar_lib:mitered_bend_50" H 4900 5050 50  0001 C CNN
+F 3 "" H 4950 4700 50  0001 C CNN
+	1    4950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4850 5000 4800
+Wire Wire Line
+	4800 4700 4900 4700
+Wire Wire Line
+	5000 4850 5250 4850
 $EndSCHEMATC
