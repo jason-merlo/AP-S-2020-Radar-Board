@@ -211,7 +211,7 @@ U 1 1 5E5A887F
 P 4900 5250
 F 0 "U20" H 4600 5500 50  0000 L CNN
 F 1 "HMC431" H 5000 5000 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.8x2.8mm" H 4900 5250 50  0001 C CNN
+F 2 "aps_radar_lib:HMC-LP4" H 4900 5250 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/hmc431.pdf" H 4900 5250 50  0001 C CNN
 F 4 "HMC431LP4ETR " H 4900 5250 50  0001 C CNN "Part Number"
 F 5 "https://www.mouser.com/ProductDetail/Analog-Devices-Hittite/HMC431LP4ETR?qs=sGAEpiMZZMuxN8ppjVrcxiCDNgdaUA3vmLRu%252BUaBrMtXLHFEtBbEFw%3D%3D" H 4900 5250 50  0001 C CNN "URL"
@@ -2889,10 +2889,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 7000 4350 7000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0260
 U 1 1 5FE2D84C
 P 6000 5700
-F 0 "#PWR?" H 6000 5450 50  0001 C CNN
+F 0 "#PWR0260" H 6000 5450 50  0001 C CNN
 F 1 "GND" H 6005 5527 50  0000 C CNN
 F 2 "" H 6000 5700 50  0001 C CNN
 F 3 "" H 6000 5700 50  0001 C CNN

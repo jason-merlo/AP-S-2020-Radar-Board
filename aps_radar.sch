@@ -29,7 +29,7 @@ L Connector:Conn_Coaxial J5
 U 1 1 5F61D7C7
 P 9450 3250
 F 0 "J5" H 9550 3225 50  0000 L CNN
-F 1 "Rx1_Ant" H 9550 3134 50  0000 L CNN
+F 1 "Rx1" H 9550 3134 50  0000 L CNN
 F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 3250 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 3250 50  0001 C CNN
 F 4 "73251-1150" H 9450 3250 50  0001 C CNN "Part Number"
@@ -59,7 +59,7 @@ L Connector:Conn_Coaxial J6
 U 1 1 5F61E813
 P 9450 4200
 F 0 "J6" H 9550 4175 50  0000 L CNN
-F 1 "Rx2_Ant" H 9550 4084 50  0000 L CNN
+F 1 "Rx2" H 9550 4084 50  0000 L CNN
 F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 4200 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 4200 50  0001 C CNN
 F 4 "73251-1150" H 9450 4200 50  0001 C CNN "Part Number"
@@ -87,7 +87,7 @@ L Connector:Conn_Coaxial J7
 U 1 1 5F620063
 P 9450 5150
 F 0 "J7" H 9550 5125 50  0000 L CNN
-F 1 "Rx3_Ant" H 9550 5034 50  0000 L CNN
+F 1 "Rx3" H 9550 5034 50  0000 L CNN
 F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 5150 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 5150 50  0001 C CNN
 F 4 "73251-1150" H 9450 5150 50  0001 C CNN "Part Number"
@@ -115,7 +115,7 @@ L Connector:Conn_Coaxial J8
 U 1 1 5F620071
 P 9450 6100
 F 0 "J8" H 9550 6075 50  0000 L CNN
-F 1 "Rx4_Ant" H 9550 5984 50  0000 L CNN
+F 1 "Rx4" H 9550 5984 50  0000 L CNN
 F 2 "aps_radar_lib:SMA_Molex_Transition" H 9450 6100 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/732511150_sd.pdf" H 9450 6100 50  0001 C CNN
 F 4 "73251-1150" H 9450 6100 50  0001 C CNN "Part Number"
@@ -341,27 +341,27 @@ $EndSheet
 $Comp
 L power:GND #PWR0107
 U 1 1 5E5EA8A6
-P 1850 7400
-F 0 "#PWR0107" H 1850 7150 50  0001 C CNN
-F 1 "GND" H 1855 7227 50  0000 C CNN
-F 2 "" H 1850 7400 50  0001 C CNN
-F 3 "" H 1850 7400 50  0001 C CNN
-	1    1850 7400
+P 1900 7400
+F 0 "#PWR0107" H 1900 7150 50  0001 C CNN
+F 1 "GND" H 1905 7227 50  0000 C CNN
+F 2 "" H 1900 7400 50  0001 C CNN
+F 3 "" H 1900 7400 50  0001 C CNN
+	1    1900 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 7400 1850 6950
+	1900 7400 1900 6950
 Wire Wire Line
-	1850 6950 1700 6950
+	1900 6950 1750 6950
 $Sheet
-S 2300 6800 900  650 
+S 2100 6800 900  650 
 U 5E5EE446
 F0 "power" 50
 F1 "power.sch" 50
-F2 "+12V0_IN_CONN" I L 2300 7050 50 
+F2 "+12V0_IN_CONN" I L 2100 7050 50 
 $EndSheet
 Wire Wire Line
-	1700 7050 2300 7050
+	1750 7050 2100 7050
 Text Notes 1250 850  0    100  ~ 0
 Transmitter
 Text Notes 7800 2600 0    100  ~ 0
@@ -635,14 +635,14 @@ Connection ~ 5600 6950
 $Comp
 L aps_radar_lib:POWER_IN J3
 U 1 1 5F458B35
-P 1500 6950
-F 0 "J3" H 1550 7100 50  0000 C CNN
-F 1 "POWER_IN" H 1550 6700 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1500 6950 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1500 6950 50  0001 C CNN
-F 4 "282834-2" H 1500 6950 50  0001 C CNN "Part Number"
-F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-2?qs=A%252Bip%252BNCYi6N8cVKuk8xDog%3D%3D" H 1500 6950 50  0001 C CNN "URL"
-	1    1500 6950
+P 1550 6950
+F 0 "J3" H 1600 7100 50  0000 C CNN
+F 1 "POWER_IN" H 1600 6700 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1550 6950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_CD_282834_C1-1248142.pdf" H 1550 6950 50  0001 C CNN
+F 4 "282834-2" H 1550 6950 50  0001 C CNN "Part Number"
+F 5 "https://www.mouser.com/ProductDetail/TE-Connectivity/282834-2?qs=A%252Bip%252BNCYi6N8cVKuk8xDog%3D%3D" H 1550 6950 50  0001 C CNN "URL"
+	1    1550 6950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -657,52 +657,8 @@ Wire Wire Line
 	6400 4950 6400 5150
 Wire Wire Line
 	5950 3250 5950 4050
-Text Notes 3900 2200 0    100  ~ 0
+Text Notes 3800 2200 0    100  ~ 0
 Mounting Holes
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5E6E847B
-P 4100 2500
-F 0 "H1" H 4200 2546 50  0000 L CNN
-F 1 "MountingHole" H 4200 2455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 2500 50  0001 C CNN
-F 3 "~" H 4100 2500 50  0001 C CNN
-	1    4100 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5E6E8DEA
-P 4100 2750
-F 0 "H2" H 4200 2796 50  0000 L CNN
-F 1 "MountingHole" H 4200 2705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 2750 50  0001 C CNN
-F 3 "~" H 4100 2750 50  0001 C CNN
-	1    4100 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5E6E9032
-P 4100 3000
-F 0 "H3" H 4200 3046 50  0000 L CNN
-F 1 "MountingHole" H 4200 2955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 3000 50  0001 C CNN
-F 3 "~" H 4100 3000 50  0001 C CNN
-	1    4100 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5E6E9357
-P 4100 3300
-F 0 "H4" H 4200 3346 50  0000 L CNN
-F 1 "MountingHole" H 4200 3255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4100 3300 50  0001 C CNN
-F 3 "~" H 4100 3300 50  0001 C CNN
-	1    4100 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J2
 U 1 1 5F6EACF3
@@ -806,4 +762,103 @@ Wire Wire Line
 Wire Wire Line
 	2400 4450 2400 4650
 Connection ~ 2400 4650
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E6E9032
+P 5450 2450
+F 0 "H3" H 5550 2496 50  0000 L CNN
+F 1 "MountingHole" H 5550 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5450 2450 50  0001 C CNN
+F 3 "~" H 5450 2450 50  0001 C CNN
+	1    5450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E6E9357
+P 6150 2450
+F 0 "H4" H 6250 2496 50  0000 L CNN
+F 1 "MountingHole" H 6250 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 6150 2450 50  0001 C CNN
+F 3 "~" H 6150 2450 50  0001 C CNN
+	1    6150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0290
+U 1 1 5FE52767
+P 6150 2550
+F 0 "#PWR0290" H 6150 2300 50  0001 C CNN
+F 1 "GND" H 6155 2377 50  0000 C CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0291
+U 1 1 5FE52D9A
+P 5450 2550
+F 0 "#PWR0291" H 5450 2300 50  0001 C CNN
+F 1 "GND" H 5455 2377 50  0000 C CNN
+F 2 "" H 5450 2550 50  0001 C CNN
+F 3 "" H 5450 2550 50  0001 C CNN
+	1    5450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0292
+U 1 1 5FE535A1
+P 3950 2550
+F 0 "#PWR0292" H 3950 2300 50  0001 C CNN
+F 1 "GND" H 3955 2377 50  0000 C CNN
+F 2 "" H 3950 2550 50  0001 C CNN
+F 3 "" H 3950 2550 50  0001 C CNN
+	1    3950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0293
+U 1 1 5FE531B7
+P 4700 2550
+F 0 "#PWR0293" H 4700 2300 50  0001 C CNN
+F 1 "GND" H 4705 2377 50  0000 C CNN
+F 2 "" H 4700 2550 50  0001 C CNN
+F 3 "" H 4700 2550 50  0001 C CNN
+	1    4700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E6E8DEA
+P 4700 2450
+F 0 "H2" H 4800 2496 50  0000 L CNN
+F 1 "MountingHole" H 4800 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4700 2450 50  0001 C CNN
+F 3 "~" H 4700 2450 50  0001 C CNN
+	1    4700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E6E847B
+P 3950 2450
+F 0 "H1" H 4050 2496 50  0000 L CNN
+F 1 "MountingHole" H 4050 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3950 2450 50  0001 C CNN
+F 3 "~" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L aps_radar_lib:delta_logo #G1
+U 1 1 5E7DCEC5
+P 1100 6200
+F 0 "#G1" H 1100 5883 60  0001 C CNN
+F 1 "delta_logo" H 1100 6517 60  0001 C CNN
+F 2 "aps_radar_lib:delta_logo" H 1100 6200 50  0001 C CNN
+F 3 "" H 1100 6200 50  0001 C CNN
+	1    1100 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
